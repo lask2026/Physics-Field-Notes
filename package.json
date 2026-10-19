@@ -1,0 +1,24 @@
+{
+  "name": "physics-field-notes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node dev/scripts/build.mjs",
+    "serve": "node dev/scripts/serve.mjs",
+    "schema": "python testing/scripts/validate_schema.py",
+    "packets": "node review/scripts/packets.mjs",
+    "packets:check": "node review/scripts/packets.mjs --check",
+    "test:unit": "node testing/scripts/run-unit.mjs",
+    "test:browser": "node testing/tests/browser.mjs",
+    "test": "npm run schema && npm run build && npm run packets && npm run test:unit && npm run test:browser && npm run test:course && npm run test:accessibility && npm run test:visuals",
+    "test:course": "node testing/tests/course-browser.mjs",
+    "test:regression": "node testing/tests/browser.mjs",
+    "report": "node testing/scripts/report.mjs",
+    "test:accessibility": "node testing/tests/accessibility.mjs",
+    "test:visuals": "node testing/tests/visual-browser.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

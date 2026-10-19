@@ -1,0 +1,318 @@
+{
+  "subject": "physics",
+  "title": "Physics Field Notes",
+  "chapters": [
+    {
+      "id": "chapter-01",
+      "number": 1,
+      "title": "Kinematics and Dynamics",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "1.1",
+          "title": "Units"
+        },
+        {
+          "id": "1.2",
+          "title": "Vectors and Scalars"
+        },
+        {
+          "id": "1.3",
+          "title": "Displacement and Velocity"
+        },
+        {
+          "id": "1.4",
+          "title": "Forces and Acceleration"
+        },
+        {
+          "id": "1.5",
+          "title": "Newton’s Laws"
+        },
+        {
+          "id": "1.6",
+          "title": "Motion with Constant Acceleration"
+        },
+        {
+          "id": "1.7",
+          "title": "Mechanical Equilibrium"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02",
+      "number": 2,
+      "title": "Work and Energy",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "2.1",
+          "title": "Energy"
+        },
+        {
+          "id": "2.2",
+          "title": "Work"
+        },
+        {
+          "id": "2.3",
+          "title": "Mechanical Advantage"
+        }
+      ]
+    },
+    {
+      "id": "chapter-03",
+      "number": 3,
+      "title": "Thermodynamics",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "3.1",
+          "title": "Zeroth Law of Thermodynamics"
+        },
+        {
+          "id": "3.2",
+          "title": "Systems"
+        },
+        {
+          "id": "3.3",
+          "title": "First Law of Thermodynamics"
+        },
+        {
+          "id": "3.4",
+          "title": "Second Law of Thermodynamics and Entropy"
+        }
+      ]
+    },
+    {
+      "id": "chapter-04",
+      "number": 4,
+      "title": "Fluids",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "4.1",
+          "title": "Characteristics of Fluids and Solids"
+        },
+        {
+          "id": "4.2",
+          "title": "Hydrostatics"
+        },
+        {
+          "id": "4.3",
+          "title": "Fluid Dynamics"
+        },
+        {
+          "id": "4.4",
+          "title": "Fluids in Physiology"
+        }
+      ]
+    },
+    {
+      "id": "chapter-05",
+      "number": 5,
+      "title": "Electrostatics and Magnetism",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "5.1",
+          "title": "Charges"
+        },
+        {
+          "id": "5.2",
+          "title": "Coulomb’s Law"
+        },
+        {
+          "id": "5.3",
+          "title": "Electric Potential Energy"
+        },
+        {
+          "id": "5.4",
+          "title": "Electric Potential"
+        },
+        {
+          "id": "5.5",
+          "title": "Special Cases in Electrostatics"
+        },
+        {
+          "id": "5.6",
+          "title": "Magnetism"
+        }
+      ]
+    },
+    {
+      "id": "chapter-06",
+      "number": 6,
+      "title": "Circuits",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "6.1",
+          "title": "Current"
+        },
+        {
+          "id": "6.2",
+          "title": "Resistance"
+        },
+        {
+          "id": "6.3",
+          "title": "Capacitance and Capacitors"
+        },
+        {
+          "id": "6.4",
+          "title": "Meters"
+        }
+      ]
+    },
+    {
+      "id": "chapter-07",
+      "number": 7,
+      "title": "Waves and Sound",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "7.1",
+          "title": "General Wave Characteristics"
+        },
+        {
+          "id": "7.2",
+          "title": "Sound"
+        }
+      ]
+    },
+    {
+      "id": "chapter-08",
+      "number": 8,
+      "title": "Light and Optics",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "8.1",
+          "title": "Electromagnetic Spectrum"
+        },
+        {
+          "id": "8.2",
+          "title": "Geometrical Optics"
+        },
+        {
+          "id": "8.3",
+          "title": "Diffraction"
+        },
+        {
+          "id": "8.4",
+          "title": "Polarization"
+        }
+      ]
+    },
+    {
+      "id": "chapter-09",
+      "number": 9,
+      "title": "Atomic and Nuclear Phenomena",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "9.1",
+          "title": "The Photoelectric Effect"
+        },
+        {
+          "id": "9.2",
+          "title": "Absorption and Emission of Light"
+        },
+        {
+          "id": "9.3",
+          "title": "Nuclear Binding Energy and Mass Defect"
+        },
+        {
+          "id": "9.4",
+          "title": "Nuclear Reactions"
+        }
+      ]
+    },
+    {
+      "id": "chapter-10",
+      "number": 10,
+      "title": "Mathematics",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "10.1",
+          "title": "Arithmetic and Significant Figures"
+        },
+        {
+          "id": "10.2",
+          "title": "Exponents and Logarithms"
+        },
+        {
+          "id": "10.3",
+          "title": "Trigonometry"
+        },
+        {
+          "id": "10.4",
+          "title": "Problem-Solving"
+        }
+      ]
+    },
+    {
+      "id": "chapter-11",
+      "number": 11,
+      "title": "Reasoning About the Design and Execution of Research",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "11.1",
+          "title": "The Scientific Method"
+        },
+        {
+          "id": "11.2",
+          "title": "Basic Science Research"
+        },
+        {
+          "id": "11.3",
+          "title": "Human Subjects Research"
+        },
+        {
+          "id": "11.4",
+          "title": "Ethics"
+        },
+        {
+          "id": "11.5",
+          "title": "Research in the Real World"
+        }
+      ]
+    },
+    {
+      "id": "chapter-12",
+      "number": 12,
+      "title": "Data-Based and Statistical Reasoning",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "12.1",
+          "title": "Measures of Central Tendency"
+        },
+        {
+          "id": "12.2",
+          "title": "Distributions"
+        },
+        {
+          "id": "12.3",
+          "title": "Measures of Distribution"
+        },
+        {
+          "id": "12.4",
+          "title": "Probability"
+        },
+        {
+          "id": "12.5",
+          "title": "Statistical Testing"
+        },
+        {
+          "id": "12.6",
+          "title": "Charts, Graphs, and Tables"
+        },
+        {
+          "id": "12.7",
+          "title": "Applying Data"
+        }
+      ]
+    }
+  ]
+}

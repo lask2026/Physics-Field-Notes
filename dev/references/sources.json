@@ -1,0 +1,27 @@
+{
+  "status": "independent-scientific-review-pending",
+  "outlineSource": "Local private physicsmath/OEBPS/toc.xhtml headings inspected 2026-10-19. No book prose, illustrations, questions or keys copied.",
+  "inspected": [
+    {
+      "title": "Motion Equations for Constant Acceleration in One Dimension",
+      "url": "https://openstax.org/books/college-physics-2e/pages/2-5-motion-equations-for-constant-acceleration-in-one-dimension",
+      "accessed": "2026-10-19"
+    },
+    {
+      "title": "Bernoulli’s Equation",
+      "url": "https://openstax.org/books/college-physics-2e/pages/12-2-bernoullis-equation",
+      "accessed": "2026-10-19"
+    },
+    {
+      "title": "Resistors in Series and Parallel",
+      "url": "https://openstax.org/books/college-physics-2e/pages/21-1-resistors-in-series-and-parallel",
+      "accessed": "2026-10-19"
+    },
+    {
+      "title": "Outcomes and the Type I and Type II Errors",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/9-2-outcomes-and-the-type-i-and-type-ii-errors",
+      "accessed": "2026-10-19"
+    }
+  ],
+  "limits": "Selected foundational references only. These do not independently validate the whole course, all numerical keys, model diagrams or study-design examples. No external model review or expert sign-off was performed."
+}

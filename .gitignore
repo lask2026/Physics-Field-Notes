@@ -1,0 +1,10 @@
+node_modules/
+__pycache__/
+dev/references/*.local.json
+review/config/*.local.json
+review/results/*
+!review/results/.gitkeep
+testing/artifacts/screenshots/
+testing/artifacts/downloaded-*
+
+testing/artifacts/*.log

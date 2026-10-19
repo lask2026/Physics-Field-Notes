@@ -1,0 +1,329 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^chapter-\\d{2}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "pilot",
+        "implemented"
+      ]
+    },
+    "scopeNote": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lessons": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "section": {
+            "type": "string",
+            "pattern": "^(?:[1-9]|1[0-2])\\.[1-9][0-9]*$"
+          },
+          "asset": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "steps": {
+            "type": "array",
+            "minItems": 3,
+            "items": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "focus": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              },
+              "required": [
+                "text",
+                "focus"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "coreRule": {
+            "$ref": "#/$defs/teachingCard"
+          },
+          "memoryCue": {
+            "$ref": "#/$defs/teachingCard"
+          },
+          "traps": {
+            "$ref": "#/$defs/teachingCard"
+          },
+          "application": {
+            "$ref": "#/$defs/teachingCard"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "section",
+          "asset",
+          "steps",
+          "coreRule",
+          "memoryCue",
+          "traps",
+          "application"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "exercises": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "asset": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "stages": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9-]*$"
+                },
+                "prompt": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "type": {
+                  "enum": [
+                    "choice",
+                    "selection",
+                    "text",
+                    "number"
+                  ]
+                },
+                "answer": {},
+                "explanation": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "hints": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                "asset": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9-]*$"
+                },
+                "options": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "minItems": 2,
+                  "uniqueItems": true
+                },
+                "unit": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "tolerance": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "aliases": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "caseSensitive": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "id",
+                "prompt",
+                "type",
+                "answer",
+                "explanation",
+                "hints"
+              ],
+              "additionalProperties": false,
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "type": {
+                        "const": "choice"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "answer": {
+                        "type": "integer",
+                        "minimum": 0
+                      }
+                    },
+                    "required": [
+                      "options"
+                    ]
+                  }
+                },
+                {
+                  "if": {
+                    "properties": {
+                      "type": {
+                        "const": "selection"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "answer": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9-]*$"
+                        },
+                        "minItems": 1,
+                        "uniqueItems": true
+                      }
+                    },
+                    "required": []
+                  }
+                },
+                {
+                  "if": {
+                    "properties": {
+                      "type": {
+                        "const": "number"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "answer": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "unit",
+                      "tolerance"
+                    ]
+                  }
+                },
+                {
+                  "if": {
+                    "properties": {
+                      "type": {
+                        "const": "text"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "answer": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "required": []
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "asset",
+          "stages"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "id",
+    "title",
+    "status",
+    "scopeNote",
+    "lessons",
+    "exercises"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://physics-field-notes.local/schema/chapter-v1",
+  "$defs": {
+    "teachingCard": {
+      "type": "object",
+      "description": "Original teaching card: a concept-specific title and explanatory paragraphs. All strings render as escaped plain text, never HTML.",
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 8
+        },
+        "paragraphs": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 20
+          }
+        }
+      },
+      "required": [
+        "title",
+        "paragraphs"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

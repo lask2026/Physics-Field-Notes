@@ -1,0 +1,15 @@
+# Physics build progress
+
+## Direct full-outline build — 2026-10-19
+
+The user requested continuing from Biochemistry to Physics, keeping the established Field Notes format and no pilot checkpoint. Inspected the private physicsmath TOC and existing app infrastructure. Created a new independent Physics project covering the book’s 12 chapters, including Math, Research Design and Statistics.
+
+Authored original content for all 54 outline sections: 54 lessons, 216 walkthrough steps, 54 matching workshops, 162 practice stages and 216 teaching cards. Of the stages, 72 require a numerical response in a displayed unit. Added subject-specific vector, force, fluid, circuit, wave, optics, atomic/nuclear and statistical/research SVG scenes with stable entity IDs. No private book content or sibling curriculum was copied. Physics has independent progress/import identity.
+
+Final current-source npm test passes: 14 JSON documents, 28 Node tests, all 12 chapters / 216 walkthrough steps / 162 practice stages, wrong-answer rejection, stage-asset replacement, concealment, chapter-isolated persisted completion, import/export/reset, assistance tracking, blocked storage and downloaded offline operation. Both themes pass 320/375/768/1280 layouts; targeted text contrast exceeds 4.5:1. Visual checks cover all 54 lessons, 216 teaching-card keyboard interactions, 54 workshop links, pointer selection, eight animated process views, pause/replay, reduced motion and SVG label geometry. All 55 assets also passed render/label-bound/overlap inspection. Representative force, wave, optics and desktop/mobile screenshots were inspected. Current source/payload hashes and generated reports pass. These establish software/model consistency, not independent physics verification.
+
+Author checks corrected converging-lens ray geometry and the parallel-resistor network. The parallel numerical stage now uses its own asset override in rendering and blind packets. A numerical/geometry test independently checks the actual lens artwork against the thin-lens relation and signed magnification; cross-topic calculations check signs, dimensional conversions and formula applications. Corrected short equation-only feedback to explain the applicable relation. None of these checks is scientific sign-off.
+
+Interaction checks caught dashed-arrow gaps, boundary fills intercepting interior clicks and missing graphical hit areas for field/notation symbols. Added solid transparent stroke hit targets for interactive shapes; boundaries no longer cover interior targets. Pointer tests choose an actual unobscured visible hit region and verify that a real click toggles selection. Reduced motion preserves SVG positioning transforms. Animated arrows carry a faint static guide and a visible moving tracer; their speed is qualitative. Active practice and blind exports remain static.
+
+Independent scientific review, deeper subtopic coverage, continuous numerical simulations, broader data problems and manual assistive-technology checks remain pending. No private book text/art, external LLM review, paid inference or live deployment was used. See SCIENCE_REVIEW.md for the per-chapter queue.
