@@ -1,0 +1,568 @@
+PHYSICS chapter-07: Waves and Sound
+Text/content review only; browser execution is not established by this packet.
+PASS 1: Independently solve every supplied blind case. Record case ID, answer, reasoning, confidence and ambiguity. Do not skip stages.
+[
+  {
+    "id": "ph-07-01-workshop-v1/map",
+    "subject": "physics",
+    "prompt": "Select the spatial separation between neighboring crests.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Crest",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Trough",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Wavelength",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Amplitude",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "wave"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M70 195 H585\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M80 195 C100 195 140 135 160 135 S220 195 240 195 S300 255 320 255 S380 195 400 195 S460 135 480 135 S540 195 560 195\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M180 335 H470\" fill=\"none\" stroke=\"var(--v-green)\" stroke-opacity=\".2\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"flow\" d=\"M180 335 H470\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><text class=\"anatomy-note\" x=\"320\" y=\"385\" text-anchor=\"middle\">Tracer arrow: phase propagation, not a material-particle path</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"160\" cy=\"135\" r=\"10\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"125\" text-anchor=\"middle\">Crest</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"255\" r=\"10\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"285\" text-anchor=\"middle\">Trough</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M160 90 H480 M160 80 V100 M480 80 V100\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"65\" text-anchor=\"middle\">Wavelength</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M550 195 V135 M540 195 H560 M540 135 H560\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"550\" y=\"125\" text-anchor=\"middle\">Amplitude</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-07-01-workshop-v1/reason",
+    "subject": "physics",
+    "prompt": "A wave has frequency 5 Hz and wavelength 2 m. Find its speed.",
+    "type": "number",
+    "unit": "m/s",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Crest",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Trough",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Wavelength",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Amplitude",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "wave"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M70 195 H585\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M80 195 C100 195 140 135 160 135 S220 195 240 195 S300 255 320 255 S380 195 400 195 S460 135 480 135 S540 195 560 195\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M180 335 H470\" fill=\"none\" stroke=\"var(--v-green)\" stroke-opacity=\".2\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"flow\" d=\"M180 335 H470\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><text class=\"anatomy-note\" x=\"320\" y=\"385\" text-anchor=\"middle\">Tracer arrow: phase propagation, not a material-particle path</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"160\" cy=\"135\" r=\"10\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"125\" text-anchor=\"middle\">Crest</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"255\" r=\"10\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"285\" text-anchor=\"middle\">Trough</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M160 90 H480 M160 80 V100 M480 80 V100\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"65\" text-anchor=\"middle\">Wavelength</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M550 195 V135 M540 195 H560 M540 135 H560\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"550\" y=\"125\" text-anchor=\"middle\">Amplitude</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-07-01-workshop-v1/transfer",
+    "subject": "physics",
+    "prompt": "Find the period of a 4 Hz wave.",
+    "type": "number",
+    "unit": "s",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Crest",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Trough",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Wavelength",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Amplitude",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "wave"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M70 195 H585\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M80 195 C100 195 140 135 160 135 S220 195 240 195 S300 255 320 255 S380 195 400 195 S460 135 480 135 S540 195 560 195\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M180 335 H470\" fill=\"none\" stroke=\"var(--v-green)\" stroke-opacity=\".2\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"flow\" d=\"M180 335 H470\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><text class=\"anatomy-note\" x=\"320\" y=\"385\" text-anchor=\"middle\">Tracer arrow: phase propagation, not a material-particle path</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"160\" cy=\"135\" r=\"10\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"125\" text-anchor=\"middle\">Crest</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"255\" r=\"10\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"285\" text-anchor=\"middle\">Trough</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M160 90 H480 M160 80 V100 M480 80 V100\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"65\" text-anchor=\"middle\">Wavelength</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M550 195 V135 M540 195 H560 M540 135 H560\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"550\" y=\"125\" text-anchor=\"middle\">Amplitude</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-07-02-workshop-v1/map",
+    "subject": "physics",
+    "prompt": "Select the high-pressure region of a longitudinal sound wave.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Compression",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Rarefaction",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Wave travel",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Source motion",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "sound"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Longitudinal pressure pattern; particles oscillate locally</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M130 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M135 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M140 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M145 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M150 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M155 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M160 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"95\" text-anchor=\"middle\">Compression</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 130 V245\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M425 130 V245\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M460 130 V245\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"460\" y=\"95\" text-anchor=\"middle\">Rarefaction</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M180 295 H500\" fill=\"none\" stroke=\"var(--v-green)\" stroke-opacity=\".2\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"flow\" d=\"M180 295 H500\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"340\" y=\"350\" text-anchor=\"middle\">Wave travel</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"100\" cy=\"200\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M75 265 H130\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"100\" y=\"330\" text-anchor=\"middle\">Source motion</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-07-02-workshop-v1/reason",
+    "subject": "physics",
+    "prompt": "Sound travels at 340 m/s with frequency 170 Hz. Find wavelength.",
+    "type": "number",
+    "unit": "m",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Compression",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Rarefaction",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Wave travel",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Source motion",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "sound"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Longitudinal pressure pattern; particles oscillate locally</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M130 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M135 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M140 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M145 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M150 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M155 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M160 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"95\" text-anchor=\"middle\">Compression</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 130 V245\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M425 130 V245\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M460 130 V245\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"460\" y=\"95\" text-anchor=\"middle\">Rarefaction</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M180 295 H500\" fill=\"none\" stroke=\"var(--v-green)\" stroke-opacity=\".2\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"flow\" d=\"M180 295 H500\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"340\" y=\"350\" text-anchor=\"middle\">Wave travel</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"100\" cy=\"200\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M75 265 H130\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"100\" y=\"330\" text-anchor=\"middle\">Source motion</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-07-02-workshop-v1/transfer",
+    "subject": "physics",
+    "prompt": "If sound intensity rises by a factor of 100, find the increase in intensity level.",
+    "type": "number",
+    "unit": "dB",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Compression",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Rarefaction",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Wave travel",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Source motion",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "sound"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Longitudinal pressure pattern; particles oscillate locally</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M130 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M135 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M140 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M145 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M150 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M155 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M160 130 V245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"95\" text-anchor=\"middle\">Compression</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 130 V245\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M425 130 V245\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M460 130 V245\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"460\" y=\"95\" text-anchor=\"middle\">Rarefaction</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M180 295 H500\" fill=\"none\" stroke=\"var(--v-green)\" stroke-opacity=\".2\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"flow\" d=\"M180 295 H500\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"340\" y=\"350\" text-anchor=\"middle\">Wave travel</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"100\" cy=\"200\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M75 265 H130\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"100\" y=\"330\" text-anchor=\"middle\">Source motion</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  }
+]
+PASS 2: Audit every lesson step, rule, cue, trap, application, diagram, prompt, option, key, hint and explanation below. Compare your independently recorded answers; do not assume the encoded key is correct.
+{
+  "chapter": {
+    "version": 1,
+    "id": "chapter-07",
+    "title": "Waves and Sound",
+    "status": "implemented",
+    "scopeNote": "Original condensed MCAT Physics, Mathematics and Research Reasoning lessons. Models and calculations use stated assumptions. Independent scientific review is pending; this is not exhaustive textbook coverage.",
+    "lessons": [
+      {
+        "id": "concept-7-1",
+        "title": "General Wave Characteristics",
+        "section": "7.1",
+        "asset": "ph07-01",
+        "steps": [
+          {
+            "text": "A periodic wave is described by amplitude, wavelength, frequency and period. Frequency is inverse period, and wave speed is v = fλ for the specified wave and medium.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Amplitude measures disturbance size, not the distance between successive crests. Wavelength is a spatial period, while ordinary period is a time interval.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Superposition adds displacements when the medium behaves linearly. Interference can enhance or cancel the local disturbance without implying that all energy has disappeared.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Standing waves arise from suitable counterpropagating waves. Boundary conditions determine nodes, antinodes and allowed wavelengths, so endpoint type matters.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "7.1 · General Wave Characteristics: the governing relation",
+          "paragraphs": [
+            "A periodic wave is described by amplitude, wavelength, frequency and period. Frequency is inverse period, and wave speed is v = fλ for the specified wave and medium.",
+            "Amplitude measures disturbance size, not the distance between successive crests. Wavelength is a spatial period, while ordinary period is a time interval."
+          ]
+        },
+        "memoryCue": {
+          "title": "7.1 · Wavelength is space; period is time.",
+          "paragraphs": [
+            "Wavelength is space; period is time.",
+            "Amplitude measures disturbance size, not the distance between successive crests. Wavelength is a spatial period, while ordinary period is a time interval."
+          ]
+        },
+        "traps": {
+          "title": "7.1 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Superposition adds displacements when the medium behaves linearly. Interference can enhance or cancel the local disturbance without implying that all energy has disappeared.",
+            "Standing waves arise from suitable counterpropagating waves. Boundary conditions determine nodes, antinodes and allowed wavelengths, so endpoint type matters."
+          ]
+        },
+        "application": {
+          "title": "7.1 · Apply the model within its limits",
+          "paragraphs": [
+            "Standing waves arise from suitable counterpropagating waves. Boundary conditions determine nodes, antinodes and allowed wavelengths, so endpoint type matters.",
+            "Wave speed is frequency times wavelength: v = fλ = (5 Hz)(2 m) = 10 m/s."
+          ]
+        }
+      },
+      {
+        "id": "concept-7-2",
+        "title": "Sound",
+        "section": "7.2",
+        "asset": "ph07-02",
+        "steps": [
+          {
+            "text": "Sound in air is a longitudinal pressure wave. Air parcels oscillate about equilibrium while the disturbance transports energy through the medium.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Sound speed depends on the medium and conditions. Frequency is set by the source; crossing into a different stationary medium generally changes speed and wavelength while preserving frequency.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Sound intensity level is β = 10 log10(I/I0) in decibels. A 10 dB increase means ten times the intensity, not ten times the pressure amplitude.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "For an approaching source and observer, the classical Doppler effect generally raises observed frequency. Use a stated sign convention and distinguish source speed from wave speed in the medium.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "7.2 · Sound: the governing relation",
+          "paragraphs": [
+            "Sound in air is a longitudinal pressure wave. Air parcels oscillate about equilibrium while the disturbance transports energy through the medium.",
+            "Sound speed depends on the medium and conditions. Frequency is set by the source; crossing into a different stationary medium generally changes speed and wavelength while preserving frequency."
+          ]
+        },
+        "memoryCue": {
+          "title": "7.2 · Particles oscillate; the pressure pattern travels.",
+          "paragraphs": [
+            "Particles oscillate; the pressure pattern travels.",
+            "Sound speed depends on the medium and conditions. Frequency is set by the source; crossing into a different stationary medium generally changes speed and wavelength while preserving frequency."
+          ]
+        },
+        "traps": {
+          "title": "7.2 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Sound intensity level is β = 10 log10(I/I0) in decibels. A 10 dB increase means ten times the intensity, not ten times the pressure amplitude.",
+            "For an approaching source and observer, the classical Doppler effect generally raises observed frequency. Use a stated sign convention and distinguish source speed from wave speed in the medium."
+          ]
+        },
+        "application": {
+          "title": "7.2 · Apply the model within its limits",
+          "paragraphs": [
+            "For an approaching source and observer, the classical Doppler effect generally raises observed frequency. Use a stated sign convention and distinguish source speed from wave speed in the medium.",
+            "Wavelength is speed divided by frequency: λ = v/f = 340/170 = 2 m."
+          ]
+        }
+      }
+    ],
+    "exercises": [
+      {
+        "id": "ph-07-01-workshop-v1",
+        "title": "General Wave Characteristics",
+        "asset": "ph07-01",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the spatial separation between neighboring crests.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant diagram entity or entities are Wavelength. A periodic wave is described by amplitude, wavelength, frequency and period. Frequency is inverse period, and wave speed is v = fλ for the specified wave and medium.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Amplitude measures disturbance size, not the distance between successive crests. Wavelength is a spatial period, while ordinary period is a time interval."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A wave has frequency 5 Hz and wavelength 2 m. Find its speed.",
+            "answer": 10,
+            "unit": "m/s",
+            "tolerance": 0,
+            "explanation": "Wave speed is frequency times wavelength: v = fλ = (5 Hz)(2 m) = 10 m/s.",
+            "id": "reason",
+            "hints": [
+              "A periodic wave is described by amplitude, wavelength, frequency and period. Frequency is inverse period, and wave speed is v = fλ for the specified wave and medium.",
+              "Amplitude measures disturbance size, not the distance between successive crests. Wavelength is a spatial period, while ordinary period is a time interval."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Find the period of a 4 Hz wave.",
+            "answer": 0.25,
+            "unit": "s",
+            "tolerance": 0,
+            "explanation": "Period is inverse frequency, so T = 1/f = 1/(4 Hz) = 0.25 s.",
+            "id": "transfer",
+            "hints": [
+              "Amplitude measures disturbance size, not the distance between successive crests. Wavelength is a spatial period, while ordinary period is a time interval.",
+              "Superposition adds displacements when the medium behaves linearly. Interference can enhance or cancel the local disturbance without implying that all energy has disappeared."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-07-02-workshop-v1",
+        "title": "Sound",
+        "asset": "ph07-02",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the high-pressure region of a longitudinal sound wave.",
+            "answer": [
+              "part-0"
+            ],
+            "explanation": "The relevant diagram entity or entities are Compression. Sound in air is a longitudinal pressure wave. Air parcels oscillate about equilibrium while the disturbance transports energy through the medium.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Sound speed depends on the medium and conditions. Frequency is set by the source; crossing into a different stationary medium generally changes speed and wavelength while preserving frequency."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Sound travels at 340 m/s with frequency 170 Hz. Find wavelength.",
+            "answer": 2,
+            "unit": "m",
+            "tolerance": 0,
+            "explanation": "Wavelength is speed divided by frequency: λ = v/f = 340/170 = 2 m.",
+            "id": "reason",
+            "hints": [
+              "Sound in air is a longitudinal pressure wave. Air parcels oscillate about equilibrium while the disturbance transports energy through the medium.",
+              "Sound speed depends on the medium and conditions. Frequency is set by the source; crossing into a different stationary medium generally changes speed and wavelength while preserving frequency."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "If sound intensity rises by a factor of 100, find the increase in intensity level.",
+            "answer": 20,
+            "unit": "dB",
+            "tolerance": 0,
+            "explanation": "Δβ = 10 log10(100) = 20 dB.",
+            "id": "transfer",
+            "hints": [
+              "Sound speed depends on the medium and conditions. Frequency is set by the source; crossing into a different stationary medium generally changes speed and wavelength while preserving frequency.",
+              "Sound intensity level is β = 10 log10(I/I0) in decibels. A 10 dB increase means ten times the intensity, not ten times the pressure amplitude."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "version": 1,
+    "assets": [
+      {
+        "id": "ph07-01",
+        "kind": "concept-schematic",
+        "title": "General Wave Characteristics",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Crest",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Trough",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Wavelength",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Amplitude",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "wave"
+        }
+      },
+      {
+        "id": "ph07-02",
+        "kind": "concept-schematic",
+        "title": "Sound",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Compression",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Rarefaction",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Wave travel",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Source motion",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "sound"
+        }
+      }
+    ]
+  }
+}
+REPORT BY CHAPTER: item ID, severity (critical/major/minor), exact claim, independent answer, encoded key, evidence, correction, uncertainty. Include coverage counts, unresolved questions and a verdict. Cite only inspected sources. Label any incomplete coverage PARTIAL with exact remaining IDs. Do not execute commands or modify curriculum. Model review is candidate evidence, not expert sign-off.
+For strictly blind evidence use a fresh conversation with blind.json only; freeze its response before supplying keyed-audit.json in a separate pass. This combined file contains keys and cannot guarantee blindness.

@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "id": "chapter-07",
+  "title": "Waves and Sound",
+  "status": "implemented",
+  "scopeNote": "Original condensed MCAT Physics, Mathematics and Research Reasoning lessons. Models and calculations use stated assumptions. Independent scientific review is pending; this is not exhaustive textbook coverage.",
+  "lessons": [
+    {
+      "id": "concept-7-1",
+      "title": "General Wave Characteristics",
+      "section": "7.1",
+      "asset": "ph07-01",
+      "steps": [
+        {
+          "text": "A periodic wave is described by amplitude, wavelength, frequency and period. Frequency is inverse period, and wave speed is v = fλ for the specified wave and medium.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Amplitude measures disturbance size, not the distance between successive crests. Wavelength is a spatial period, while ordinary period is a time interval.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Superposition adds displacements when the medium behaves linearly. Interference can enhance or cancel the local disturbance without implying that all energy has disappeared.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Standing waves arise from suitable counterpropagating waves. Boundary conditions determine nodes, antinodes and allowed wavelengths, so endpoint type matters.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "7.1 · General Wave Characteristics: the governing relation",
+        "paragraphs": [
+          "A periodic wave is described by amplitude, wavelength, frequency and period. Frequency is inverse period, and wave speed is v = fλ for the specified wave and medium.",
+          "Amplitude measures disturbance size, not the distance between successive crests. Wavelength is a spatial period, while ordinary period is a time interval."
+        ]
+      },
+      "memoryCue": {
+        "title": "7.1 · Wavelength is space; period is time.",
+        "paragraphs": [
+          "Wavelength is space; period is time.",
+          "Amplitude measures disturbance size, not the distance between successive crests. Wavelength is a spatial period, while ordinary period is a time interval."
+        ]
+      },
+      "traps": {
+        "title": "7.1 · Check signs, assumptions and meaning",
+        "paragraphs": [
+          "Superposition adds displacements when the medium behaves linearly. Interference can enhance or cancel the local disturbance without implying that all energy has disappeared.",
+          "Standing waves arise from suitable counterpropagating waves. Boundary conditions determine nodes, antinodes and allowed wavelengths, so endpoint type matters."
+        ]
+      },
+      "application": {
+        "title": "7.1 · Apply the model within its limits",
+        "paragraphs": [
+          "Standing waves arise from suitable counterpropagating waves. Boundary conditions determine nodes, antinodes and allowed wavelengths, so endpoint type matters.",
+          "Wave speed is frequency times wavelength: v = fλ = (5 Hz)(2 m) = 10 m/s."
+        ]
+      }
+    },
+    {
+      "id": "concept-7-2",
+      "title": "Sound",
+      "section": "7.2",
+      "asset": "ph07-02",
+      "steps": [
+        {
+          "text": "Sound in air is a longitudinal pressure wave. Air parcels oscillate about equilibrium while the disturbance transports energy through the medium.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Sound speed depends on the medium and conditions. Frequency is set by the source; crossing into a different stationary medium generally changes speed and wavelength while preserving frequency.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Sound intensity level is β = 10 log10(I/I0) in decibels. A 10 dB increase means ten times the intensity, not ten times the pressure amplitude.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "For an approaching source and observer, the classical Doppler effect generally raises observed frequency. Use a stated sign convention and distinguish source speed from wave speed in the medium.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "7.2 · Sound: the governing relation",
+        "paragraphs": [
+          "Sound in air is a longitudinal pressure wave. Air parcels oscillate about equilibrium while the disturbance transports energy through the medium.",
+          "Sound speed depends on the medium and conditions. Frequency is set by the source; crossing into a different stationary medium generally changes speed and wavelength while preserving frequency."
+        ]
+      },
+      "memoryCue": {
+        "title": "7.2 · Particles oscillate; the pressure pattern travels.",
+        "paragraphs": [
+          "Particles oscillate; the pressure pattern travels.",
+          "Sound speed depends on the medium and conditions. Frequency is set by the source; crossing into a different stationary medium generally changes speed and wavelength while preserving frequency."
+        ]
+      },
+      "traps": {
+        "title": "7.2 · Check signs, assumptions and meaning",
+        "paragraphs": [
+          "Sound intensity level is β = 10 log10(I/I0) in decibels. A 10 dB increase means ten times the intensity, not ten times the pressure amplitude.",
+          "For an approaching source and observer, the classical Doppler effect generally raises observed frequency. Use a stated sign convention and distinguish source speed from wave speed in the medium."
+        ]
+      },
+      "application": {
+        "title": "7.2 · Apply the model within its limits",
+        "paragraphs": [
+          "For an approaching source and observer, the classical Doppler effect generally raises observed frequency. Use a stated sign convention and distinguish source speed from wave speed in the medium.",
+          "Wavelength is speed divided by frequency: λ = v/f = 340/170 = 2 m."
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ph-07-01-workshop-v1",
+      "title": "General Wave Characteristics",
+      "asset": "ph07-01",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the spatial separation between neighboring crests.",
+          "answer": [
+            "part-2"
+          ],
+          "explanation": "The relevant diagram entity or entities are Wavelength. A periodic wave is described by amplitude, wavelength, frequency and period. Frequency is inverse period, and wave speed is v = fλ for the specified wave and medium.",
+          "hints": [
+            "Identify the physical or reasoning role described before selecting its schematic entity.",
+            "Amplitude measures disturbance size, not the distance between successive crests. Wavelength is a spatial period, while ordinary period is a time interval."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "A wave has frequency 5 Hz and wavelength 2 m. Find its speed.",
+          "answer": 10,
+          "unit": "m/s",
+          "tolerance": 0,
+          "explanation": "Wave speed is frequency times wavelength: v = fλ = (5 Hz)(2 m) = 10 m/s.",
+          "id": "reason",
+          "hints": [
+            "A periodic wave is described by amplitude, wavelength, frequency and period. Frequency is inverse period, and wave speed is v = fλ for the specified wave and medium.",
+            "Amplitude measures disturbance size, not the distance between successive crests. Wavelength is a spatial period, while ordinary period is a time interval."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "Find the period of a 4 Hz wave.",
+          "answer": 0.25,
+          "unit": "s",
+          "tolerance": 0,
+          "explanation": "Period is inverse frequency, so T = 1/f = 1/(4 Hz) = 0.25 s.",
+          "id": "transfer",
+          "hints": [
+            "Amplitude measures disturbance size, not the distance between successive crests. Wavelength is a spatial period, while ordinary period is a time interval.",
+            "Superposition adds displacements when the medium behaves linearly. Interference can enhance or cancel the local disturbance without implying that all energy has disappeared."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ph-07-02-workshop-v1",
+      "title": "Sound",
+      "asset": "ph07-02",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the high-pressure region of a longitudinal sound wave.",
+          "answer": [
+            "part-0"
+          ],
+          "explanation": "The relevant diagram entity or entities are Compression. Sound in air is a longitudinal pressure wave. Air parcels oscillate about equilibrium while the disturbance transports energy through the medium.",
+          "hints": [
+            "Identify the physical or reasoning role described before selecting its schematic entity.",
+            "Sound speed depends on the medium and conditions. Frequency is set by the source; crossing into a different stationary medium generally changes speed and wavelength while preserving frequency."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "Sound travels at 340 m/s with frequency 170 Hz. Find wavelength.",
+          "answer": 2,
+          "unit": "m",
+          "tolerance": 0,
+          "explanation": "Wavelength is speed divided by frequency: λ = v/f = 340/170 = 2 m.",
+          "id": "reason",
+          "hints": [
+            "Sound in air is a longitudinal pressure wave. Air parcels oscillate about equilibrium while the disturbance transports energy through the medium.",
+            "Sound speed depends on the medium and conditions. Frequency is set by the source; crossing into a different stationary medium generally changes speed and wavelength while preserving frequency."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "If sound intensity rises by a factor of 100, find the increase in intensity level.",
+          "answer": 20,
+          "unit": "dB",
+          "tolerance": 0,
+          "explanation": "Δβ = 10 log10(100) = 20 dB.",
+          "id": "transfer",
+          "hints": [
+            "Sound speed depends on the medium and conditions. Frequency is set by the source; crossing into a different stationary medium generally changes speed and wavelength while preserving frequency.",
+            "Sound intensity level is β = 10 log10(I/I0) in decibels. A 10 dB increase means ten times the intensity, not ten times the pressure amplitude."
+          ]
+        }
+      ]
+    }
+  ]
+}
