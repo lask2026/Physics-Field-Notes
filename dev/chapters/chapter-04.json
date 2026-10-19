@@ -1,0 +1,443 @@
+{
+  "version": 1,
+  "id": "chapter-04",
+  "title": "Fluids",
+  "status": "implemented",
+  "scopeNote": "Original condensed MCAT Physics, Mathematics and Research Reasoning lessons. Models and calculations use stated assumptions. Independent scientific review is pending; this is not exhaustive textbook coverage.",
+  "lessons": [
+    {
+      "id": "concept-4-1",
+      "title": "Characteristics of Fluids and Solids",
+      "section": "4.1",
+      "asset": "ph04-01",
+      "steps": [
+        {
+          "text": "Density is mass per volume. Pressure is force per area, while viscosity characterizes resistance to shear flow; these are different properties.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "A fluid at rest does not sustain a static shear stress like an elastic solid. Liquids and gases flow under sustained shear, although their compressibilities differ.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "A nearly incompressible liquid model holds density approximately fixed. Treating a gas this way requires a justified regime rather than a universal assumption.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Viscosity influences flow resistance and dissipation. A denser fluid is not necessarily more viscous; compare measured or stated properties separately.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "4.1 · Characteristics of Fluids and Solids: the governing relation",
+        "paragraphs": [
+          "Density is mass per volume. Pressure is force per area, while viscosity characterizes resistance to shear flow; these are different properties.",
+          "A fluid at rest does not sustain a static shear stress like an elastic solid. Liquids and gases flow under sustained shear, although their compressibilities differ."
+        ]
+      },
+      "memoryCue": {
+        "title": "4.1 · Density counts mass per volume; viscosity resists shear flow.",
+        "paragraphs": [
+          "Density counts mass per volume; viscosity resists shear flow.",
+          "A fluid at rest does not sustain a static shear stress like an elastic solid. Liquids and gases flow under sustained shear, although their compressibilities differ."
+        ]
+      },
+      "traps": {
+        "title": "4.1 · Check signs, assumptions and meaning",
+        "paragraphs": [
+          "A nearly incompressible liquid model holds density approximately fixed. Treating a gas this way requires a justified regime rather than a universal assumption.",
+          "Viscosity influences flow resistance and dissipation. A denser fluid is not necessarily more viscous; compare measured or stated properties separately."
+        ]
+      },
+      "application": {
+        "title": "4.1 · Apply the model within its limits",
+        "paragraphs": [
+          "Viscosity influences flow resistance and dissipation. A denser fluid is not necessarily more viscous; compare measured or stated properties separately.",
+          "ρ = m/V = 0.8/0.001 = 800 kg/m³."
+        ]
+      }
+    },
+    {
+      "id": "concept-4-2",
+      "title": "Hydrostatics",
+      "section": "4.2",
+      "asset": "ph04-02",
+      "steps": [
+        {
+          "text": "For a static liquid of uniform density, pressure at depth h is Psurface + ρgh. Gauge pressure subtracts the chosen reference atmospheric pressure.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "At the same depth in one connected static fluid, pressure is equal. Vessel shape does not alter the hydrostatic depth contribution under these assumptions.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Buoyant force equals the weight of displaced fluid. It depends on submerged volume and fluid density, not automatically on the entire object’s weight.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "A floating object has buoyancy balancing its weight in static equilibrium. For a fully submerged object, compare density and other forces before predicting motion.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "4.2 · Hydrostatics: the governing relation",
+        "paragraphs": [
+          "For a static liquid of uniform density, pressure at depth h is Psurface + ρgh. Gauge pressure subtracts the chosen reference atmospheric pressure.",
+          "At the same depth in one connected static fluid, pressure is equal. Vessel shape does not alter the hydrostatic depth contribution under these assumptions."
+        ]
+      },
+      "memoryCue": {
+        "title": "4.2 · Depth sets hydrostatic pressure; displaced fluid sets buoyancy.",
+        "paragraphs": [
+          "Depth sets hydrostatic pressure; displaced fluid sets buoyancy.",
+          "At the same depth in one connected static fluid, pressure is equal. Vessel shape does not alter the hydrostatic depth contribution under these assumptions."
+        ]
+      },
+      "traps": {
+        "title": "4.2 · Check signs, assumptions and meaning",
+        "paragraphs": [
+          "Buoyant force equals the weight of displaced fluid. It depends on submerged volume and fluid density, not automatically on the entire object’s weight.",
+          "A floating object has buoyancy balancing its weight in static equilibrium. For a fully submerged object, compare density and other forces before predicting motion."
+        ]
+      },
+      "application": {
+        "title": "4.2 · Apply the model within its limits",
+        "paragraphs": [
+          "A floating object has buoyancy balancing its weight in static equilibrium. For a fully submerged object, compare density and other forces before predicting motion.",
+          "Pgauge = ρgh = 1000 × 10 × 2 = 20000 Pa."
+        ]
+      }
+    },
+    {
+      "id": "concept-4-3",
+      "title": "Fluid Dynamics",
+      "section": "4.3",
+      "asset": "ph04-03",
+      "steps": [
+        {
+          "text": "For steady incompressible flow through an unbranched tube, continuity gives A1v1 = A2v2. A smaller area requires a larger mean flow speed at the same volume flow rate.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Bernoulli’s relation P + ½ρv² + ρgh = constant applies along a streamline for steady incompressible flow with negligible viscous losses and no intervening pump work.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "For laminar Newtonian flow in a long cylindrical tube, Poiseuille resistance is 8ηL/(πr⁴). Radius changes have a fourth-power effect only within this model’s assumptions.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Real vascular flow can be pulsatile, branched and dissipative. Do not apply a frictionless constant-Bernoulli sum across every real vessel or a pressure-adding pump.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "4.3 · Fluid Dynamics: the governing relation",
+        "paragraphs": [
+          "For steady incompressible flow through an unbranched tube, continuity gives A1v1 = A2v2. A smaller area requires a larger mean flow speed at the same volume flow rate.",
+          "Bernoulli’s relation P + ½ρv² + ρgh = constant applies along a streamline for steady incompressible flow with negligible viscous losses and no intervening pump work."
+        ]
+      },
+      "memoryCue": {
+        "title": "4.3 · Continuity tracks volume; Bernoulli tracks ideal mechanical energy.",
+        "paragraphs": [
+          "Continuity tracks volume; Bernoulli tracks ideal mechanical energy.",
+          "Bernoulli’s relation P + ½ρv² + ρgh = constant applies along a streamline for steady incompressible flow with negligible viscous losses and no intervening pump work."
+        ]
+      },
+      "traps": {
+        "title": "4.3 · Check signs, assumptions and meaning",
+        "paragraphs": [
+          "For laminar Newtonian flow in a long cylindrical tube, Poiseuille resistance is 8ηL/(πr⁴). Radius changes have a fourth-power effect only within this model’s assumptions.",
+          "Real vascular flow can be pulsatile, branched and dissipative. Do not apply a frictionless constant-Bernoulli sum across every real vessel or a pressure-adding pump."
+        ]
+      },
+      "application": {
+        "title": "4.3 · Apply the model within its limits",
+        "paragraphs": [
+          "Real vascular flow can be pulsatile, branched and dissipative. Do not apply a frictionless constant-Bernoulli sum across every real vessel or a pressure-adding pump.",
+          "A1v1 = A2v2 gives v2 = (6/3) × 2 = 4 m/s."
+        ]
+      }
+    },
+    {
+      "id": "concept-4-4",
+      "title": "Fluids in Physiology",
+      "section": "4.4",
+      "asset": "ph04-04",
+      "steps": [
+        {
+          "text": "A useful circulation model relates volume flow to driving pressure difference divided by resistance: Qflow = ΔP/R. Volume flow is not the same quantity as local speed.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Parallel vessels can have a large combined area, lowering average speed for a given total flow. Narrowing one vessel differs from distributing flow across many small vessels.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "A simplified cylindrical-vessel model predicts strong radius sensitivity, but real blood is cellular and vessels can change diameter. State assumptions before using a rigid Newtonian-tube equation.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Conservation of flow applies at junctions: total inflow equals total outflow in steady conditions. Physiological variation and compliance can make instantaneous flows differ from steady averages.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "4.4 · Fluids in Physiology: the governing relation",
+        "paragraphs": [
+          "A useful circulation model relates volume flow to driving pressure difference divided by resistance: Qflow = ΔP/R. Volume flow is not the same quantity as local speed.",
+          "Parallel vessels can have a large combined area, lowering average speed for a given total flow. Narrowing one vessel differs from distributing flow across many small vessels."
+        ]
+      },
+      "memoryCue": {
+        "title": "4.4 · Flow needs a pressure difference; speed also needs total area.",
+        "paragraphs": [
+          "Flow needs a pressure difference; speed also needs total area.",
+          "Parallel vessels can have a large combined area, lowering average speed for a given total flow. Narrowing one vessel differs from distributing flow across many small vessels."
+        ]
+      },
+      "traps": {
+        "title": "4.4 · Check signs, assumptions and meaning",
+        "paragraphs": [
+          "A simplified cylindrical-vessel model predicts strong radius sensitivity, but real blood is cellular and vessels can change diameter. State assumptions before using a rigid Newtonian-tube equation.",
+          "Conservation of flow applies at junctions: total inflow equals total outflow in steady conditions. Physiological variation and compliance can make instantaneous flows differ from steady averages."
+        ]
+      },
+      "application": {
+        "title": "4.4 · Apply the model within its limits",
+        "paragraphs": [
+          "Conservation of flow applies at junctions: total inflow equals total outflow in steady conditions. Physiological variation and compliance can make instantaneous flows differ from steady averages.",
+          "Qflow = ΔP/R = 60/3 = 20 L/min; the pressure units cancel."
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ph-04-01-workshop-v1",
+      "title": "Characteristics of Fluids and Solids",
+      "asset": "ph04-01",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the property computed as mass divided by volume.",
+          "answer": [
+            "part-2"
+          ],
+          "explanation": "The relevant diagram entity or entities are Density. Density is mass per volume. Pressure is force per area, while viscosity characterizes resistance to shear flow; these are different properties.",
+          "hints": [
+            "Identify the physical or reasoning role described before selecting its schematic entity.",
+            "A fluid at rest does not sustain a static shear stress like an elastic solid. Liquids and gases flow under sustained shear, although their compressibilities differ."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "A fluid sample has mass 0.8 kg and volume 0.001 m³. Find its density.",
+          "answer": 800,
+          "unit": "kg/m³",
+          "tolerance": 0,
+          "explanation": "ρ = m/V = 0.8/0.001 = 800 kg/m³.",
+          "id": "reason",
+          "hints": [
+            "Density is mass per volume. Pressure is force per area, while viscosity characterizes resistance to shear flow; these are different properties.",
+            "A fluid at rest does not sustain a static shear stress like an elastic solid. Liquids and gases flow under sustained shear, although their compressibilities differ."
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "Which property directly characterizes resistance to shear flow?",
+          "options": [
+            "Electric potential",
+            "Specific wavelength",
+            "Viscosity",
+            "Mass alone"
+          ],
+          "answer": 2,
+          "explanation": "Viscosity relates shear stress to flow deformation in the stated fluid model.",
+          "id": "transfer",
+          "hints": [
+            "A fluid at rest does not sustain a static shear stress like an elastic solid. Liquids and gases flow under sustained shear, although their compressibilities differ.",
+            "A nearly incompressible liquid model holds density approximately fixed. Treating a gas this way requires a justified regime rather than a universal assumption."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ph-04-02-workshop-v1",
+      "title": "Hydrostatics",
+      "asset": "ph04-02",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the upward resultant from the surrounding static pressure distribution.",
+          "answer": [
+            "part-3"
+          ],
+          "explanation": "The relevant diagram entity or entities are Buoyant force. For a static liquid of uniform density, pressure at depth h is Psurface + ρgh. Gauge pressure subtracts the chosen reference atmospheric pressure.",
+          "hints": [
+            "Identify the physical or reasoning role described before selecting its schematic entity.",
+            "At the same depth in one connected static fluid, pressure is equal. Vessel shape does not alter the hydrostatic depth contribution under these assumptions."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "Use ρ = 1000 kg/m³ and g = 10 m/s². Find gauge pressure 2 m below a water surface.",
+          "answer": 20000,
+          "unit": "Pa",
+          "tolerance": 0,
+          "explanation": "Pgauge = ρgh = 1000 × 10 × 2 = 20000 Pa.",
+          "id": "reason",
+          "hints": [
+            "For a static liquid of uniform density, pressure at depth h is Psurface + ρgh. Gauge pressure subtracts the chosen reference atmospheric pressure.",
+            "At the same depth in one connected static fluid, pressure is equal. Vessel shape does not alter the hydrostatic depth contribution under these assumptions."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "An object displaces 0.003 m³ of water. With ρ = 1000 kg/m³ and g = 10 m/s², find buoyant force.",
+          "answer": 30,
+          "unit": "N",
+          "tolerance": 0,
+          "explanation": "Fb = ρfluid g Vdisplaced = 1000 × 10 × 0.003 = 30 N.",
+          "id": "transfer",
+          "hints": [
+            "At the same depth in one connected static fluid, pressure is equal. Vessel shape does not alter the hydrostatic depth contribution under these assumptions.",
+            "Buoyant force equals the weight of displaced fluid. It depends on submerged volume and fluid density, not automatically on the entire object’s weight."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ph-04-03-workshop-v1",
+      "title": "Fluid Dynamics",
+      "asset": "ph04-03",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the region with the smaller cross-sectional area.",
+          "answer": [
+            "part-1"
+          ],
+          "explanation": "The relevant diagram entity or entities are Narrow segment. For steady incompressible flow through an unbranched tube, continuity gives A1v1 = A2v2. A smaller area requires a larger mean flow speed at the same volume flow rate.",
+          "hints": [
+            "Identify the physical or reasoning role described before selecting its schematic entity.",
+            "Bernoulli’s relation P + ½ρv² + ρgh = constant applies along a streamline for steady incompressible flow with negligible viscous losses and no intervening pump work."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "Steady water flow enters at 2 m/s in area 6 cm² and exits through area 3 cm². Find exit speed.",
+          "answer": 4,
+          "unit": "m/s",
+          "tolerance": 0,
+          "explanation": "A1v1 = A2v2 gives v2 = (6/3) × 2 = 4 m/s.",
+          "id": "reason",
+          "hints": [
+            "For steady incompressible flow through an unbranched tube, continuity gives A1v1 = A2v2. A smaller area requires a larger mean flow speed at the same volume flow rate.",
+            "Bernoulli’s relation P + ½ρv² + ρgh = constant applies along a streamline for steady incompressible flow with negligible viscous losses and no intervening pump work."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "For laminar Poiseuille flow with fixed viscosity and length, halving tube radius multiplies resistance by what factor?",
+          "answer": 16,
+          "unit": "dimensionless",
+          "tolerance": 0,
+          "explanation": "R is proportional to 1/r⁴, so the resistance ratio is 2⁴ = 16.",
+          "id": "transfer",
+          "hints": [
+            "Bernoulli’s relation P + ½ρv² + ρgh = constant applies along a streamline for steady incompressible flow with negligible viscous losses and no intervening pump work.",
+            "For laminar Newtonian flow in a long cylindrical tube, Poiseuille resistance is 8ηL/(πr⁴). Radius changes have a fourth-power effect only within this model’s assumptions."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ph-04-04-workshop-v1",
+      "title": "Fluids in Physiology",
+      "asset": "ph04-04",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the driving term rather than the resistance or resulting flow.",
+          "answer": [
+            "part-0"
+          ],
+          "explanation": "The relevant diagram entity or entities are Pressure difference. A useful circulation model relates volume flow to driving pressure difference divided by resistance: Qflow = ΔP/R. Volume flow is not the same quantity as local speed.",
+          "hints": [
+            "Identify the physical or reasoning role described before selecting its schematic entity.",
+            "Parallel vessels can have a large combined area, lowering average speed for a given total flow. Narrowing one vessel differs from distributing flow across many small vessels."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "A vessel model has ΔP = 60 mmHg and R = 3 mmHg·min/L. Find volume flow.",
+          "answer": 20,
+          "unit": "L/min",
+          "tolerance": 0,
+          "explanation": "Qflow = ΔP/R = 60/3 = 20 L/min; the pressure units cancel.",
+          "id": "reason",
+          "hints": [
+            "A useful circulation model relates volume flow to driving pressure difference divided by resistance: Qflow = ΔP/R. Volume flow is not the same quantity as local speed.",
+            "Parallel vessels can have a large combined area, lowering average speed for a given total flow. Narrowing one vessel differs from distributing flow across many small vessels."
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "The same total volume flow enters a network with larger combined cross-sectional area. What happens to mean speed?",
+          "options": [
+            "It must increase",
+            "It decreases",
+            "It is always unchanged",
+            "It becomes a pressure"
+          ],
+          "answer": 1,
+          "explanation": "Since Qflow = Atotalvmean, increasing total area at fixed flow lowers mean speed.",
+          "id": "transfer",
+          "hints": [
+            "Parallel vessels can have a large combined area, lowering average speed for a given total flow. Narrowing one vessel differs from distributing flow across many small vessels.",
+            "A simplified cylindrical-vessel model predicts strong radius sensitivity, but real blood is cellular and vessels can change diameter. State assumptions before using a rigid Newtonian-tube equation."
+          ]
+        }
+      ]
+    }
+  ]
+}

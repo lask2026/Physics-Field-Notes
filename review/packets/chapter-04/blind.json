@@ -1,0 +1,527 @@
+{
+  "chapter": "chapter-04",
+  "cases": [
+    {
+      "id": "ph-04-01-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the property computed as mass divided by volume.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Solid response",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Fluid shear",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Density",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Viscosity",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "fluid"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"210\" text-anchor=\"middle\">Material properties are distinct; no density–viscosity equivalence</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"110\" y=\"100\" width=\"100\" height=\"85\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Solid response</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 125 H530 M390 165 H530\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M410 145 H510\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Fluid shear</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"110\" y=\"250\" width=\"100\" height=\"70\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"290\" text-anchor=\"middle\">m / V</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Density</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 250 H530 M390 310 H530\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M410 300 L500 260\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Viscosity</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-04-01-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "A fluid sample has mass 0.8 kg and volume 0.001 m³. Find its density.",
+      "type": "number",
+      "unit": "kg/m³",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Solid response",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Fluid shear",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Density",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Viscosity",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "fluid"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"210\" text-anchor=\"middle\">Material properties are distinct; no density–viscosity equivalence</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"110\" y=\"100\" width=\"100\" height=\"85\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Solid response</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 125 H530 M390 165 H530\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M410 145 H510\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Fluid shear</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"110\" y=\"250\" width=\"100\" height=\"70\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"290\" text-anchor=\"middle\">m / V</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Density</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 250 H530 M390 310 H530\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M410 300 L500 260\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Viscosity</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-04-01-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "Which property directly characterizes resistance to shear flow?",
+      "type": "choice",
+      "options": [
+        "Electric potential",
+        "Specific wavelength",
+        "Viscosity",
+        "Mass alone"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Solid response",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Fluid shear",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Density",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Viscosity",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "fluid"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"210\" text-anchor=\"middle\">Material properties are distinct; no density–viscosity equivalence</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"110\" y=\"100\" width=\"100\" height=\"85\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Solid response</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 125 H530 M390 165 H530\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M410 145 H510\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Fluid shear</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"110\" y=\"250\" width=\"100\" height=\"70\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"290\" text-anchor=\"middle\">m / V</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Density</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 250 H530 M390 310 H530\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M410 300 L500 260\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Viscosity</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-04-02-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the upward resultant from the surrounding static pressure distribution.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Surface pressure",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Depth",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Fluid pressure",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Buoyant force",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "hydrostatic"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M130 80 V330 H510 V80\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M135 100 H505 V325 H135Z\" fill=\"var(--v-blue)\" fill-opacity=\".08\"/><rect class=\"outline\" x=\"215\" y=\"190\" width=\"70\" height=\"60\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"320\" y=\"385\" text-anchor=\"middle\">Uniform static fluid · qualitative depth and pressure</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M145 95 H495\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"65\" text-anchor=\"middle\">Surface pressure</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M430 110 V240\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"510\" y=\"180\" text-anchor=\"middle\">Depth</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"245\" r=\"13\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M400 245 H350\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"395\" y=\"295\" text-anchor=\"middle\">Fluid pressure</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M250 250 V170\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"150\" y=\"170\" text-anchor=\"middle\">Buoyant force</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-04-02-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "Use ρ = 1000 kg/m³ and g = 10 m/s². Find gauge pressure 2 m below a water surface.",
+      "type": "number",
+      "unit": "Pa",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Surface pressure",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Depth",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Fluid pressure",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Buoyant force",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "hydrostatic"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M130 80 V330 H510 V80\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M135 100 H505 V325 H135Z\" fill=\"var(--v-blue)\" fill-opacity=\".08\"/><rect class=\"outline\" x=\"215\" y=\"190\" width=\"70\" height=\"60\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"320\" y=\"385\" text-anchor=\"middle\">Uniform static fluid · qualitative depth and pressure</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M145 95 H495\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"65\" text-anchor=\"middle\">Surface pressure</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M430 110 V240\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"510\" y=\"180\" text-anchor=\"middle\">Depth</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"245\" r=\"13\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M400 245 H350\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"395\" y=\"295\" text-anchor=\"middle\">Fluid pressure</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M250 250 V170\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"150\" y=\"170\" text-anchor=\"middle\">Buoyant force</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-04-02-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "An object displaces 0.003 m³ of water. With ρ = 1000 kg/m³ and g = 10 m/s², find buoyant force.",
+      "type": "number",
+      "unit": "N",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Surface pressure",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Depth",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Fluid pressure",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Buoyant force",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "hydrostatic"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M130 80 V330 H510 V80\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M135 100 H505 V325 H135Z\" fill=\"var(--v-blue)\" fill-opacity=\".08\"/><rect class=\"outline\" x=\"215\" y=\"190\" width=\"70\" height=\"60\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"320\" y=\"385\" text-anchor=\"middle\">Uniform static fluid · qualitative depth and pressure</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M145 95 H495\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"65\" text-anchor=\"middle\">Surface pressure</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M430 110 V240\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"510\" y=\"180\" text-anchor=\"middle\">Depth</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"245\" r=\"13\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M400 245 H350\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"395\" y=\"295\" text-anchor=\"middle\">Fluid pressure</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M250 250 V170\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"150\" y=\"170\" text-anchor=\"middle\">Buoyant force</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-04-03-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the region with the smaller cross-sectional area.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Wide segment",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Narrow segment",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Flow speed",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Pressure",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "flow"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M225 110 L390 165 M225 280 L390 225\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"375\" text-anchor=\"middle\">Steady incompressible flow model; tracers indicate flow direction</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M90 110 H225 M90 280 H225\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"150\" y=\"75\" text-anchor=\"middle\">Wide segment</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 165 H550 M390 225 H550\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"465\" y=\"130\" text-anchor=\"middle\">Narrow segment</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M260 195 H500\" fill=\"none\" stroke=\"var(--v-green)\" stroke-opacity=\".2\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"flow\" d=\"M260 195 H500\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"420\" y=\"295\" text-anchor=\"middle\">Flow speed</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"160\" cy=\"195\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"325\" text-anchor=\"middle\">Pressure</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-04-03-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "Steady water flow enters at 2 m/s in area 6 cm² and exits through area 3 cm². Find exit speed.",
+      "type": "number",
+      "unit": "m/s",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Wide segment",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Narrow segment",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Flow speed",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Pressure",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "flow"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M225 110 L390 165 M225 280 L390 225\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"375\" text-anchor=\"middle\">Steady incompressible flow model; tracers indicate flow direction</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M90 110 H225 M90 280 H225\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"150\" y=\"75\" text-anchor=\"middle\">Wide segment</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 165 H550 M390 225 H550\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"465\" y=\"130\" text-anchor=\"middle\">Narrow segment</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M260 195 H500\" fill=\"none\" stroke=\"var(--v-green)\" stroke-opacity=\".2\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"flow\" d=\"M260 195 H500\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"420\" y=\"295\" text-anchor=\"middle\">Flow speed</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"160\" cy=\"195\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"325\" text-anchor=\"middle\">Pressure</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-04-03-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "For laminar Poiseuille flow with fixed viscosity and length, halving tube radius multiplies resistance by what factor?",
+      "type": "number",
+      "unit": "dimensionless",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Wide segment",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Narrow segment",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Flow speed",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Pressure",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "flow"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M225 110 L390 165 M225 280 L390 225\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"375\" text-anchor=\"middle\">Steady incompressible flow model; tracers indicate flow direction</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M90 110 H225 M90 280 H225\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"150\" y=\"75\" text-anchor=\"middle\">Wide segment</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 165 H550 M390 225 H550\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"465\" y=\"130\" text-anchor=\"middle\">Narrow segment</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M260 195 H500\" fill=\"none\" stroke=\"var(--v-green)\" stroke-opacity=\".2\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"flow\" d=\"M260 195 H500\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"420\" y=\"295\" text-anchor=\"middle\">Flow speed</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"160\" cy=\"195\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"325\" text-anchor=\"middle\">Pressure</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-04-04-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the driving term rather than the resistance or resulting flow.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Pressure difference",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Vascular resistance",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Volume flow",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Parallel branches",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "circulation"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Lumped pressure–resistance model and branching flow</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M110 110 H230\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Pressure difference</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M420 130 h15 l7 -12 14 24 14 -24 14 24 7 -12 h15\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Vascular resistance</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M100 280 H230\" fill=\"none\" stroke=\"var(--v-green)\" stroke-opacity=\".2\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"flow\" d=\"M100 280 H230\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Volume flow</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M370 265 H410 L450 235 H535 M410 265 L450 300 H535\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Parallel branches</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-04-04-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "A vessel model has ΔP = 60 mmHg and R = 3 mmHg·min/L. Find volume flow.",
+      "type": "number",
+      "unit": "L/min",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Pressure difference",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Vascular resistance",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Volume flow",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Parallel branches",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "circulation"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Lumped pressure–resistance model and branching flow</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M110 110 H230\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Pressure difference</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M420 130 h15 l7 -12 14 24 14 -24 14 24 7 -12 h15\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Vascular resistance</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M100 280 H230\" fill=\"none\" stroke=\"var(--v-green)\" stroke-opacity=\".2\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"flow\" d=\"M100 280 H230\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Volume flow</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M370 265 H410 L450 235 H535 M410 265 L450 300 H535\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Parallel branches</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-04-04-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "The same total volume flow enters a network with larger combined cross-sectional area. What happens to mean speed?",
+      "type": "choice",
+      "options": [
+        "It must increase",
+        "It decreases",
+        "It is always unchanged",
+        "It becomes a pressure"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Pressure difference",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Vascular resistance",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Volume flow",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Parallel branches",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "circulation"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Lumped pressure–resistance model and branching flow</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M110 110 H230\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Pressure difference</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M420 130 h15 l7 -12 14 24 14 -24 14 24 7 -12 h15\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Vascular resistance</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M100 280 H230\" fill=\"none\" stroke=\"var(--v-green)\" stroke-opacity=\".2\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"flow\" d=\"M100 280 H230\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Volume flow</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M370 265 H410 L450 235 H535 M410 265 L450 300 H535\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Parallel branches</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    }
+  ]
+}
