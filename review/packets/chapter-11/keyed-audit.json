@@ -1,0 +1,770 @@
+{
+  "warning": "Candidate evidence only; do not treat the provided keys as authoritative.",
+  "chapter": {
+    "version": 1,
+    "id": "chapter-11",
+    "title": "Reasoning About the Design and Execution of Research",
+    "status": "implemented",
+    "scopeNote": "Original condensed MCAT Physics, Mathematics and Research Reasoning lessons. Models and calculations use stated assumptions. Independent scientific review is pending; this is not exhaustive textbook coverage.",
+    "lessons": [
+      {
+        "id": "concept-11-1",
+        "title": "The Scientific Method",
+        "section": "11.1",
+        "asset": "ph11-01",
+        "steps": [
+          {
+            "text": "A scientific hypothesis is a testable explanation; a prediction is an expected observation under specified conditions. Evidence can constrain an explanation without proving it true for all possible cases.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "An experiment compares outcomes while controlling relevant conditions. A useful hypothesis makes predictions that could be contradicted by observations.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Failure to reject a hypothesis is not proof of truth. Null results can arise from limited precision, low power or a genuinely small effect.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Replication and revision are normal parts of inquiry. Distinguish an exploratory idea from a prespecified test when evaluating the strength of a claim.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "11.1 · The Scientific Method: the governing relation",
+          "paragraphs": [
+            "A scientific hypothesis is a testable explanation; a prediction is an expected observation under specified conditions. Evidence can constrain an explanation without proving it true for all possible cases.",
+            "An experiment compares outcomes while controlling relevant conditions. A useful hypothesis makes predictions that could be contradicted by observations."
+          ]
+        },
+        "memoryCue": {
+          "title": "11.1 · A testable claim must risk being contradicted.",
+          "paragraphs": [
+            "A testable claim must risk being contradicted.",
+            "An experiment compares outcomes while controlling relevant conditions. A useful hypothesis makes predictions that could be contradicted by observations."
+          ]
+        },
+        "traps": {
+          "title": "11.1 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Failure to reject a hypothesis is not proof of truth. Null results can arise from limited precision, low power or a genuinely small effect.",
+            "Replication and revision are normal parts of inquiry. Distinguish an exploratory idea from a prespecified test when evaluating the strength of a claim."
+          ]
+        },
+        "application": {
+          "title": "11.1 · Apply the model within its limits",
+          "paragraphs": [
+            "Replication and revision are normal parts of inquiry. Distinguish an exploratory idea from a prespecified test when evaluating the strength of a claim.",
+            "The specified change in X and measured response in Y can be tested under controlled conditions."
+          ]
+        }
+      },
+      {
+        "id": "concept-11-2",
+        "title": "Basic Science Research",
+        "section": "11.2",
+        "asset": "ph11-02",
+        "steps": [
+          {
+            "text": "An experiment manipulates an independent variable and measures a dependent outcome. A control condition helps separate the tested change from background effects.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "A confounder is related to both exposure and outcome and can distort the apparent association. Holding conditions fixed, random assignment and appropriate analysis address different sources of bias.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Random assignment allocates treatment and supports causal comparison within a study. Random sampling selects participants or units from a population and addresses a different generalization question.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Biological replicates are distinct experimental units; repeated readings of one specimen are technical replicates. Treating all technical readings as independent can overstate precision.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "11.2 · Basic Science Research: the governing relation",
+          "paragraphs": [
+            "An experiment manipulates an independent variable and measures a dependent outcome. A control condition helps separate the tested change from background effects.",
+            "A confounder is related to both exposure and outcome and can distort the apparent association. Holding conditions fixed, random assignment and appropriate analysis address different sources of bias."
+          ]
+        },
+        "memoryCue": {
+          "title": "11.2 · Assignment supports group comparison; sampling supports population reach.",
+          "paragraphs": [
+            "Assignment supports group comparison; sampling supports population reach.",
+            "A confounder is related to both exposure and outcome and can distort the apparent association. Holding conditions fixed, random assignment and appropriate analysis address different sources of bias."
+          ]
+        },
+        "traps": {
+          "title": "11.2 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Random assignment allocates treatment and supports causal comparison within a study. Random sampling selects participants or units from a population and addresses a different generalization question.",
+            "Biological replicates are distinct experimental units; repeated readings of one specimen are technical replicates. Treating all technical readings as independent can overstate precision."
+          ]
+        },
+        "application": {
+          "title": "11.2 · Apply the model within its limits",
+          "paragraphs": [
+            "Biological replicates are distinct experimental units; repeated readings of one specimen are technical replicates. Treating all technical readings as independent can overstate precision.",
+            "The dependent variable is the measured response: reaction time."
+          ]
+        }
+      },
+      {
+        "id": "concept-11-3",
+        "title": "Human Subjects Research",
+        "section": "11.3",
+        "asset": "ph11-03",
+        "steps": [
+          {
+            "text": "An interventional study assigns an exposure, whereas an observational study measures exposures without assigning them. Observational associations need careful treatment of confounding.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Random assignment can reduce systematic baseline differences on average but does not guarantee perfect balance in every finite sample. Blinding addresses expectation and measurement biases.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "A cohort study follows groups defined by exposure; a case-control study selects on outcome status and compares prior exposures. These sampling choices affect which measures can be estimated directly.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Study design alone does not guarantee validity. Loss to follow-up, adherence, outcome measurement and the population actually studied all affect interpretation.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "11.3 · Human Subjects Research: the governing relation",
+          "paragraphs": [
+            "An interventional study assigns an exposure, whereas an observational study measures exposures without assigning them. Observational associations need careful treatment of confounding.",
+            "Random assignment can reduce systematic baseline differences on average but does not guarantee perfect balance in every finite sample. Blinding addresses expectation and measurement biases."
+          ]
+        },
+        "memoryCue": {
+          "title": "11.3 · Randomize allocation; blind expectations; inspect follow-up.",
+          "paragraphs": [
+            "Randomize allocation; blind expectations; inspect follow-up.",
+            "Random assignment can reduce systematic baseline differences on average but does not guarantee perfect balance in every finite sample. Blinding addresses expectation and measurement biases."
+          ]
+        },
+        "traps": {
+          "title": "11.3 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "A cohort study follows groups defined by exposure; a case-control study selects on outcome status and compares prior exposures. These sampling choices affect which measures can be estimated directly.",
+            "Study design alone does not guarantee validity. Loss to follow-up, adherence, outcome measurement and the population actually studied all affect interpretation."
+          ]
+        },
+        "application": {
+          "title": "11.3 · Apply the model within its limits",
+          "paragraphs": [
+            "Study design alone does not guarantee validity. Loss to follow-up, adherence, outcome measurement and the population actually studied all affect interpretation.",
+            "Selecting participants by outcome status and comparing earlier exposures describes a case-control design."
+          ]
+        }
+      },
+      {
+        "id": "concept-11-4",
+        "title": "Ethics",
+        "section": "11.4",
+        "asset": "ph11-04",
+        "steps": [
+          {
+            "text": "Ethical research requires attention to voluntary informed consent, reasonable risk–benefit balance, privacy and fair participant selection. These are principles for evaluating a study, not a substitute for jurisdiction-specific rules.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Consent is an ongoing process that supports understanding and choice. A signature alone does not establish comprehension or remove the need to respect withdrawal.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Independent oversight reviews proposed research and safeguards. Scientific interest does not by itself justify avoidable harm or coercive recruitment.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Protecting confidentiality differs from claiming that no identifying information was collected. Describe what data exist, who can access them and how risk is limited.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "11.4 · Ethics: the governing relation",
+          "paragraphs": [
+            "Ethical research requires attention to voluntary informed consent, reasonable risk–benefit balance, privacy and fair participant selection. These are principles for evaluating a study, not a substitute for jurisdiction-specific rules.",
+            "Consent is an ongoing process that supports understanding and choice. A signature alone does not establish comprehension or remove the need to respect withdrawal."
+          ]
+        },
+        "memoryCue": {
+          "title": "11.4 · Consent is understanding and choice, not just a signature.",
+          "paragraphs": [
+            "Consent is understanding and choice, not just a signature.",
+            "Consent is an ongoing process that supports understanding and choice. A signature alone does not establish comprehension or remove the need to respect withdrawal."
+          ]
+        },
+        "traps": {
+          "title": "11.4 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Independent oversight reviews proposed research and safeguards. Scientific interest does not by itself justify avoidable harm or coercive recruitment.",
+            "Protecting confidentiality differs from claiming that no identifying information was collected. Describe what data exist, who can access them and how risk is limited."
+          ]
+        },
+        "application": {
+          "title": "11.4 · Apply the model within its limits",
+          "paragraphs": [
+            "Protecting confidentiality differs from claiming that no identifying information was collected. Describe what data exist, who can access them and how risk is limited.",
+            "Consent supports informed voluntary choice through understandable disclosure and opportunity to ask questions."
+          ]
+        }
+      },
+      {
+        "id": "concept-11-5",
+        "title": "Research in the Real World",
+        "section": "11.5",
+        "asset": "ph11-05",
+        "steps": [
+          {
+            "text": "Internal validity concerns whether a study’s conclusions hold for its studied comparison. External validity concerns applicability to other populations, settings and conditions.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "A statistically detectable effect can be too small to matter practically. Consider absolute change, uncertainty, baseline risk and costs rather than relying only on a p-value.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Selective reporting and publication patterns can distort the apparent literature. Prespecified outcomes, transparent methods and replication improve interpretability but do not guarantee correctness.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Translation to practice depends on feasibility, adherence, context and competing evidence. A laboratory mechanism or single trial is one contribution to a broader evidence base.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "11.5 · Research in the Real World: the governing relation",
+          "paragraphs": [
+            "Internal validity concerns whether a study’s conclusions hold for its studied comparison. External validity concerns applicability to other populations, settings and conditions.",
+            "A statistically detectable effect can be too small to matter practically. Consider absolute change, uncertainty, baseline risk and costs rather than relying only on a p-value."
+          ]
+        },
+        "memoryCue": {
+          "title": "11.5 · Ask whether the effect is credible, meaningful and transferable.",
+          "paragraphs": [
+            "Ask whether the effect is credible, meaningful and transferable.",
+            "A statistically detectable effect can be too small to matter practically. Consider absolute change, uncertainty, baseline risk and costs rather than relying only on a p-value."
+          ]
+        },
+        "traps": {
+          "title": "11.5 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Selective reporting and publication patterns can distort the apparent literature. Prespecified outcomes, transparent methods and replication improve interpretability but do not guarantee correctness.",
+            "Translation to practice depends on feasibility, adherence, context and competing evidence. A laboratory mechanism or single trial is one contribution to a broader evidence base."
+          ]
+        },
+        "application": {
+          "title": "11.5 · Apply the model within its limits",
+          "paragraphs": [
+            "Translation to practice depends on feasibility, adherence, context and competing evidence. A laboratory mechanism or single trial is one contribution to a broader evidence base.",
+            "Absolute reduction = 0.20 - 0.15 = 0.05, or 5 percentage points."
+          ]
+        }
+      }
+    ],
+    "exercises": [
+      {
+        "id": "ph-11-01-workshop-v1",
+        "title": "The Scientific Method",
+        "asset": "ph11-01",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the proposed explanation that motivates testable predictions.",
+            "answer": [
+              "part-0"
+            ],
+            "explanation": "The relevant diagram entity or entities are Hypothesis. A scientific hypothesis is a testable explanation; a prediction is an expected observation under specified conditions. Evidence can constrain an explanation without proving it true for all possible cases.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "An experiment compares outcomes while controlling relevant conditions. A useful hypothesis makes predictions that could be contradicted by observations."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "Which statement is most directly a testable prediction?",
+            "options": [
+              "Doubling X will increase measured Y under specified conditions",
+              "The explanation is beyond all observation",
+              "Any possible result confirms the idea",
+              "The result is correct because it is familiar"
+            ],
+            "answer": 0,
+            "explanation": "The specified change in X and measured response in Y can be tested under controlled conditions.",
+            "id": "reason",
+            "hints": [
+              "A scientific hypothesis is a testable explanation; a prediction is an expected observation under specified conditions. Evidence can constrain an explanation without proving it true for all possible cases.",
+              "An experiment compares outcomes while controlling relevant conditions. A useful hypothesis makes predictions that could be contradicted by observations."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "An experiment fails to reject its null hypothesis. What follows?",
+            "options": [
+              "The null has been proven universally true",
+              "The data do not establish rejection under the chosen test",
+              "The experiment must be fraudulent",
+              "The alternative is necessarily impossible"
+            ],
+            "answer": 1,
+            "explanation": "A nonrejection can reflect insufficient evidence or limited power; it is not proof of no effect.",
+            "id": "transfer",
+            "hints": [
+              "An experiment compares outcomes while controlling relevant conditions. A useful hypothesis makes predictions that could be contradicted by observations.",
+              "Failure to reject a hypothesis is not proof of truth. Null results can arise from limited precision, low power or a genuinely small effect."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-11-02-workshop-v1",
+        "title": "Basic Science Research",
+        "asset": "ph11-02",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the factor that can distort an exposure–outcome association when linked to both.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant diagram entity or entities are Confounder. An experiment manipulates an independent variable and measures a dependent outcome. A control condition helps separate the tested change from background effects.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "A confounder is related to both exposure and outcome and can distort the apparent association. Holding conditions fixed, random assignment and appropriate analysis address different sources of bias."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "An experiment changes solution temperature and measures reaction time. What is the dependent variable?",
+            "options": [
+              "Assigned temperature",
+              "Reaction time",
+              "The investigator’s hypothesis",
+              "The name of the instrument"
+            ],
+            "answer": 1,
+            "explanation": "The dependent variable is the measured response: reaction time.",
+            "id": "reason",
+            "hints": [
+              "An experiment manipulates an independent variable and measures a dependent outcome. A control condition helps separate the tested change from background effects.",
+              "A confounder is related to both exposure and outcome and can distort the apparent association. Holding conditions fixed, random assignment and appropriate analysis address different sources of bias."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "Ten readings are taken from one biological specimen. What are those repeated readings?",
+            "options": [
+              "Ten independent organisms",
+              "Randomly sampled people",
+              "Technical replicates",
+              "Ten separate clinical trials"
+            ],
+            "answer": 2,
+            "explanation": "Repeated measurement of the same specimen is technical replication, not ten independent biological units.",
+            "id": "transfer",
+            "hints": [
+              "A confounder is related to both exposure and outcome and can distort the apparent association. Holding conditions fixed, random assignment and appropriate analysis address different sources of bias.",
+              "Random assignment allocates treatment and supports causal comparison within a study. Random sampling selects participants or units from a population and addresses a different generalization question."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-11-03-workshop-v1",
+        "title": "Human Subjects Research",
+        "asset": "ph11-03",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the design feature allocating participants to intervention groups by chance.",
+            "answer": [
+              "part-0"
+            ],
+            "explanation": "The relevant diagram entity or entities are Random assignment. An interventional study assigns an exposure, whereas an observational study measures exposures without assigning them. Observational associations need careful treatment of confounding.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Random assignment can reduce systematic baseline differences on average but does not guarantee perfect balance in every finite sample. Blinding addresses expectation and measurement biases."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "A study selects people with and without a disease, then compares prior exposures. Which design is this?",
+            "options": [
+              "A cohort defined initially only by exposure",
+              "A randomized trial by definition",
+              "Case-control",
+              "A single uncontrolled laboratory assay"
+            ],
+            "answer": 2,
+            "explanation": "Selecting participants by outcome status and comparing earlier exposures describes a case-control design.",
+            "id": "reason",
+            "hints": [
+              "An interventional study assigns an exposure, whereas an observational study measures exposures without assigning them. Observational associations need careful treatment of confounding.",
+              "Random assignment can reduce systematic baseline differences on average but does not guarantee perfect balance in every finite sample. Blinding addresses expectation and measurement biases."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "What does blinded outcome assessment primarily help reduce?",
+            "options": [
+              "Every possible confounder automatically",
+              "The need for consent",
+              "All random sampling error",
+              "Expectation-related measurement bias"
+            ],
+            "answer": 3,
+            "explanation": "Blinding limits the influence of knowledge of assignment on measurement or judgment; it does not eliminate every source of bias.",
+            "id": "transfer",
+            "hints": [
+              "Random assignment can reduce systematic baseline differences on average but does not guarantee perfect balance in every finite sample. Blinding addresses expectation and measurement biases.",
+              "A cohort study follows groups defined by exposure; a case-control study selects on outcome status and compares prior exposures. These sampling choices affect which measures can be estimated directly."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-11-04-workshop-v1",
+        "title": "Ethics",
+        "asset": "ph11-04",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the principle concerned with distributing participation opportunities and burdens fairly.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant diagram entity or entities are Fair selection. Ethical research requires attention to voluntary informed consent, reasonable risk–benefit balance, privacy and fair participant selection. These are principles for evaluating a study, not a substitute for jurisdiction-specific rules.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Consent is an ongoing process that supports understanding and choice. A signature alone does not establish comprehension or remove the need to respect withdrawal."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "Which practice best supports informed consent?",
+            "options": [
+              "Promise that research has no possible risks",
+              "Replace explanation with a signature alone",
+              "Make participation a condition for unrelated essential services",
+              "Explain relevant risks and voluntary participation in understandable terms"
+            ],
+            "answer": 3,
+            "explanation": "Consent supports informed voluntary choice through understandable disclosure and opportunity to ask questions.",
+            "id": "reason",
+            "hints": [
+              "Ethical research requires attention to voluntary informed consent, reasonable risk–benefit balance, privacy and fair participant selection. These are principles for evaluating a study, not a substitute for jurisdiction-specific rules.",
+              "Consent is an ongoing process that supports understanding and choice. A signature alone does not establish comprehension or remove the need to respect withdrawal."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "Identifiable data are collected but access is restricted. Which description is most appropriate?",
+            "options": [
+              "Confidentiality measures protect identified data",
+              "The study is automatically anonymous",
+              "No privacy risk can remain",
+              "Consent is unnecessary by definition"
+            ],
+            "answer": 0,
+            "explanation": "Restricted access is a confidentiality safeguard; collection of identifiers means anonymity should not be claimed.",
+            "id": "transfer",
+            "hints": [
+              "Consent is an ongoing process that supports understanding and choice. A signature alone does not establish comprehension or remove the need to respect withdrawal.",
+              "Independent oversight reviews proposed research and safeguards. Scientific interest does not by itself justify avoidable harm or coercive recruitment."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-11-05-workshop-v1",
+        "title": "Research in the Real World",
+        "asset": "ph11-05",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the population to which a user hopes to apply the study’s findings.",
+            "answer": [
+              "part-1"
+            ],
+            "explanation": "The relevant diagram entity or entities are Target population. Internal validity concerns whether a study’s conclusions hold for its studied comparison. External validity concerns applicability to other populations, settings and conditions.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "A statistically detectable effect can be too small to matter practically. Consider absolute change, uncertainty, baseline risk and costs rather than relying only on a p-value."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A hypothetical intervention lowers event risk from 0.20 to 0.15. Find the absolute risk reduction as a fraction.",
+            "answer": 0.05,
+            "unit": "dimensionless",
+            "tolerance": 0.000001,
+            "explanation": "Absolute reduction = 0.20 - 0.15 = 0.05, or 5 percentage points.",
+            "id": "reason",
+            "hints": [
+              "Internal validity concerns whether a study’s conclusions hold for its studied comparison. External validity concerns applicability to other populations, settings and conditions.",
+              "A statistically detectable effect can be too small to matter practically. Consider absolute change, uncertainty, baseline risk and costs rather than relying only on a p-value."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "A well-run study enrolls only one narrow population. What requires additional support?",
+            "options": [
+              "Its existence as a study",
+              "Generalization to different populations",
+              "That it measured any outcome",
+              "That its authors can report a sample size"
+            ],
+            "answer": 1,
+            "explanation": "External validity depends on how the studied population and setting relate to the intended target.",
+            "id": "transfer",
+            "hints": [
+              "A statistically detectable effect can be too small to matter practically. Consider absolute change, uncertainty, baseline risk and costs rather than relying only on a p-value.",
+              "Selective reporting and publication patterns can distort the apparent literature. Prespecified outcomes, transparent methods and replication improve interpretability but do not guarantee correctness."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "version": 1,
+    "assets": [
+      {
+        "id": "ph11-01",
+        "kind": "concept-schematic",
+        "title": "The Scientific Method",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Hypothesis",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Prediction",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Experiment",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Revision",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "research"
+        }
+      },
+      {
+        "id": "ph11-02",
+        "kind": "concept-schematic",
+        "title": "Basic Science Research",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Independent variable",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Dependent variable",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Control condition",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Confounder",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "experiment"
+        }
+      },
+      {
+        "id": "ph11-03",
+        "kind": "concept-schematic",
+        "title": "Human Subjects Research",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Random assignment",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Treatment arm",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Control arm",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Blinded assessment",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "study"
+        }
+      },
+      {
+        "id": "ph11-04",
+        "kind": "concept-schematic",
+        "title": "Ethics",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Informed consent",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Risk–benefit review",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Privacy",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Fair selection",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "ethics"
+        }
+      },
+      {
+        "id": "ph11-05",
+        "kind": "concept-schematic",
+        "title": "Research in the Real World",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Study population",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Target population",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Effect estimate",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Implementation",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "translation"
+        }
+      }
+    ]
+  }
+}
