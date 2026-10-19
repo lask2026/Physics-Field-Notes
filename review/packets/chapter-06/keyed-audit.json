@@ -1,0 +1,638 @@
+{
+  "warning": "Candidate evidence only; do not treat the provided keys as authoritative.",
+  "chapter": {
+    "version": 1,
+    "id": "chapter-06",
+    "title": "Circuits",
+    "status": "implemented",
+    "scopeNote": "Original condensed MCAT Physics, Mathematics and Research Reasoning lessons. Models and calculations use stated assumptions. Independent scientific review is pending; this is not exhaustive textbook coverage.",
+    "lessons": [
+      {
+        "id": "concept-6-1",
+        "title": "Current",
+        "section": "6.1",
+        "asset": "ph06-01",
+        "steps": [
+          {
+            "text": "Electric current is charge crossing a surface per time: I = ΔQ/Δt. One ampere is one coulomb per second.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Conventional current follows positive-charge flow. In a metal wire, electron drift is opposite conventional current; a complete circuit is needed for sustained steady current.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "At a circuit junction, steady charge conservation gives total current in equal to total current out. Charge does not ordinarily accumulate indefinitely at an ideal junction.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Current is not consumed by a resistor. Energy is transferred as charges move through potential differences, while the steady series current is shared by all series elements.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "6.1 · Current: the governing relation",
+          "paragraphs": [
+            "Electric current is charge crossing a surface per time: I = ΔQ/Δt. One ampere is one coulomb per second.",
+            "Conventional current follows positive-charge flow. In a metal wire, electron drift is opposite conventional current; a complete circuit is needed for sustained steady current."
+          ]
+        },
+        "memoryCue": {
+          "title": "6.1 · Current carries charge; a resistor transfers energy rather than consuming charge.",
+          "paragraphs": [
+            "Current carries charge; a resistor transfers energy rather than consuming charge.",
+            "Conventional current follows positive-charge flow. In a metal wire, electron drift is opposite conventional current; a complete circuit is needed for sustained steady current."
+          ]
+        },
+        "traps": {
+          "title": "6.1 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "At a circuit junction, steady charge conservation gives total current in equal to total current out. Charge does not ordinarily accumulate indefinitely at an ideal junction.",
+            "Current is not consumed by a resistor. Energy is transferred as charges move through potential differences, while the steady series current is shared by all series elements."
+          ]
+        },
+        "application": {
+          "title": "6.1 · Apply the model within its limits",
+          "paragraphs": [
+            "Current is not consumed by a resistor. Energy is transferred as charges move through potential differences, while the steady series current is shared by all series elements.",
+            "Steady current is charge per time, so I = ΔQ/Δt = 18 C / 6 s = 3 A."
+          ]
+        }
+      },
+      {
+        "id": "concept-6-2",
+        "title": "Resistance",
+        "section": "6.2",
+        "asset": "ph06-02",
+        "steps": [
+          {
+            "text": "An ohmic resistor obeys V = IR over a specified regime. Resistance can depend on temperature, geometry and material; a linear relation is not universal for every device.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Series resistances add and carry the same current. Parallel branches share potential difference and have reciprocal resistances that add.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "For a uniform wire, R = ρelectricalL/A. Electrical resistivity is not mass density. Lengthening a wire raises resistance, whereas increasing area lowers it.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Dissipated power is IV, or I²R and V²/R when Ohm’s law applies. Decide whether current or voltage is held fixed before predicting how a resistance change affects power.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "6.2 · Resistance: the governing relation",
+          "paragraphs": [
+            "An ohmic resistor obeys V = IR over a specified regime. Resistance can depend on temperature, geometry and material; a linear relation is not universal for every device.",
+            "Series resistances add and carry the same current. Parallel branches share potential difference and have reciprocal resistances that add."
+          ]
+        },
+        "memoryCue": {
+          "title": "6.2 · Series shares current; parallel shares voltage.",
+          "paragraphs": [
+            "Series shares current; parallel shares voltage.",
+            "Series resistances add and carry the same current. Parallel branches share potential difference and have reciprocal resistances that add."
+          ]
+        },
+        "traps": {
+          "title": "6.2 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "For a uniform wire, R = ρelectricalL/A. Electrical resistivity is not mass density. Lengthening a wire raises resistance, whereas increasing area lowers it.",
+            "Dissipated power is IV, or I²R and V²/R when Ohm’s law applies. Decide whether current or voltage is held fixed before predicting how a resistance change affects power."
+          ]
+        },
+        "application": {
+          "title": "6.2 · Apply the model within its limits",
+          "paragraphs": [
+            "Dissipated power is IV, or I²R and V²/R when Ohm’s law applies. Decide whether current or voltage is held fixed before predicting how a resistance change affects power.",
+            "For the stated ohmic resistor, I = V/R = 12 V / 4 Ω = 3 A."
+          ]
+        }
+      },
+      {
+        "id": "concept-6-3",
+        "title": "Capacitance and Capacitors",
+        "section": "6.3",
+        "asset": "ph06-03",
+        "steps": [
+          {
+            "text": "Capacitance relates stored charge magnitude to potential difference: C = Q/V. An ideal parallel-plate model gives C = κε0A/d, neglecting edge fields.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "A dielectric increases capacitance for fixed plate geometry. What happens to charge and voltage depends on whether a battery remains connected or the capacitor is isolated.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Stored energy can be written ½CV², Q²/(2C) or ½QV. Increasing capacitance raises energy at fixed voltage but lowers energy at fixed charge.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "An ideal capacitor blocks steady direct current after charging, although current flows during transients. The changing field stores energy without sustained conduction across the ideal dielectric.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "6.3 · Capacitance and Capacitors: the governing relation",
+          "paragraphs": [
+            "Capacitance relates stored charge magnitude to potential difference: C = Q/V. An ideal parallel-plate model gives C = κε0A/d, neglecting edge fields.",
+            "A dielectric increases capacitance for fixed plate geometry. What happens to charge and voltage depends on whether a battery remains connected or the capacitor is isolated."
+          ]
+        },
+        "memoryCue": {
+          "title": "6.3 · First ask: fixed voltage or fixed charge?",
+          "paragraphs": [
+            "First ask: fixed voltage or fixed charge?",
+            "A dielectric increases capacitance for fixed plate geometry. What happens to charge and voltage depends on whether a battery remains connected or the capacitor is isolated."
+          ]
+        },
+        "traps": {
+          "title": "6.3 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Stored energy can be written ½CV², Q²/(2C) or ½QV. Increasing capacitance raises energy at fixed voltage but lowers energy at fixed charge.",
+            "An ideal capacitor blocks steady direct current after charging, although current flows during transients. The changing field stores energy without sustained conduction across the ideal dielectric."
+          ]
+        },
+        "application": {
+          "title": "6.3 · Apply the model within its limits",
+          "paragraphs": [
+            "An ideal capacitor blocks steady direct current after charging, although current flows during transients. The changing field stores energy without sustained conduction across the ideal dielectric.",
+            "Q = CV = (4 μF)(3 V) = 12 μC."
+          ]
+        }
+      },
+      {
+        "id": "concept-6-4",
+        "title": "Meters",
+        "section": "6.4",
+        "asset": "ph06-04",
+        "steps": [
+          {
+            "text": "An ammeter measures current and is inserted in series with the branch of interest. An ideal ammeter has zero resistance so it does not appreciably alter that current.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "A voltmeter measures potential difference across two points and is connected in parallel. An ideal voltmeter has infinite resistance and draws no current.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "A real meter can load a circuit. Placing a low-resistance ammeter directly across a source can create a dangerously high-current path; the schematic is an instructional model, not a wiring procedure.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Read the intended branch and connection before using a meter value. A voltmeter reading depends on both lead placement and the chosen polarity.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "6.4 · Meters: the governing relation",
+          "paragraphs": [
+            "An ammeter measures current and is inserted in series with the branch of interest. An ideal ammeter has zero resistance so it does not appreciably alter that current.",
+            "A voltmeter measures potential difference across two points and is connected in parallel. An ideal voltmeter has infinite resistance and draws no current."
+          ]
+        },
+        "memoryCue": {
+          "title": "6.4 · Ammeter in series, voltmeter in parallel.",
+          "paragraphs": [
+            "Ammeter in series, voltmeter in parallel.",
+            "A voltmeter measures potential difference across two points and is connected in parallel. An ideal voltmeter has infinite resistance and draws no current."
+          ]
+        },
+        "traps": {
+          "title": "6.4 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "A real meter can load a circuit. Placing a low-resistance ammeter directly across a source can create a dangerously high-current path; the schematic is an instructional model, not a wiring procedure.",
+            "Read the intended branch and connection before using a meter value. A voltmeter reading depends on both lead placement and the chosen polarity."
+          ]
+        },
+        "application": {
+          "title": "6.4 · Apply the model within its limits",
+          "paragraphs": [
+            "Read the intended branch and connection before using a meter value. A voltmeter reading depends on both lead placement and the chosen polarity.",
+            "A voltmeter measures the potential difference across the resistor while ideally drawing no current."
+          ]
+        }
+      }
+    ],
+    "exercises": [
+      {
+        "id": "ph-06-01-workshop-v1",
+        "title": "Current",
+        "asset": "ph06-01",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the element supplying the circuit’s potential rise.",
+            "answer": [
+              "part-0"
+            ],
+            "explanation": "The relevant diagram entity or entities are Voltage source. Electric current is charge crossing a surface per time: I = ΔQ/Δt. One ampere is one coulomb per second.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Conventional current follows positive-charge flow. In a metal wire, electron drift is opposite conventional current; a complete circuit is needed for sustained steady current."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A steady 18 C crosses a wire section in 6 s. Find current.",
+            "answer": 3,
+            "unit": "A",
+            "tolerance": 0,
+            "explanation": "Steady current is charge per time, so I = ΔQ/Δt = 18 C / 6 s = 3 A.",
+            "id": "reason",
+            "hints": [
+              "Electric current is charge crossing a surface per time: I = ΔQ/Δt. One ampere is one coulomb per second.",
+              "Conventional current follows positive-charge flow. In a metal wire, electron drift is opposite conventional current; a complete circuit is needed for sustained steady current."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A junction receives 5 A and sends 2 A through one branch. Find the outgoing current in its only other branch.",
+            "answer": 3,
+            "unit": "A",
+            "tolerance": 0,
+            "explanation": "Charge conservation gives 5 = 2 + Iother, so Iother = 3 A.",
+            "id": "transfer",
+            "hints": [
+              "Conventional current follows positive-charge flow. In a metal wire, electron drift is opposite conventional current; a complete circuit is needed for sustained steady current.",
+              "At a circuit junction, steady charge conservation gives total current in equal to total current out. Charge does not ordinarily accumulate indefinitely at an ideal junction."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-06-02-workshop-v1",
+        "title": "Resistance",
+        "asset": "ph06-02",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select both elements whose resistances add in the displayed series arrangement.",
+            "answer": [
+              "part-1",
+              "part-2"
+            ],
+            "explanation": "The relevant diagram entity or entities are Series resistor, Second resistor. An ohmic resistor obeys V = IR over a specified regime. Resistance can depend on temperature, geometry and material; a linear relation is not universal for every device.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Series resistances add and carry the same current. Parallel branches share potential difference and have reciprocal resistances that add."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A 12 V source is across a 4 Ω ohmic resistor. Find current.",
+            "answer": 3,
+            "unit": "A",
+            "tolerance": 0,
+            "explanation": "For the stated ohmic resistor, I = V/R = 12 V / 4 Ω = 3 A.",
+            "id": "reason",
+            "hints": [
+              "An ohmic resistor obeys V = IR over a specified regime. Resistance can depend on temperature, geometry and material; a linear relation is not universal for every device.",
+              "Series resistances add and carry the same current. Parallel branches share potential difference and have reciprocal resistances that add."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Find the equivalent resistance of 6 Ω and 3 Ω connected in parallel.",
+            "answer": 2,
+            "unit": "Ω",
+            "tolerance": 0,
+            "explanation": "1/Req = 1/6 + 1/3 = 1/2, so Req = 2 Ω.",
+            "id": "transfer",
+            "hints": [
+              "Series resistances add and carry the same current. Parallel branches share potential difference and have reciprocal resistances that add.",
+              "For a uniform wire, R = ρelectricalL/A. Electrical resistivity is not mass density. Lengthening a wire raises resistance, whereas increasing area lowers it."
+            ],
+            "asset": "ph06-02-parallel"
+          }
+        ]
+      },
+      {
+        "id": "ph-06-03-workshop-v1",
+        "title": "Capacitance and Capacitors",
+        "asset": "ph06-03",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the insulating region separating the charged plates.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant diagram entity or entities are Dielectric gap. Capacitance relates stored charge magnitude to potential difference: C = Q/V. An ideal parallel-plate model gives C = κε0A/d, neglecting edge fields.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "A dielectric increases capacitance for fixed plate geometry. What happens to charge and voltage depends on whether a battery remains connected or the capacitor is isolated."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A 4 μF capacitor has 3 V across it. Find charge magnitude in microcoulombs.",
+            "answer": 12,
+            "unit": "μC",
+            "tolerance": 0,
+            "explanation": "Q = CV = (4 μF)(3 V) = 12 μC.",
+            "id": "reason",
+            "hints": [
+              "Capacitance relates stored charge magnitude to potential difference: C = Q/V. An ideal parallel-plate model gives C = κε0A/d, neglecting edge fields.",
+              "A dielectric increases capacitance for fixed plate geometry. What happens to charge and voltage depends on whether a battery remains connected or the capacitor is isolated."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Find stored energy for C = 2 F and V = 3 V.",
+            "answer": 9,
+            "unit": "J",
+            "tolerance": 0,
+            "explanation": "U = ½CV² = ½ × 2 × 3² = 9 J.",
+            "id": "transfer",
+            "hints": [
+              "A dielectric increases capacitance for fixed plate geometry. What happens to charge and voltage depends on whether a battery remains connected or the capacitor is isolated.",
+              "Stored energy can be written ½CV², Q²/(2C) or ½QV. Increasing capacitance raises energy at fixed voltage but lowers energy at fixed charge."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-06-04-workshop-v1",
+        "title": "Meters",
+        "asset": "ph06-04",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the meter that ideally draws no current.",
+            "answer": [
+              "part-1"
+            ],
+            "explanation": "The relevant diagram entity or entities are Voltmeter. An ammeter measures current and is inserted in series with the branch of interest. An ideal ammeter has zero resistance so it does not appreciably alter that current.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "A voltmeter measures potential difference across two points and is connected in parallel. An ideal voltmeter has infinite resistance and draws no current."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "How is an ideal voltmeter connected to measure a resistor’s voltage?",
+            "options": [
+              "In series replacing every wire",
+              "As a short across the battery",
+              "In parallel across the resistor",
+              "Without contacting two circuit points"
+            ],
+            "answer": 2,
+            "explanation": "A voltmeter measures the potential difference across the resistor while ideally drawing no current.",
+            "id": "reason",
+            "hints": [
+              "An ammeter measures current and is inserted in series with the branch of interest. An ideal ammeter has zero resistance so it does not appreciably alter that current.",
+              "A voltmeter measures potential difference across two points and is connected in parallel. An ideal voltmeter has infinite resistance and draws no current."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "What ideal resistance minimizes an ammeter’s effect on branch current?",
+            "options": [
+              "Infinite resistance",
+              "Exactly the load resistance",
+              "A negative infinite resistance",
+              "Zero resistance"
+            ],
+            "answer": 3,
+            "explanation": "An ideal ammeter has zero resistance and is inserted in series.",
+            "id": "transfer",
+            "hints": [
+              "A voltmeter measures potential difference across two points and is connected in parallel. An ideal voltmeter has infinite resistance and draws no current.",
+              "A real meter can load a circuit. Placing a low-resistance ammeter directly across a source can create a dangerously high-current path; the schematic is an instructional model, not a wiring procedure."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "version": 1,
+    "assets": [
+      {
+        "id": "ph06-01",
+        "kind": "concept-schematic",
+        "title": "Current",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Voltage source",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Conventional current",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Resistor",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Return path",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "circuit"
+        }
+      },
+      {
+        "id": "ph06-02",
+        "kind": "concept-schematic",
+        "title": "Resistance",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Voltage source",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Series resistor",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Second resistor",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Return wire",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "resistors"
+        }
+      },
+      {
+        "id": "ph06-03",
+        "kind": "concept-schematic",
+        "title": "Capacitance and Capacitors",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Positive plate",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Negative plate",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Dielectric gap",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Stored energy",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "capacitor"
+        }
+      },
+      {
+        "id": "ph06-04",
+        "kind": "concept-schematic",
+        "title": "Meters",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Ammeter",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Voltmeter",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Circuit branch",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Measured element",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "meters"
+        }
+      },
+      {
+        "id": "ph06-02-parallel",
+        "kind": "concept-schematic",
+        "title": "Parallel resistor network",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Voltage source",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Upper resistor",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Lower resistor",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Return wire",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "parallel-resistors"
+        }
+      }
+    ]
+  }
+}

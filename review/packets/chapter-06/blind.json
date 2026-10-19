@@ -1,0 +1,527 @@
+{
+  "chapter": "chapter-06",
+  "cases": [
+    {
+      "id": "ph-06-01-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the element supplying the circuit’s potential rise.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Voltage source",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Conventional current",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Resistor",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Return path",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "circuit"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M130 165 V110 H470 V165\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Conventional current around an ideal closed loop</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M130 170 V210 M110 180 H150 M120 195 H140\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"90\" y=\"160\" text-anchor=\"middle\">Voltage source</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M180 110 H400\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-opacity=\".2\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"flow\" d=\"M180 110 H400\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"290\" y=\"65\" text-anchor=\"middle\">Conventional current</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M420 190 h15 l7 -12 14 24 14 -24 14 24 7 -12 h15\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"535\" y=\"195\" text-anchor=\"middle\">Resistor</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M130 215 V300 H470 V220\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"350\" text-anchor=\"middle\">Return path</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-06-01-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "A steady 18 C crosses a wire section in 6 s. Find current.",
+      "type": "number",
+      "unit": "A",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Voltage source",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Conventional current",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Resistor",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Return path",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "circuit"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M130 165 V110 H470 V165\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Conventional current around an ideal closed loop</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M130 170 V210 M110 180 H150 M120 195 H140\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"90\" y=\"160\" text-anchor=\"middle\">Voltage source</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M180 110 H400\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-opacity=\".2\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"flow\" d=\"M180 110 H400\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"290\" y=\"65\" text-anchor=\"middle\">Conventional current</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M420 190 h15 l7 -12 14 24 14 -24 14 24 7 -12 h15\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"535\" y=\"195\" text-anchor=\"middle\">Resistor</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M130 215 V300 H470 V220\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"350\" text-anchor=\"middle\">Return path</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-06-01-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "A junction receives 5 A and sends 2 A through one branch. Find the outgoing current in its only other branch.",
+      "type": "number",
+      "unit": "A",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Voltage source",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Conventional current",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Resistor",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Return path",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "circuit"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M130 165 V110 H470 V165\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Conventional current around an ideal closed loop</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M130 170 V210 M110 180 H150 M120 195 H140\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"90\" y=\"160\" text-anchor=\"middle\">Voltage source</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M180 110 H400\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-opacity=\".2\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"flow\" d=\"M180 110 H400\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"290\" y=\"65\" text-anchor=\"middle\">Conventional current</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M420 190 h15 l7 -12 14 24 14 -24 14 24 7 -12 h15\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"535\" y=\"195\" text-anchor=\"middle\">Resistor</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M130 215 V300 H470 V220\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"350\" text-anchor=\"middle\">Return path</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-06-02-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select both elements whose resistances add in the displayed series arrangement.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Voltage source",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Series resistor",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Second resistor",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Return wire",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "resistors"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M90 165 V110 H185 M295 110 H385\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"390\" text-anchor=\"middle\">Two displayed resistors in series; prompt may ask a separate network</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M90 170 V220 M70 185 H110 M80 205 H100\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"90\" y=\"140\" text-anchor=\"middle\">Voltage source</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M190 110 h15 l7 -12 14 24 14 -24 14 24 7 -12 h15\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"245\" y=\"70\" text-anchor=\"middle\">Series resistor</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 110 h15 l7 -12 14 24 14 -24 14 24 7 -12 h15\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"440\" y=\"70\" text-anchor=\"middle\">Second resistor</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M90 225 V300 H550 V110 H495\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"345\" text-anchor=\"middle\">Return wire</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-06-02-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "A 12 V source is across a 4 Ω ohmic resistor. Find current.",
+      "type": "number",
+      "unit": "A",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Voltage source",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Series resistor",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Second resistor",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Return wire",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "resistors"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M90 165 V110 H185 M295 110 H385\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"390\" text-anchor=\"middle\">Two displayed resistors in series; prompt may ask a separate network</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M90 170 V220 M70 185 H110 M80 205 H100\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"90\" y=\"140\" text-anchor=\"middle\">Voltage source</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M190 110 h15 l7 -12 14 24 14 -24 14 24 7 -12 h15\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"245\" y=\"70\" text-anchor=\"middle\">Series resistor</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 110 h15 l7 -12 14 24 14 -24 14 24 7 -12 h15\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"440\" y=\"70\" text-anchor=\"middle\">Second resistor</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M90 225 V300 H550 V110 H495\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"345\" text-anchor=\"middle\">Return wire</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-06-02-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "Find the equivalent resistance of 6 Ω and 3 Ω connected in parallel.",
+      "type": "number",
+      "unit": "Ω",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Voltage source",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Upper resistor",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Lower resistor",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Return wire",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "parallel-resistors"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"425\" text-anchor=\"middle\">Both resistors connect across the same two nodes</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M90 175 V225 M70 190 H110 M80 210 H100\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"95\" y=\"155\" text-anchor=\"middle\">Voltage source</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M340 160 h15 l7 -12 14 24 14 -24 14 24 7 -12 h15\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"390\" y=\"120\" text-anchor=\"middle\">Upper resistor</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M340 260 h15 l7 -12 14 24 14 -24 14 24 7 -12 h15\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"390\" y=\"310\" text-anchor=\"middle\">Lower resistor</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M90 170 V80 H240 V260 M240 160 H335 M240 260 H335 M445 160 H540 V340 H90 V230 M445 260 H540\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"540\" y=\"390\" text-anchor=\"middle\">Return wire</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-06-03-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the insulating region separating the charged plates.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Positive plate",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Negative plate",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Dielectric gap",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Stored energy",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "capacitor"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Ideal parallel plates; field stores energy; charge signs shown</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M240 95 V300\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"220\" y=\"195\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"170\" y=\"65\" text-anchor=\"middle\">Positive plate</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M400 95 V300\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"420\" y=\"195\" text-anchor=\"middle\">−</text></g><text class=\"part-label\" x=\"470\" y=\"65\" text-anchor=\"middle\">Negative plate</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"275\" y=\"115\" width=\"90\" height=\"165\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"330\" text-anchor=\"middle\">Dielectric gap</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M255 145 H385\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"outline\" d=\"M255 200 H385\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"outline\" d=\"M255 255 H385\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"490\" y=\"350\" text-anchor=\"middle\">Stored energy</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-06-03-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "A 4 μF capacitor has 3 V across it. Find charge magnitude in microcoulombs.",
+      "type": "number",
+      "unit": "μC",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Positive plate",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Negative plate",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Dielectric gap",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Stored energy",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "capacitor"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Ideal parallel plates; field stores energy; charge signs shown</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M240 95 V300\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"220\" y=\"195\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"170\" y=\"65\" text-anchor=\"middle\">Positive plate</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M400 95 V300\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"420\" y=\"195\" text-anchor=\"middle\">−</text></g><text class=\"part-label\" x=\"470\" y=\"65\" text-anchor=\"middle\">Negative plate</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"275\" y=\"115\" width=\"90\" height=\"165\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"330\" text-anchor=\"middle\">Dielectric gap</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M255 145 H385\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"outline\" d=\"M255 200 H385\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"outline\" d=\"M255 255 H385\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"490\" y=\"350\" text-anchor=\"middle\">Stored energy</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-06-03-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "Find stored energy for C = 2 F and V = 3 V.",
+      "type": "number",
+      "unit": "J",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Positive plate",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Negative plate",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Dielectric gap",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Stored energy",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "capacitor"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Ideal parallel plates; field stores energy; charge signs shown</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M240 95 V300\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"220\" y=\"195\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"170\" y=\"65\" text-anchor=\"middle\">Positive plate</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M400 95 V300\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"420\" y=\"195\" text-anchor=\"middle\">−</text></g><text class=\"part-label\" x=\"470\" y=\"65\" text-anchor=\"middle\">Negative plate</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"275\" y=\"115\" width=\"90\" height=\"165\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"330\" text-anchor=\"middle\">Dielectric gap</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M255 145 H385\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"outline\" d=\"M255 200 H385\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/><path class=\"outline\" d=\"M255 255 H385\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"490\" y=\"350\" text-anchor=\"middle\">Stored energy</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-06-04-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the meter that ideally draws no current.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Ammeter",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Voltmeter",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Circuit branch",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Measured element",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "meters"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Symbols identify meter roles; connect according to the current prompt</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"175\" cy=\"130\" r=\"30\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"175\" y=\"137\" text-anchor=\"middle\">A</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Ammeter</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"470\" cy=\"130\" r=\"30\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"470\" y=\"137\" text-anchor=\"middle\">V</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Voltmeter</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M100 255 H240 M100 300 H240\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Circuit branch</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M420 280 h15 l7 -12 14 24 14 -24 14 24 7 -12 h15\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Measured element</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-06-04-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "How is an ideal voltmeter connected to measure a resistor’s voltage?",
+      "type": "choice",
+      "options": [
+        "In series replacing every wire",
+        "As a short across the battery",
+        "In parallel across the resistor",
+        "Without contacting two circuit points"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Ammeter",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Voltmeter",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Circuit branch",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Measured element",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "meters"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Symbols identify meter roles; connect according to the current prompt</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"175\" cy=\"130\" r=\"30\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"175\" y=\"137\" text-anchor=\"middle\">A</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Ammeter</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"470\" cy=\"130\" r=\"30\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"470\" y=\"137\" text-anchor=\"middle\">V</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Voltmeter</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M100 255 H240 M100 300 H240\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Circuit branch</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M420 280 h15 l7 -12 14 24 14 -24 14 24 7 -12 h15\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Measured element</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-06-04-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "What ideal resistance minimizes an ammeter’s effect on branch current?",
+      "type": "choice",
+      "options": [
+        "Infinite resistance",
+        "Exactly the load resistance",
+        "A negative infinite resistance",
+        "Zero resistance"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Ammeter",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Voltmeter",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Circuit branch",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Measured element",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "meters"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Symbols identify meter roles; connect according to the current prompt</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"175\" cy=\"130\" r=\"30\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"175\" y=\"137\" text-anchor=\"middle\">A</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Ammeter</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"470\" cy=\"130\" r=\"30\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"470\" y=\"137\" text-anchor=\"middle\">V</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Voltmeter</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M100 255 H240 M100 300 H240\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Circuit branch</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M420 280 h15 l7 -12 14 24 14 -24 14 24 7 -12 h15\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Measured element</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    }
+  ]
+}
