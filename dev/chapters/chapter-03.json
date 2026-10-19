@@ -1,0 +1,451 @@
+{
+  "version": 1,
+  "id": "chapter-03",
+  "title": "Thermodynamics",
+  "status": "implemented",
+  "scopeNote": "Original condensed MCAT Physics, Mathematics and Research Reasoning lessons. Models and calculations use stated assumptions. Independent scientific review is pending; this is not exhaustive textbook coverage.",
+  "lessons": [
+    {
+      "id": "concept-3-1",
+      "title": "Zeroth Law of Thermodynamics",
+      "section": "3.1",
+      "asset": "ph03-01",
+      "steps": [
+        {
+          "text": "Temperature describes thermal equilibrium and relates to microscopic energy distributions. Heat is energy transferred because of a temperature difference, not a substance stored inside an object.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "The zeroth law makes thermal equilibrium transitive: if A and B are separately in thermal equilibrium with C, A and B are in equilibrium with each other.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Equal temperature does not require equal total internal energy. Amount of material, composition and phase can change internal energy at the same temperature.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Use kelvin for absolute-temperature ratios. Celsius intervals equal kelvin intervals, but Celsius zero is not absolute zero.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "3.1 · Zeroth Law of Thermodynamics: the governing relation",
+        "paragraphs": [
+          "Temperature describes thermal equilibrium and relates to microscopic energy distributions. Heat is energy transferred because of a temperature difference, not a substance stored inside an object.",
+          "The zeroth law makes thermal equilibrium transitive: if A and B are separately in thermal equilibrium with C, A and B are in equilibrium with each other."
+        ]
+      },
+      "memoryCue": {
+        "title": "3.1 · Temperature is a state variable; heat crosses a boundary.",
+        "paragraphs": [
+          "Temperature is a state variable; heat crosses a boundary.",
+          "The zeroth law makes thermal equilibrium transitive: if A and B are separately in thermal equilibrium with C, A and B are in equilibrium with each other."
+        ]
+      },
+      "traps": {
+        "title": "3.1 · Check signs, assumptions and meaning",
+        "paragraphs": [
+          "Equal temperature does not require equal total internal energy. Amount of material, composition and phase can change internal energy at the same temperature.",
+          "Use kelvin for absolute-temperature ratios. Celsius intervals equal kelvin intervals, but Celsius zero is not absolute zero."
+        ]
+      },
+      "application": {
+        "title": "3.1 · Apply the model within its limits",
+        "paragraphs": [
+          "Use kelvin for absolute-temperature ratios. Celsius intervals equal kelvin intervals, but Celsius zero is not absolute zero.",
+          "The kelvin offset is added to the Celsius value: 20 + 273.15 = 293.15 K."
+        ]
+      }
+    },
+    {
+      "id": "concept-3-2",
+      "title": "Systems",
+      "section": "3.2",
+      "asset": "ph03-02",
+      "steps": [
+        {
+          "text": "A thermodynamic system is the part selected for study; everything else is surroundings. The boundary determines which exchanges must be counted.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "An open system exchanges matter and energy; a closed system exchanges energy but not matter. An isolated system exchanges neither with its surroundings.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "A closed system is not automatically adiabatic. Adiabatic means no heat transfer across the boundary, but work can still change internal energy.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "State functions depend on state rather than process path. Heat and work depend on the path taken between states, so they are not stored state functions.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "3.2 · Systems: the governing relation",
+        "paragraphs": [
+          "A thermodynamic system is the part selected for study; everything else is surroundings. The boundary determines which exchanges must be counted.",
+          "An open system exchanges matter and energy; a closed system exchanges energy but not matter. An isolated system exchanges neither with its surroundings."
+        ]
+      },
+      "memoryCue": {
+        "title": "3.2 · Closed blocks matter; isolated blocks matter and energy.",
+        "paragraphs": [
+          "Closed blocks matter; isolated blocks matter and energy.",
+          "An open system exchanges matter and energy; a closed system exchanges energy but not matter. An isolated system exchanges neither with its surroundings."
+        ]
+      },
+      "traps": {
+        "title": "3.2 · Check signs, assumptions and meaning",
+        "paragraphs": [
+          "A closed system is not automatically adiabatic. Adiabatic means no heat transfer across the boundary, but work can still change internal energy.",
+          "State functions depend on state rather than process path. Heat and work depend on the path taken between states, so they are not stored state functions."
+        ]
+      },
+      "application": {
+        "title": "3.2 · Apply the model within its limits",
+        "paragraphs": [
+          "State functions depend on state rather than process path. Heat and work depend on the path taken between states, so they are not stored state functions.",
+          "Closed systems can exchange energy through heat while retaining matter."
+        ]
+      }
+    },
+    {
+      "id": "concept-3-3",
+      "title": "First Law of Thermodynamics",
+      "section": "3.3",
+      "asset": "ph03-03",
+      "steps": [
+        {
+          "text": "Use the convention ΔU = Q - Wby, where Q is positive for heat entering the system and Wby is positive for work done by the system on its surroundings.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "A gas expanding against external pressure does positive work in this convention. Compression does negative work by the gas, which tends to increase its internal energy.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "For a quasistatic pressure-volume process, work by the gas is the area under its P–V curve. A cyclic process returns to its initial internal energy but can exchange net heat and work.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "For a monatomic ideal gas with fixed amount, internal energy depends on absolute temperature. During an ideal-gas isothermal process, ΔU = 0; heat and work need not vanish.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "3.3 · First Law of Thermodynamics: the governing relation",
+        "paragraphs": [
+          "Use the convention ΔU = Q - Wby, where Q is positive for heat entering the system and Wby is positive for work done by the system on its surroundings.",
+          "A gas expanding against external pressure does positive work in this convention. Compression does negative work by the gas, which tends to increase its internal energy."
+        ]
+      },
+      "memoryCue": {
+        "title": "3.3 · Name the work convention before choosing the sign.",
+        "paragraphs": [
+          "Name the work convention before choosing the sign.",
+          "A gas expanding against external pressure does positive work in this convention. Compression does negative work by the gas, which tends to increase its internal energy."
+        ]
+      },
+      "traps": {
+        "title": "3.3 · Check signs, assumptions and meaning",
+        "paragraphs": [
+          "For a quasistatic pressure-volume process, work by the gas is the area under its P–V curve. A cyclic process returns to its initial internal energy but can exchange net heat and work.",
+          "For a monatomic ideal gas with fixed amount, internal energy depends on absolute temperature. During an ideal-gas isothermal process, ΔU = 0; heat and work need not vanish."
+        ]
+      },
+      "application": {
+        "title": "3.3 · Apply the model within its limits",
+        "paragraphs": [
+          "For a monatomic ideal gas with fixed amount, internal energy depends on absolute temperature. During an ideal-gas isothermal process, ΔU = 0; heat and work need not vanish.",
+          "With heat into the gas positive and work by the gas positive, ΔU = Q - Wby = 500 - 180 = +320 J."
+        ]
+      }
+    },
+    {
+      "id": "concept-3-4",
+      "title": "Second Law of Thermodynamics and Entropy",
+      "section": "3.4",
+      "asset": "ph03-04",
+      "steps": [
+        {
+          "text": "Entropy is a state function related to energy dispersal and accessible microscopic arrangements. A local entropy decrease can occur when it is offset by a larger surroundings increase.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "For a reversible heat transfer at fixed absolute temperature, ΔS = Qrev/T. This expression uses a reversible path, even when the actual process is irreversible.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "For an isolated system, total entropy does not decrease. For a spontaneous irreversible process, entropy of the system plus surroundings increases; a reversible idealization has zero total change.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Heat naturally flows from hotter to colder regions without external work. A refrigerator can move heat the other way by requiring work and increasing total entropy.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "3.4 · Second Law of Thermodynamics and Entropy: the governing relation",
+        "paragraphs": [
+          "Entropy is a state function related to energy dispersal and accessible microscopic arrangements. A local entropy decrease can occur when it is offset by a larger surroundings increase.",
+          "For a reversible heat transfer at fixed absolute temperature, ΔS = Qrev/T. This expression uses a reversible path, even when the actual process is irreversible."
+        ]
+      },
+      "memoryCue": {
+        "title": "3.4 · A local decrease can coexist with a larger global increase.",
+        "paragraphs": [
+          "A local decrease can coexist with a larger global increase.",
+          "For a reversible heat transfer at fixed absolute temperature, ΔS = Qrev/T. This expression uses a reversible path, even when the actual process is irreversible."
+        ]
+      },
+      "traps": {
+        "title": "3.4 · Check signs, assumptions and meaning",
+        "paragraphs": [
+          "For an isolated system, total entropy does not decrease. For a spontaneous irreversible process, entropy of the system plus surroundings increases; a reversible idealization has zero total change.",
+          "Heat naturally flows from hotter to colder regions without external work. A refrigerator can move heat the other way by requiring work and increasing total entropy."
+        ]
+      },
+      "application": {
+        "title": "3.4 · Apply the model within its limits",
+        "paragraphs": [
+          "Heat naturally flows from hotter to colder regions without external work. A refrigerator can move heat the other way by requiring work and increasing total entropy.",
+          "ΔS = Qrev/T = 600/300 = +2 J/K."
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ph-03-01-workshop-v1",
+      "title": "Zeroth Law of Thermodynamics",
+      "asset": "ph03-01",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the instrument brought into equilibrium to infer temperature.",
+          "answer": [
+            "part-3"
+          ],
+          "explanation": "The relevant diagram entity or entities are Thermometer. Temperature describes thermal equilibrium and relates to microscopic energy distributions. Heat is energy transferred because of a temperature difference, not a substance stored inside an object.",
+          "hints": [
+            "Identify the physical or reasoning role described before selecting its schematic entity.",
+            "The zeroth law makes thermal equilibrium transitive: if A and B are separately in thermal equilibrium with C, A and B are in equilibrium with each other."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "Using T(K) = T(°C) + 273.15, convert 20 °C to kelvin.",
+          "answer": 293.15,
+          "unit": "K",
+          "tolerance": 1e-06,
+          "explanation": "The kelvin offset is added to the Celsius value: 20 + 273.15 = 293.15 K.",
+          "id": "reason",
+          "hints": [
+            "Temperature describes thermal equilibrium and relates to microscopic energy distributions. Heat is energy transferred because of a temperature difference, not a substance stored inside an object.",
+            "The zeroth law makes thermal equilibrium transitive: if A and B are separately in thermal equilibrium with C, A and B are in equilibrium with each other."
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "Two objects have equal temperature but different masses. Must their internal energies be equal?",
+          "options": [
+            "Yes, always",
+            "No; amount and composition also matter",
+            "Only if they are touching",
+            "Temperature equals total internal energy"
+          ],
+          "answer": 1,
+          "explanation": "Temperature alone does not determine total internal energy.",
+          "id": "transfer",
+          "hints": [
+            "The zeroth law makes thermal equilibrium transitive: if A and B are separately in thermal equilibrium with C, A and B are in equilibrium with each other.",
+            "Equal temperature does not require equal total internal energy. Amount of material, composition and phase can change internal energy at the same temperature."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ph-03-02-workshop-v1",
+      "title": "Systems",
+      "asset": "ph03-02",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the feature separating the chosen system from its surroundings.",
+          "answer": [
+            "part-1"
+          ],
+          "explanation": "The relevant diagram entity or entities are Boundary. A thermodynamic system is the part selected for study; everything else is surroundings. The boundary determines which exchanges must be counted.",
+          "hints": [
+            "Identify the physical or reasoning role described before selecting its schematic entity.",
+            "An open system exchanges matter and energy; a closed system exchanges energy but not matter. An isolated system exchanges neither with its surroundings."
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "A sealed rigid metal container can exchange heat but no matter. Which label fits?",
+          "options": [
+            "Open because heat moves",
+            "Closed, not necessarily isolated",
+            "Always isolated",
+            "Always adiabatic"
+          ],
+          "answer": 1,
+          "explanation": "Closed systems can exchange energy through heat while retaining matter.",
+          "id": "reason",
+          "hints": [
+            "A thermodynamic system is the part selected for study; everything else is surroundings. The boundary determines which exchanges must be counted.",
+            "An open system exchanges matter and energy; a closed system exchanges energy but not matter. An isolated system exchanges neither with its surroundings."
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "Which quantity is a state function?",
+          "options": [
+            "Heat transferred",
+            "Path-specific work",
+            "Internal energy",
+            "Distance traveled through a process"
+          ],
+          "answer": 2,
+          "explanation": "Internal energy depends on thermodynamic state; heat and work describe transfers along a process.",
+          "id": "transfer",
+          "hints": [
+            "An open system exchanges matter and energy; a closed system exchanges energy but not matter. An isolated system exchanges neither with its surroundings.",
+            "A closed system is not automatically adiabatic. Adiabatic means no heat transfer across the boundary, but work can still change internal energy."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ph-03-03-workshop-v1",
+      "title": "First Law of Thermodynamics",
+      "asset": "ph03-03",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the energy transfer that is positive when the gas expands against an external pressure.",
+          "answer": [
+            "part-1"
+          ],
+          "explanation": "The relevant diagram entity or entities are Work by gas. Use the convention ΔU = Q - Wby, where Q is positive for heat entering the system and Wby is positive for work done by the system on its surroundings.",
+          "hints": [
+            "Identify the physical or reasoning role described before selecting its schematic entity.",
+            "A gas expanding against external pressure does positive work in this convention. Compression does negative work by the gas, which tends to increase its internal energy."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "A gas absorbs Q = +500 J and does Wby = +180 J. Find ΔU using ΔU = Q - Wby.",
+          "answer": 320,
+          "unit": "J",
+          "tolerance": 0,
+          "explanation": "With heat into the gas positive and work by the gas positive, ΔU = Q - Wby = 500 - 180 = +320 J.",
+          "id": "reason",
+          "hints": [
+            "Use the convention ΔU = Q - Wby, where Q is positive for heat entering the system and Wby is positive for work done by the system on its surroundings.",
+            "A gas expanding against external pressure does positive work in this convention. Compression does negative work by the gas, which tends to increase its internal energy."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "An adiabatic gas is compressed, so Wby = -70 J. Find ΔU.",
+          "answer": 70,
+          "unit": "J",
+          "tolerance": 0,
+          "explanation": "Adiabatic means Q = 0; ΔU = 0 - (-70) = +70 J.",
+          "id": "transfer",
+          "hints": [
+            "A gas expanding against external pressure does positive work in this convention. Compression does negative work by the gas, which tends to increase its internal energy.",
+            "For a quasistatic pressure-volume process, work by the gas is the area under its P–V curve. A cyclic process returns to its initial internal energy but can exchange net heat and work."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ph-03-04-workshop-v1",
+      "title": "Second Law of Thermodynamics and Entropy",
+      "asset": "ph03-04",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the quantity constrained not to decrease for an isolated combined system.",
+          "answer": [
+            "part-2"
+          ],
+          "explanation": "The relevant diagram entity or entities are Total entropy. Entropy is a state function related to energy dispersal and accessible microscopic arrangements. A local entropy decrease can occur when it is offset by a larger surroundings increase.",
+          "hints": [
+            "Identify the physical or reasoning role described before selecting its schematic entity.",
+            "For a reversible heat transfer at fixed absolute temperature, ΔS = Qrev/T. This expression uses a reversible path, even when the actual process is irreversible."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "A reservoir receives 600 J reversibly at a constant 300 K. Find its entropy change.",
+          "answer": 2,
+          "unit": "J/K",
+          "tolerance": 0,
+          "explanation": "ΔS = Qrev/T = 600/300 = +2 J/K.",
+          "id": "reason",
+          "hints": [
+            "Entropy is a state function related to energy dispersal and accessible microscopic arrangements. A local entropy decrease can occur when it is offset by a larger surroundings increase.",
+            "For a reversible heat transfer at fixed absolute temperature, ΔS = Qrev/T. This expression uses a reversible path, even when the actual process is irreversible."
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "A refrigerator lowers entropy inside its cold compartment. What must be considered?",
+          "options": [
+            "The surroundings and supplied work as well",
+            "Only the compartment",
+            "A required violation of the second law",
+            "An entropy decrease of the entire isolated universe"
+          ],
+          "answer": 0,
+          "explanation": "A refrigerator uses work and releases heat; the combined entropy balance can satisfy the second law.",
+          "id": "transfer",
+          "hints": [
+            "For a reversible heat transfer at fixed absolute temperature, ΔS = Qrev/T. This expression uses a reversible path, even when the actual process is irreversible.",
+            "For an isolated system, total entropy does not decrease. For a spontaneous irreversible process, entropy of the system plus surroundings increases; a reversible idealization has zero total change."
+          ]
+        }
+      ]
+    }
+  ]
+}

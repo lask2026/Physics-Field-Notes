@@ -1,0 +1,1146 @@
+PHYSICS chapter-03: Thermodynamics
+Text/content review only; browser execution is not established by this packet.
+PASS 1: Independently solve every supplied blind case. Record case ID, answer, reasoning, confidence and ambiguity. Do not skip stages.
+[
+  {
+    "id": "ph-03-01-workshop-v1/map",
+    "subject": "physics",
+    "prompt": "Select the instrument brought into equilibrium to infer temperature.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "System A",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Thermal contact",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "System B",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Thermometer",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "temperature"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"355\" text-anchor=\"middle\">Equilibrium temperature; no heat-flow direction assumed</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"105\" y=\"110\" width=\"100\" height=\"100\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"165\" text-anchor=\"middle\">A</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">System A</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M210 165 H430\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Thermal contact</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"435\" y=\"110\" width=\"100\" height=\"100\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"485\" y=\"165\" text-anchor=\"middle\">B</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">System B</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"295\" r=\"20\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><rect class=\"outline\" x=\"312\" y=\"220\" width=\"16\" height=\"75\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Thermometer</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-03-01-workshop-v1/reason",
+    "subject": "physics",
+    "prompt": "Using T(K) = T(°C) + 273.15, convert 20 °C to kelvin.",
+    "type": "number",
+    "unit": "K",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "System A",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Thermal contact",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "System B",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Thermometer",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "temperature"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"355\" text-anchor=\"middle\">Equilibrium temperature; no heat-flow direction assumed</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"105\" y=\"110\" width=\"100\" height=\"100\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"165\" text-anchor=\"middle\">A</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">System A</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M210 165 H430\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Thermal contact</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"435\" y=\"110\" width=\"100\" height=\"100\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"485\" y=\"165\" text-anchor=\"middle\">B</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">System B</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"295\" r=\"20\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><rect class=\"outline\" x=\"312\" y=\"220\" width=\"16\" height=\"75\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Thermometer</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-03-01-workshop-v1/transfer",
+    "subject": "physics",
+    "prompt": "Two objects have equal temperature but different masses. Must their internal energies be equal?",
+    "type": "choice",
+    "options": [
+      "Yes, always",
+      "No; amount and composition also matter",
+      "Only if they are touching",
+      "Temperature equals total internal energy"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "System A",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Thermal contact",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "System B",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Thermometer",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "temperature"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"355\" text-anchor=\"middle\">Equilibrium temperature; no heat-flow direction assumed</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"105\" y=\"110\" width=\"100\" height=\"100\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"165\" text-anchor=\"middle\">A</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">System A</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M210 165 H430\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Thermal contact</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"435\" y=\"110\" width=\"100\" height=\"100\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"485\" y=\"165\" text-anchor=\"middle\">B</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">System B</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"295\" r=\"20\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><rect class=\"outline\" x=\"312\" y=\"220\" width=\"16\" height=\"75\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Thermometer</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-03-02-workshop-v1/map",
+    "subject": "physics",
+    "prompt": "Select the feature separating the chosen system from its surroundings.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "System interior",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Boundary",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Surroundings",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Energy exchange",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "system"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"365\" text-anchor=\"middle\">Classify matter and energy transfers across a chosen boundary</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"190\" r=\"62\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"190\" text-anchor=\"middle\">System interior</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"200\" y=\"75\" width=\"240\" height=\"230\" rx=\"6\" fill=\"none\" fill-opacity=\".1\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"55\" text-anchor=\"middle\">Boundary</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M70 100 H155 M485 100 H570 M70 280 H155 M485 280 H570\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"100\" y=\"65\" text-anchor=\"middle\">Surroundings</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M100 190 H230\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"100\" y=\"155\" text-anchor=\"middle\">Energy exchange</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-03-02-workshop-v1/reason",
+    "subject": "physics",
+    "prompt": "A sealed rigid metal container can exchange heat but no matter. Which label fits?",
+    "type": "choice",
+    "options": [
+      "Open because heat moves",
+      "Closed, not necessarily isolated",
+      "Always isolated",
+      "Always adiabatic"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "System interior",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Boundary",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Surroundings",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Energy exchange",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "system"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"365\" text-anchor=\"middle\">Classify matter and energy transfers across a chosen boundary</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"190\" r=\"62\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"190\" text-anchor=\"middle\">System interior</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"200\" y=\"75\" width=\"240\" height=\"230\" rx=\"6\" fill=\"none\" fill-opacity=\".1\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"55\" text-anchor=\"middle\">Boundary</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M70 100 H155 M485 100 H570 M70 280 H155 M485 280 H570\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"100\" y=\"65\" text-anchor=\"middle\">Surroundings</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M100 190 H230\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"100\" y=\"155\" text-anchor=\"middle\">Energy exchange</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-03-02-workshop-v1/transfer",
+    "subject": "physics",
+    "prompt": "Which quantity is a state function?",
+    "type": "choice",
+    "options": [
+      "Heat transferred",
+      "Path-specific work",
+      "Internal energy",
+      "Distance traveled through a process"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "System interior",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Boundary",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Surroundings",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Energy exchange",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "system"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"365\" text-anchor=\"middle\">Classify matter and energy transfers across a chosen boundary</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"190\" r=\"62\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"190\" text-anchor=\"middle\">System interior</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"200\" y=\"75\" width=\"240\" height=\"230\" rx=\"6\" fill=\"none\" fill-opacity=\".1\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"55\" text-anchor=\"middle\">Boundary</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M70 100 H155 M485 100 H570 M70 280 H155 M485 280 H570\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"100\" y=\"65\" text-anchor=\"middle\">Surroundings</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M100 190 H230\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"100\" y=\"155\" text-anchor=\"middle\">Energy exchange</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-03-03-workshop-v1/map",
+    "subject": "physics",
+    "prompt": "Select the energy transfer that is positive when the gas expands against an external pressure.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Heat into gas",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Work by gas",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Internal energy",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Moving piston",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "piston"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M235 125 V285 H430 M235 125 H430\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"345\" text-anchor=\"middle\">Convention: heat into gas positive; work by gas positive</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M100 215 H220\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Heat into gas</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M440 160 H550\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Work by gas</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"255\" cy=\"190\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"290\" cy=\"190\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"325\" cy=\"190\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"360\" cy=\"190\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"255\" cy=\"240\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"290\" cy=\"240\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"325\" cy=\"240\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"360\" cy=\"240\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Internal energy</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"400\" y=\"130\" width=\"28\" height=\"150\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Moving piston</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-03-03-workshop-v1/reason",
+    "subject": "physics",
+    "prompt": "A gas absorbs Q = +500 J and does Wby = +180 J. Find ΔU using ΔU = Q - Wby.",
+    "type": "number",
+    "unit": "J",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Heat into gas",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Work by gas",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Internal energy",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Moving piston",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "piston"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M235 125 V285 H430 M235 125 H430\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"345\" text-anchor=\"middle\">Convention: heat into gas positive; work by gas positive</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M100 215 H220\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Heat into gas</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M440 160 H550\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Work by gas</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"255\" cy=\"190\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"290\" cy=\"190\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"325\" cy=\"190\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"360\" cy=\"190\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"255\" cy=\"240\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"290\" cy=\"240\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"325\" cy=\"240\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"360\" cy=\"240\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Internal energy</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"400\" y=\"130\" width=\"28\" height=\"150\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Moving piston</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-03-03-workshop-v1/transfer",
+    "subject": "physics",
+    "prompt": "An adiabatic gas is compressed, so Wby = -70 J. Find ΔU.",
+    "type": "number",
+    "unit": "J",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Heat into gas",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Work by gas",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Internal energy",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Moving piston",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "piston"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M235 125 V285 H430 M235 125 H430\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"345\" text-anchor=\"middle\">Convention: heat into gas positive; work by gas positive</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M100 215 H220\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Heat into gas</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M440 160 H550\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Work by gas</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"255\" cy=\"190\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"290\" cy=\"190\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"325\" cy=\"190\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"360\" cy=\"190\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"255\" cy=\"240\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"290\" cy=\"240\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"325\" cy=\"240\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"360\" cy=\"240\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Internal energy</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"400\" y=\"130\" width=\"28\" height=\"150\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Moving piston</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-03-04-workshop-v1/map",
+    "subject": "physics",
+    "prompt": "Select the quantity constrained not to decrease for an isolated combined system.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "System entropy",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Surroundings entropy",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Total entropy",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Heat flow",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "entropy"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Total entropy applies to the specified combined system</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"100\" y=\"100\" width=\"100\" height=\"90\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"150\" y=\"152\" text-anchor=\"middle\">ΔSsys</text></g><text class=\"part-label\" x=\"150\" y=\"65\" text-anchor=\"middle\">System entropy</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"430\" y=\"100\" width=\"110\" height=\"90\" rx=\"6\" fill=\"var(--v-purple)\" fill-opacity=\".1\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"485\" y=\"152\" text-anchor=\"middle\">ΔSsurr</text></g><text class=\"part-label\" x=\"485\" y=\"65\" text-anchor=\"middle\">Surroundings entropy</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"235\" y=\"235\" width=\"170\" height=\"70\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"320\" y=\"277\" text-anchor=\"middle\">ΔStotal</text></g><text class=\"part-label\" x=\"320\" y=\"350\" text-anchor=\"middle\">Total entropy</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M220 145 H410\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"320\" y=\"110\" text-anchor=\"middle\">Heat flow</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-03-04-workshop-v1/reason",
+    "subject": "physics",
+    "prompt": "A reservoir receives 600 J reversibly at a constant 300 K. Find its entropy change.",
+    "type": "number",
+    "unit": "J/K",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "System entropy",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Surroundings entropy",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Total entropy",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Heat flow",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "entropy"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Total entropy applies to the specified combined system</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"100\" y=\"100\" width=\"100\" height=\"90\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"150\" y=\"152\" text-anchor=\"middle\">ΔSsys</text></g><text class=\"part-label\" x=\"150\" y=\"65\" text-anchor=\"middle\">System entropy</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"430\" y=\"100\" width=\"110\" height=\"90\" rx=\"6\" fill=\"var(--v-purple)\" fill-opacity=\".1\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"485\" y=\"152\" text-anchor=\"middle\">ΔSsurr</text></g><text class=\"part-label\" x=\"485\" y=\"65\" text-anchor=\"middle\">Surroundings entropy</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"235\" y=\"235\" width=\"170\" height=\"70\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"320\" y=\"277\" text-anchor=\"middle\">ΔStotal</text></g><text class=\"part-label\" x=\"320\" y=\"350\" text-anchor=\"middle\">Total entropy</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M220 145 H410\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"320\" y=\"110\" text-anchor=\"middle\">Heat flow</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-03-04-workshop-v1/transfer",
+    "subject": "physics",
+    "prompt": "A refrigerator lowers entropy inside its cold compartment. What must be considered?",
+    "type": "choice",
+    "options": [
+      "The surroundings and supplied work as well",
+      "Only the compartment",
+      "A required violation of the second law",
+      "An entropy decrease of the entire isolated universe"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "System entropy",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Surroundings entropy",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Total entropy",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Heat flow",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "entropy"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Total entropy applies to the specified combined system</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"100\" y=\"100\" width=\"100\" height=\"90\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"150\" y=\"152\" text-anchor=\"middle\">ΔSsys</text></g><text class=\"part-label\" x=\"150\" y=\"65\" text-anchor=\"middle\">System entropy</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"430\" y=\"100\" width=\"110\" height=\"90\" rx=\"6\" fill=\"var(--v-purple)\" fill-opacity=\".1\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"485\" y=\"152\" text-anchor=\"middle\">ΔSsurr</text></g><text class=\"part-label\" x=\"485\" y=\"65\" text-anchor=\"middle\">Surroundings entropy</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"235\" y=\"235\" width=\"170\" height=\"70\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"320\" y=\"277\" text-anchor=\"middle\">ΔStotal</text></g><text class=\"part-label\" x=\"320\" y=\"350\" text-anchor=\"middle\">Total entropy</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M220 145 H410\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"320\" y=\"110\" text-anchor=\"middle\">Heat flow</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  }
+]
+PASS 2: Audit every lesson step, rule, cue, trap, application, diagram, prompt, option, key, hint and explanation below. Compare your independently recorded answers; do not assume the encoded key is correct.
+{
+  "chapter": {
+    "version": 1,
+    "id": "chapter-03",
+    "title": "Thermodynamics",
+    "status": "implemented",
+    "scopeNote": "Original condensed MCAT Physics, Mathematics and Research Reasoning lessons. Models and calculations use stated assumptions. Independent scientific review is pending; this is not exhaustive textbook coverage.",
+    "lessons": [
+      {
+        "id": "concept-3-1",
+        "title": "Zeroth Law of Thermodynamics",
+        "section": "3.1",
+        "asset": "ph03-01",
+        "steps": [
+          {
+            "text": "Temperature describes thermal equilibrium and relates to microscopic energy distributions. Heat is energy transferred because of a temperature difference, not a substance stored inside an object.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "The zeroth law makes thermal equilibrium transitive: if A and B are separately in thermal equilibrium with C, A and B are in equilibrium with each other.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Equal temperature does not require equal total internal energy. Amount of material, composition and phase can change internal energy at the same temperature.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Use kelvin for absolute-temperature ratios. Celsius intervals equal kelvin intervals, but Celsius zero is not absolute zero.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "3.1 · Zeroth Law of Thermodynamics: the governing relation",
+          "paragraphs": [
+            "Temperature describes thermal equilibrium and relates to microscopic energy distributions. Heat is energy transferred because of a temperature difference, not a substance stored inside an object.",
+            "The zeroth law makes thermal equilibrium transitive: if A and B are separately in thermal equilibrium with C, A and B are in equilibrium with each other."
+          ]
+        },
+        "memoryCue": {
+          "title": "3.1 · Temperature is a state variable; heat crosses a boundary.",
+          "paragraphs": [
+            "Temperature is a state variable; heat crosses a boundary.",
+            "The zeroth law makes thermal equilibrium transitive: if A and B are separately in thermal equilibrium with C, A and B are in equilibrium with each other."
+          ]
+        },
+        "traps": {
+          "title": "3.1 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Equal temperature does not require equal total internal energy. Amount of material, composition and phase can change internal energy at the same temperature.",
+            "Use kelvin for absolute-temperature ratios. Celsius intervals equal kelvin intervals, but Celsius zero is not absolute zero."
+          ]
+        },
+        "application": {
+          "title": "3.1 · Apply the model within its limits",
+          "paragraphs": [
+            "Use kelvin for absolute-temperature ratios. Celsius intervals equal kelvin intervals, but Celsius zero is not absolute zero.",
+            "The kelvin offset is added to the Celsius value: 20 + 273.15 = 293.15 K."
+          ]
+        }
+      },
+      {
+        "id": "concept-3-2",
+        "title": "Systems",
+        "section": "3.2",
+        "asset": "ph03-02",
+        "steps": [
+          {
+            "text": "A thermodynamic system is the part selected for study; everything else is surroundings. The boundary determines which exchanges must be counted.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "An open system exchanges matter and energy; a closed system exchanges energy but not matter. An isolated system exchanges neither with its surroundings.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "A closed system is not automatically adiabatic. Adiabatic means no heat transfer across the boundary, but work can still change internal energy.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "State functions depend on state rather than process path. Heat and work depend on the path taken between states, so they are not stored state functions.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "3.2 · Systems: the governing relation",
+          "paragraphs": [
+            "A thermodynamic system is the part selected for study; everything else is surroundings. The boundary determines which exchanges must be counted.",
+            "An open system exchanges matter and energy; a closed system exchanges energy but not matter. An isolated system exchanges neither with its surroundings."
+          ]
+        },
+        "memoryCue": {
+          "title": "3.2 · Closed blocks matter; isolated blocks matter and energy.",
+          "paragraphs": [
+            "Closed blocks matter; isolated blocks matter and energy.",
+            "An open system exchanges matter and energy; a closed system exchanges energy but not matter. An isolated system exchanges neither with its surroundings."
+          ]
+        },
+        "traps": {
+          "title": "3.2 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "A closed system is not automatically adiabatic. Adiabatic means no heat transfer across the boundary, but work can still change internal energy.",
+            "State functions depend on state rather than process path. Heat and work depend on the path taken between states, so they are not stored state functions."
+          ]
+        },
+        "application": {
+          "title": "3.2 · Apply the model within its limits",
+          "paragraphs": [
+            "State functions depend on state rather than process path. Heat and work depend on the path taken between states, so they are not stored state functions.",
+            "Closed systems can exchange energy through heat while retaining matter."
+          ]
+        }
+      },
+      {
+        "id": "concept-3-3",
+        "title": "First Law of Thermodynamics",
+        "section": "3.3",
+        "asset": "ph03-03",
+        "steps": [
+          {
+            "text": "Use the convention ΔU = Q - Wby, where Q is positive for heat entering the system and Wby is positive for work done by the system on its surroundings.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "A gas expanding against external pressure does positive work in this convention. Compression does negative work by the gas, which tends to increase its internal energy.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "For a quasistatic pressure-volume process, work by the gas is the area under its P–V curve. A cyclic process returns to its initial internal energy but can exchange net heat and work.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "For a monatomic ideal gas with fixed amount, internal energy depends on absolute temperature. During an ideal-gas isothermal process, ΔU = 0; heat and work need not vanish.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "3.3 · First Law of Thermodynamics: the governing relation",
+          "paragraphs": [
+            "Use the convention ΔU = Q - Wby, where Q is positive for heat entering the system and Wby is positive for work done by the system on its surroundings.",
+            "A gas expanding against external pressure does positive work in this convention. Compression does negative work by the gas, which tends to increase its internal energy."
+          ]
+        },
+        "memoryCue": {
+          "title": "3.3 · Name the work convention before choosing the sign.",
+          "paragraphs": [
+            "Name the work convention before choosing the sign.",
+            "A gas expanding against external pressure does positive work in this convention. Compression does negative work by the gas, which tends to increase its internal energy."
+          ]
+        },
+        "traps": {
+          "title": "3.3 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "For a quasistatic pressure-volume process, work by the gas is the area under its P–V curve. A cyclic process returns to its initial internal energy but can exchange net heat and work.",
+            "For a monatomic ideal gas with fixed amount, internal energy depends on absolute temperature. During an ideal-gas isothermal process, ΔU = 0; heat and work need not vanish."
+          ]
+        },
+        "application": {
+          "title": "3.3 · Apply the model within its limits",
+          "paragraphs": [
+            "For a monatomic ideal gas with fixed amount, internal energy depends on absolute temperature. During an ideal-gas isothermal process, ΔU = 0; heat and work need not vanish.",
+            "With heat into the gas positive and work by the gas positive, ΔU = Q - Wby = 500 - 180 = +320 J."
+          ]
+        }
+      },
+      {
+        "id": "concept-3-4",
+        "title": "Second Law of Thermodynamics and Entropy",
+        "section": "3.4",
+        "asset": "ph03-04",
+        "steps": [
+          {
+            "text": "Entropy is a state function related to energy dispersal and accessible microscopic arrangements. A local entropy decrease can occur when it is offset by a larger surroundings increase.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "For a reversible heat transfer at fixed absolute temperature, ΔS = Qrev/T. This expression uses a reversible path, even when the actual process is irreversible.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "For an isolated system, total entropy does not decrease. For a spontaneous irreversible process, entropy of the system plus surroundings increases; a reversible idealization has zero total change.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Heat naturally flows from hotter to colder regions without external work. A refrigerator can move heat the other way by requiring work and increasing total entropy.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "3.4 · Second Law of Thermodynamics and Entropy: the governing relation",
+          "paragraphs": [
+            "Entropy is a state function related to energy dispersal and accessible microscopic arrangements. A local entropy decrease can occur when it is offset by a larger surroundings increase.",
+            "For a reversible heat transfer at fixed absolute temperature, ΔS = Qrev/T. This expression uses a reversible path, even when the actual process is irreversible."
+          ]
+        },
+        "memoryCue": {
+          "title": "3.4 · A local decrease can coexist with a larger global increase.",
+          "paragraphs": [
+            "A local decrease can coexist with a larger global increase.",
+            "For a reversible heat transfer at fixed absolute temperature, ΔS = Qrev/T. This expression uses a reversible path, even when the actual process is irreversible."
+          ]
+        },
+        "traps": {
+          "title": "3.4 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "For an isolated system, total entropy does not decrease. For a spontaneous irreversible process, entropy of the system plus surroundings increases; a reversible idealization has zero total change.",
+            "Heat naturally flows from hotter to colder regions without external work. A refrigerator can move heat the other way by requiring work and increasing total entropy."
+          ]
+        },
+        "application": {
+          "title": "3.4 · Apply the model within its limits",
+          "paragraphs": [
+            "Heat naturally flows from hotter to colder regions without external work. A refrigerator can move heat the other way by requiring work and increasing total entropy.",
+            "ΔS = Qrev/T = 600/300 = +2 J/K."
+          ]
+        }
+      }
+    ],
+    "exercises": [
+      {
+        "id": "ph-03-01-workshop-v1",
+        "title": "Zeroth Law of Thermodynamics",
+        "asset": "ph03-01",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the instrument brought into equilibrium to infer temperature.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant diagram entity or entities are Thermometer. Temperature describes thermal equilibrium and relates to microscopic energy distributions. Heat is energy transferred because of a temperature difference, not a substance stored inside an object.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "The zeroth law makes thermal equilibrium transitive: if A and B are separately in thermal equilibrium with C, A and B are in equilibrium with each other."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Using T(K) = T(°C) + 273.15, convert 20 °C to kelvin.",
+            "answer": 293.15,
+            "unit": "K",
+            "tolerance": 0.000001,
+            "explanation": "The kelvin offset is added to the Celsius value: 20 + 273.15 = 293.15 K.",
+            "id": "reason",
+            "hints": [
+              "Temperature describes thermal equilibrium and relates to microscopic energy distributions. Heat is energy transferred because of a temperature difference, not a substance stored inside an object.",
+              "The zeroth law makes thermal equilibrium transitive: if A and B are separately in thermal equilibrium with C, A and B are in equilibrium with each other."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "Two objects have equal temperature but different masses. Must their internal energies be equal?",
+            "options": [
+              "Yes, always",
+              "No; amount and composition also matter",
+              "Only if they are touching",
+              "Temperature equals total internal energy"
+            ],
+            "answer": 1,
+            "explanation": "Temperature alone does not determine total internal energy.",
+            "id": "transfer",
+            "hints": [
+              "The zeroth law makes thermal equilibrium transitive: if A and B are separately in thermal equilibrium with C, A and B are in equilibrium with each other.",
+              "Equal temperature does not require equal total internal energy. Amount of material, composition and phase can change internal energy at the same temperature."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-03-02-workshop-v1",
+        "title": "Systems",
+        "asset": "ph03-02",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the feature separating the chosen system from its surroundings.",
+            "answer": [
+              "part-1"
+            ],
+            "explanation": "The relevant diagram entity or entities are Boundary. A thermodynamic system is the part selected for study; everything else is surroundings. The boundary determines which exchanges must be counted.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "An open system exchanges matter and energy; a closed system exchanges energy but not matter. An isolated system exchanges neither with its surroundings."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "A sealed rigid metal container can exchange heat but no matter. Which label fits?",
+            "options": [
+              "Open because heat moves",
+              "Closed, not necessarily isolated",
+              "Always isolated",
+              "Always adiabatic"
+            ],
+            "answer": 1,
+            "explanation": "Closed systems can exchange energy through heat while retaining matter.",
+            "id": "reason",
+            "hints": [
+              "A thermodynamic system is the part selected for study; everything else is surroundings. The boundary determines which exchanges must be counted.",
+              "An open system exchanges matter and energy; a closed system exchanges energy but not matter. An isolated system exchanges neither with its surroundings."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "Which quantity is a state function?",
+            "options": [
+              "Heat transferred",
+              "Path-specific work",
+              "Internal energy",
+              "Distance traveled through a process"
+            ],
+            "answer": 2,
+            "explanation": "Internal energy depends on thermodynamic state; heat and work describe transfers along a process.",
+            "id": "transfer",
+            "hints": [
+              "An open system exchanges matter and energy; a closed system exchanges energy but not matter. An isolated system exchanges neither with its surroundings.",
+              "A closed system is not automatically adiabatic. Adiabatic means no heat transfer across the boundary, but work can still change internal energy."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-03-03-workshop-v1",
+        "title": "First Law of Thermodynamics",
+        "asset": "ph03-03",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the energy transfer that is positive when the gas expands against an external pressure.",
+            "answer": [
+              "part-1"
+            ],
+            "explanation": "The relevant diagram entity or entities are Work by gas. Use the convention ΔU = Q - Wby, where Q is positive for heat entering the system and Wby is positive for work done by the system on its surroundings.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "A gas expanding against external pressure does positive work in this convention. Compression does negative work by the gas, which tends to increase its internal energy."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A gas absorbs Q = +500 J and does Wby = +180 J. Find ΔU using ΔU = Q - Wby.",
+            "answer": 320,
+            "unit": "J",
+            "tolerance": 0,
+            "explanation": "With heat into the gas positive and work by the gas positive, ΔU = Q - Wby = 500 - 180 = +320 J.",
+            "id": "reason",
+            "hints": [
+              "Use the convention ΔU = Q - Wby, where Q is positive for heat entering the system and Wby is positive for work done by the system on its surroundings.",
+              "A gas expanding against external pressure does positive work in this convention. Compression does negative work by the gas, which tends to increase its internal energy."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "An adiabatic gas is compressed, so Wby = -70 J. Find ΔU.",
+            "answer": 70,
+            "unit": "J",
+            "tolerance": 0,
+            "explanation": "Adiabatic means Q = 0; ΔU = 0 - (-70) = +70 J.",
+            "id": "transfer",
+            "hints": [
+              "A gas expanding against external pressure does positive work in this convention. Compression does negative work by the gas, which tends to increase its internal energy.",
+              "For a quasistatic pressure-volume process, work by the gas is the area under its P–V curve. A cyclic process returns to its initial internal energy but can exchange net heat and work."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-03-04-workshop-v1",
+        "title": "Second Law of Thermodynamics and Entropy",
+        "asset": "ph03-04",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the quantity constrained not to decrease for an isolated combined system.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant diagram entity or entities are Total entropy. Entropy is a state function related to energy dispersal and accessible microscopic arrangements. A local entropy decrease can occur when it is offset by a larger surroundings increase.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "For a reversible heat transfer at fixed absolute temperature, ΔS = Qrev/T. This expression uses a reversible path, even when the actual process is irreversible."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A reservoir receives 600 J reversibly at a constant 300 K. Find its entropy change.",
+            "answer": 2,
+            "unit": "J/K",
+            "tolerance": 0,
+            "explanation": "ΔS = Qrev/T = 600/300 = +2 J/K.",
+            "id": "reason",
+            "hints": [
+              "Entropy is a state function related to energy dispersal and accessible microscopic arrangements. A local entropy decrease can occur when it is offset by a larger surroundings increase.",
+              "For a reversible heat transfer at fixed absolute temperature, ΔS = Qrev/T. This expression uses a reversible path, even when the actual process is irreversible."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "A refrigerator lowers entropy inside its cold compartment. What must be considered?",
+            "options": [
+              "The surroundings and supplied work as well",
+              "Only the compartment",
+              "A required violation of the second law",
+              "An entropy decrease of the entire isolated universe"
+            ],
+            "answer": 0,
+            "explanation": "A refrigerator uses work and releases heat; the combined entropy balance can satisfy the second law.",
+            "id": "transfer",
+            "hints": [
+              "For a reversible heat transfer at fixed absolute temperature, ΔS = Qrev/T. This expression uses a reversible path, even when the actual process is irreversible.",
+              "For an isolated system, total entropy does not decrease. For a spontaneous irreversible process, entropy of the system plus surroundings increases; a reversible idealization has zero total change."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "version": 1,
+    "assets": [
+      {
+        "id": "ph03-01",
+        "kind": "concept-schematic",
+        "title": "Zeroth Law of Thermodynamics",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "System A",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Thermal contact",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "System B",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Thermometer",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "temperature"
+        }
+      },
+      {
+        "id": "ph03-02",
+        "kind": "concept-schematic",
+        "title": "Systems",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "System interior",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Boundary",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Surroundings",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Energy exchange",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "system"
+        }
+      },
+      {
+        "id": "ph03-03",
+        "kind": "concept-schematic",
+        "title": "First Law of Thermodynamics",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Heat into gas",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Work by gas",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Internal energy",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Moving piston",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "piston"
+        }
+      },
+      {
+        "id": "ph03-04",
+        "kind": "concept-schematic",
+        "title": "Second Law of Thermodynamics and Entropy",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "System entropy",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Surroundings entropy",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Total entropy",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Heat flow",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "entropy"
+        }
+      }
+    ]
+  }
+}
+REPORT BY CHAPTER: item ID, severity (critical/major/minor), exact claim, independent answer, encoded key, evidence, correction, uncertainty. Include coverage counts, unresolved questions and a verdict. Cite only inspected sources. Label any incomplete coverage PARTIAL with exact remaining IDs. Do not execute commands or modify curriculum. Model review is candidate evidence, not expert sign-off.
+For strictly blind evidence use a fresh conversation with blind.json only; freeze its response before supplying keyed-audit.json in a separate pass. This combined file contains keys and cannot guarantee blindness.
