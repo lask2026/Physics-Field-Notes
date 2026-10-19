@@ -1,0 +1,1959 @@
+PHYSICS chapter-12: Data-Based and Statistical Reasoning
+Text/content review only; browser execution is not established by this packet.
+PASS 1: Independently solve every supplied blind case. Record case ID, answer, reasoning, confidence and ambiguity. Do not skip stages.
+[
+  {
+    "id": "ph-12-01-workshop-v1/map",
+    "subject": "physics",
+    "prompt": "Select the summary usually less affected than the mean by one extreme value.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Mean",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Median",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Mode",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Outlier",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "center"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Location summaries and an extreme observation</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M100 135 H220\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"160\" y=\"110\" text-anchor=\"middle\">Σx / n</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Mean</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M400 135 H530\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"465\" cy=\"135\" r=\"8\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Median</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"140\" cy=\"285\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"160\" cy=\"285\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"180\" cy=\"285\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Mode</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"500\" cy=\"285\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Outlier</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-01-workshop-v1/reason",
+    "subject": "physics",
+    "prompt": "Find the arithmetic mean of 2, 4, 6 and 8.",
+    "type": "number",
+    "unit": "dimensionless",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Mean",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Median",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Mode",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Outlier",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "center"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Location summaries and an extreme observation</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M100 135 H220\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"160\" y=\"110\" text-anchor=\"middle\">Σx / n</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Mean</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M400 135 H530\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"465\" cy=\"135\" r=\"8\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Median</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"140\" cy=\"285\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"160\" cy=\"285\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"180\" cy=\"285\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Mode</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"500\" cy=\"285\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Outlier</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-01-workshop-v1/transfer",
+    "subject": "physics",
+    "prompt": "Find the median of 1, 2, 3, 4 and 100.",
+    "type": "number",
+    "unit": "dimensionless",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Mean",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Median",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Mode",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Outlier",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "center"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Location summaries and an extreme observation</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M100 135 H220\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"160\" y=\"110\" text-anchor=\"middle\">Σx / n</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Mean</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M400 135 H530\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"465\" cy=\"135\" r=\"8\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Median</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"140\" cy=\"285\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"160\" cy=\"285\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"180\" cy=\"285\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Mode</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"500\" cy=\"285\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Outlier</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-02-workshop-v1/map",
+    "subject": "physics",
+    "prompt": "Select the feature interpreted as probability in a continuous-density model.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Left tail",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Central region",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Right tail",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Probability area",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "distribution"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M80 290 H570\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"410\" text-anchor=\"middle\">Schematic density only; no measured values or exact normal quantiles</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M100 290 Q155 290 200 245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"145\" y=\"335\" text-anchor=\"middle\">Left tail</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M200 245 Q320 5 440 245\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"65\" text-anchor=\"middle\">Central region</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M440 245 Q490 290 550 290\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"495\" y=\"335\" text-anchor=\"middle\">Right tail</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M260 290 V155 Q320 95 380 155 V290Z\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\"/></g><text class=\"part-label\" x=\"320\" y=\"375\" text-anchor=\"middle\">Probability area</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-02-workshop-v1/reason",
+    "subject": "physics",
+    "prompt": "For μ = 50 and σ = 5, find the z score of x = 60.",
+    "type": "number",
+    "unit": "dimensionless",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Left tail",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Central region",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Right tail",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Probability area",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "distribution"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M80 290 H570\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"410\" text-anchor=\"middle\">Schematic density only; no measured values or exact normal quantiles</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M100 290 Q155 290 200 245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"145\" y=\"335\" text-anchor=\"middle\">Left tail</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M200 245 Q320 5 440 245\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"65\" text-anchor=\"middle\">Central region</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M440 245 Q490 290 550 290\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"495\" y=\"335\" text-anchor=\"middle\">Right tail</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M260 290 V155 Q320 95 380 155 V290Z\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\"/></g><text class=\"part-label\" x=\"320\" y=\"375\" text-anchor=\"middle\">Probability area</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-02-workshop-v1/transfer",
+    "subject": "physics",
+    "prompt": "A distribution has a long tail extending to large positive values. Which description fits?",
+    "type": "choice",
+    "options": [
+      "Left-skewed by definition",
+      "Necessarily normal",
+      "Uniform by definition",
+      "Right-skewed"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Left tail",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Central region",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Right tail",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Probability area",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "distribution"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M80 290 H570\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"410\" text-anchor=\"middle\">Schematic density only; no measured values or exact normal quantiles</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M100 290 Q155 290 200 245\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"145\" y=\"335\" text-anchor=\"middle\">Left tail</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M200 245 Q320 5 440 245\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"65\" text-anchor=\"middle\">Central region</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M440 245 Q490 290 550 290\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"495\" y=\"335\" text-anchor=\"middle\">Right tail</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M260 290 V155 Q320 95 380 155 V290Z\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\"/></g><text class=\"part-label\" x=\"320\" y=\"375\" text-anchor=\"middle\">Probability area</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-03-workshop-v1/map",
+    "subject": "physics",
+    "prompt": "Select the quantity shrinking as 1/√n under the stated independent-sample mean model.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Variance",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Standard deviation",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Standard error",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Sample size",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "spread"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"210\" text-anchor=\"middle\">Observation spread differs from uncertainty in an estimated mean</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"110\" y=\"105\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"145\" text-anchor=\"middle\">s²</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Variance</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"420\" y=\"105\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-purple)\" fill-opacity=\".1\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"470\" y=\"145\" text-anchor=\"middle\">s</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Standard deviation</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"110\" y=\"255\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"295\" text-anchor=\"middle\">SE</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Standard error</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"420\" cy=\"285\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"440\" cy=\"285\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"460\" cy=\"285\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"480\" cy=\"285\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"500\" cy=\"285\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Sample size</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-03-workshop-v1/reason",
+    "subject": "physics",
+    "prompt": "A sample has s = 12 units and n = 36 independent observations. Find the estimated standard error of its mean.",
+    "type": "number",
+    "unit": "units",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Variance",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Standard deviation",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Standard error",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Sample size",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "spread"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"210\" text-anchor=\"middle\">Observation spread differs from uncertainty in an estimated mean</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"110\" y=\"105\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"145\" text-anchor=\"middle\">s²</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Variance</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"420\" y=\"105\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-purple)\" fill-opacity=\".1\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"470\" y=\"145\" text-anchor=\"middle\">s</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Standard deviation</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"110\" y=\"255\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"295\" text-anchor=\"middle\">SE</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Standard error</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"420\" cy=\"285\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"440\" cy=\"285\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"460\" cy=\"285\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"480\" cy=\"285\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"500\" cy=\"285\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Sample size</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-03-workshop-v1/transfer",
+    "subject": "physics",
+    "prompt": "All observations are multiplied by 3. By what factor does their variance change?",
+    "type": "number",
+    "unit": "dimensionless",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Variance",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Standard deviation",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Standard error",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Sample size",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "spread"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"210\" text-anchor=\"middle\">Observation spread differs from uncertainty in an estimated mean</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"110\" y=\"105\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"145\" text-anchor=\"middle\">s²</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Variance</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"420\" y=\"105\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-purple)\" fill-opacity=\".1\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"470\" y=\"145\" text-anchor=\"middle\">s</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Standard deviation</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"110\" y=\"255\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"295\" text-anchor=\"middle\">SE</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Standard error</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"420\" cy=\"285\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"440\" cy=\"285\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"460\" cy=\"285\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"480\" cy=\"285\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"500\" cy=\"285\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Sample size</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-04-workshop-v1/map",
+    "subject": "physics",
+    "prompt": "Select the outcomes belonging to both A and B.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Event A",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Event B",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Intersection",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Conditional set",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "probability"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"405\" text-anchor=\"middle\">Overlapping events in a conceptual sample space; not area-proportional</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"250\" cy=\"190\" r=\"90\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"220\" y=\"175\" text-anchor=\"middle\">Event A</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"390\" cy=\"190\" r=\"90\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"420\" y=\"175\" text-anchor=\"middle\">Event B</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 134 Q360 190 320 246 Q280 190 320 134Z\" fill=\"var(--v-green)\" fill-opacity=\".2\" stroke=\"var(--v-green)\"/></g><text class=\"part-label\" x=\"320\" y=\"365\" text-anchor=\"middle\">Intersection</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"130\" y=\"65\" width=\"380\" height=\"255\" rx=\"6\" fill=\"none\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"45\" text-anchor=\"middle\">Conditional set</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-04-workshop-v1/reason",
+    "subject": "physics",
+    "prompt": "Independent events have P(A) = 0.4 and P(B) = 0.5. Find P(A and B).",
+    "type": "number",
+    "unit": "dimensionless",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Event A",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Event B",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Intersection",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Conditional set",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "probability"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"405\" text-anchor=\"middle\">Overlapping events in a conceptual sample space; not area-proportional</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"250\" cy=\"190\" r=\"90\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"220\" y=\"175\" text-anchor=\"middle\">Event A</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"390\" cy=\"190\" r=\"90\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"420\" y=\"175\" text-anchor=\"middle\">Event B</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 134 Q360 190 320 246 Q280 190 320 134Z\" fill=\"var(--v-green)\" fill-opacity=\".2\" stroke=\"var(--v-green)\"/></g><text class=\"part-label\" x=\"320\" y=\"365\" text-anchor=\"middle\">Intersection</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"130\" y=\"65\" width=\"380\" height=\"255\" rx=\"6\" fill=\"none\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"45\" text-anchor=\"middle\">Conditional set</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-04-workshop-v1/transfer",
+    "subject": "physics",
+    "prompt": "P(A and B) = 0.12 and P(B) = 0.30. Find P(A|B).",
+    "type": "number",
+    "unit": "dimensionless",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Event A",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Event B",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Intersection",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Conditional set",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "probability"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"405\" text-anchor=\"middle\">Overlapping events in a conceptual sample space; not area-proportional</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"250\" cy=\"190\" r=\"90\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"220\" y=\"175\" text-anchor=\"middle\">Event A</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"390\" cy=\"190\" r=\"90\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"420\" y=\"175\" text-anchor=\"middle\">Event B</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 134 Q360 190 320 246 Q280 190 320 134Z\" fill=\"var(--v-green)\" fill-opacity=\".2\" stroke=\"var(--v-green)\"/></g><text class=\"part-label\" x=\"320\" y=\"365\" text-anchor=\"middle\">Intersection</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"130\" y=\"65\" width=\"380\" height=\"255\" rx=\"6\" fill=\"none\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"45\" text-anchor=\"middle\">Conditional set</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-05-workshop-v1/map",
+    "subject": "physics",
+    "prompt": "Select the set of statistic values triggering rejection under the chosen decision rule.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Null hypothesis",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Test statistic",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Rejection region",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Decision",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "testing"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Conceptual test workflow; no particular p-value or critical value</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"100\" y=\"85\" width=\"110\" height=\"70\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"125\" text-anchor=\"middle\">H₀</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Null hypothesis</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M400 160 H530\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"465\" cy=\"160\" r=\"7\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Test statistic</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M440 290 L500 240 V290Z\" fill=\"var(--v-green)\" fill-opacity=\".15\" stroke=\"var(--v-green)\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Rejection region</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"95\" y=\"250\" width=\"145\" height=\"65\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"167\" y=\"290\" text-anchor=\"middle\">Decision</text></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Decision</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-05-workshop-v1/reason",
+    "subject": "physics",
+    "prompt": "For a stated alternative, β = 0.20. Find statistical power.",
+    "type": "number",
+    "unit": "dimensionless",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Null hypothesis",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Test statistic",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Rejection region",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Decision",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "testing"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Conceptual test workflow; no particular p-value or critical value</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"100\" y=\"85\" width=\"110\" height=\"70\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"125\" text-anchor=\"middle\">H₀</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Null hypothesis</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M400 160 H530\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"465\" cy=\"160\" r=\"7\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Test statistic</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M440 290 L500 240 V290Z\" fill=\"var(--v-green)\" fill-opacity=\".15\" stroke=\"var(--v-green)\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Rejection region</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"95\" y=\"250\" width=\"145\" height=\"65\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"167\" y=\"290\" text-anchor=\"middle\">Decision</text></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Decision</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-05-workshop-v1/transfer",
+    "subject": "physics",
+    "prompt": "A test rejects a null hypothesis that is actually true. What error occurred?",
+    "type": "choice",
+    "options": [
+      "Type II",
+      "No possible error",
+      "Type I",
+      "A sampling frame"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Null hypothesis",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Test statistic",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Rejection region",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Decision",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "testing"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Conceptual test workflow; no particular p-value or critical value</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"100\" y=\"85\" width=\"110\" height=\"70\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"125\" text-anchor=\"middle\">H₀</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Null hypothesis</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M400 160 H530\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"465\" cy=\"160\" r=\"7\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Test statistic</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M440 290 L500 240 V290Z\" fill=\"var(--v-green)\" fill-opacity=\".15\" stroke=\"var(--v-green)\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Rejection region</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"95\" y=\"250\" width=\"145\" height=\"65\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"167\" y=\"290\" text-anchor=\"middle\">Decision</text></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Decision</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-06-workshop-v1/map",
+    "subject": "physics",
+    "prompt": "Select the visual element whose definition is required before interpreting statistical uncertainty.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Horizontal axis",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Vertical axis",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Data marks",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Uncertainty bars",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "graph"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"400\" text-anchor=\"middle\">Hypothetical visual pattern; actual uncertainty definition must be supplied</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M110 300 H550\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"355\" text-anchor=\"middle\">Horizontal axis</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M110 300 V70\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"95\" y=\"45\" text-anchor=\"middle\">Vertical axis</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"190\" cy=\"255\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"275\" cy=\"220\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"360\" cy=\"185\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"445\" cy=\"150\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"340\" y=\"105\" text-anchor=\"middle\">Data marks</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M190 235 v40 m-10 -40 h20 m-20 40 h20\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M275 200 v40 m-10 -40 h20 m-20 40 h20\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M360 165 v40 m-10 -40 h20 m-20 40 h20\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M445 130 v40 m-10 -40 h20 m-20 40 h20\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"510\" y=\"210\" text-anchor=\"middle\">Uncertainty bars</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-06-workshop-v1/reason",
+    "subject": "physics",
+    "prompt": "On a position-time plot, position rises from 2 m at 1 s to 14 m at 5 s along a straight segment. Find the slope.",
+    "type": "number",
+    "unit": "m/s",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Horizontal axis",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Vertical axis",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Data marks",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Uncertainty bars",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "graph"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"400\" text-anchor=\"middle\">Hypothetical visual pattern; actual uncertainty definition must be supplied</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M110 300 H550\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"355\" text-anchor=\"middle\">Horizontal axis</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M110 300 V70\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"95\" y=\"45\" text-anchor=\"middle\">Vertical axis</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"190\" cy=\"255\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"275\" cy=\"220\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"360\" cy=\"185\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"445\" cy=\"150\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"340\" y=\"105\" text-anchor=\"middle\">Data marks</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M190 235 v40 m-10 -40 h20 m-20 40 h20\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M275 200 v40 m-10 -40 h20 m-20 40 h20\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M360 165 v40 m-10 -40 h20 m-20 40 h20\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M445 130 v40 m-10 -40 h20 m-20 40 h20\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"510\" y=\"210\" text-anchor=\"middle\">Uncertainty bars</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-06-workshop-v1/transfer",
+    "subject": "physics",
+    "prompt": "A figure shows error bars without defining them. What is justified?",
+    "type": "choice",
+    "options": [
+      "They must be 95% confidence intervals",
+      "They always equal standard deviation",
+      "They prove every group difference significant",
+      "Their statistical interpretation is not established"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Horizontal axis",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Vertical axis",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Data marks",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Uncertainty bars",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "graph"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"400\" text-anchor=\"middle\">Hypothetical visual pattern; actual uncertainty definition must be supplied</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M110 300 H550\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"355\" text-anchor=\"middle\">Horizontal axis</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M110 300 V70\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"95\" y=\"45\" text-anchor=\"middle\">Vertical axis</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"190\" cy=\"255\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"275\" cy=\"220\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"360\" cy=\"185\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"445\" cy=\"150\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"340\" y=\"105\" text-anchor=\"middle\">Data marks</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M190 235 v40 m-10 -40 h20 m-20 40 h20\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M275 200 v40 m-10 -40 h20 m-20 40 h20\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M360 165 v40 m-10 -40 h20 m-20 40 h20\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M445 130 v40 m-10 -40 h20 m-20 40 h20\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"510\" y=\"210\" text-anchor=\"middle\">Uncertainty bars</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-07-workshop-v1/map",
+    "subject": "physics",
+    "prompt": "Select the influence that can distort the exposure–outcome comparison.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Observed association",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Confounding",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Effect estimate",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Bounded conclusion",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "inference"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Association, alternative explanations and justified scope</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M115 155 L210 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Observed association</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"465\" cy=\"135\" r=\"30\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"465\" y=\"143\" text-anchor=\"middle\">?</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Confounding</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"105\" y=\"250\" width=\"110\" height=\"65\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Effect estimate</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"400\" y=\"250\" width=\"135\" height=\"65\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Bounded conclusion</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-07-workshop-v1/reason",
+    "subject": "physics",
+    "prompt": "Risk falls from 0.02 to 0.01. Find relative risk reduction as a fraction.",
+    "type": "number",
+    "unit": "dimensionless",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Observed association",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Confounding",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Effect estimate",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Bounded conclusion",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "inference"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Association, alternative explanations and justified scope</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M115 155 L210 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Observed association</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"465\" cy=\"135\" r=\"30\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"465\" y=\"143\" text-anchor=\"middle\">?</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Confounding</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"105\" y=\"250\" width=\"110\" height=\"65\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Effect estimate</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"400\" y=\"250\" width=\"135\" height=\"65\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Bounded conclusion</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "ph-12-07-workshop-v1/transfer",
+    "subject": "physics",
+    "prompt": "An observational study finds an exposure associated with an outcome. Which conclusion is warranted without further design support?",
+    "type": "choice",
+    "options": [
+      "An association was observed; causation remains uncertain",
+      "The exposure certainly caused the outcome",
+      "Confounding is impossible",
+      "A small p-value removes all bias"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Observed association",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Confounding",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Effect estimate",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Bounded conclusion",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "inference"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Association, alternative explanations and justified scope</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M115 155 L210 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Observed association</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"465\" cy=\"135\" r=\"30\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"465\" y=\"143\" text-anchor=\"middle\">?</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Confounding</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"105\" y=\"250\" width=\"110\" height=\"65\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Effect estimate</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"400\" y=\"250\" width=\"135\" height=\"65\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Bounded conclusion</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  }
+]
+PASS 2: Audit every lesson step, rule, cue, trap, application, diagram, prompt, option, key, hint and explanation below. Compare your independently recorded answers; do not assume the encoded key is correct.
+{
+  "chapter": {
+    "version": 1,
+    "id": "chapter-12",
+    "title": "Data-Based and Statistical Reasoning",
+    "status": "implemented",
+    "scopeNote": "Original condensed MCAT Physics, Mathematics and Research Reasoning lessons. Models and calculations use stated assumptions. Independent scientific review is pending; this is not exhaustive textbook coverage.",
+    "lessons": [
+      {
+        "id": "concept-12-1",
+        "title": "Measures of Central Tendency",
+        "section": "12.1",
+        "asset": "ph12-01",
+        "steps": [
+          {
+            "text": "The arithmetic mean is the sum divided by count. The median is the middle ordered value, averaging the two middle values for an even count; the mode is the most frequent value.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "The mean is sensitive to extreme values, while the median is often more robust. A distribution need not have exactly one mode.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Do not average subgroup means without considering subgroup sizes. A combined mean requires weighting by the number of observations represented by each mean.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Choose a summary that fits the question and distribution. A central tendency alone does not describe variability, skewness or the uncertainty of a population estimate.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "12.1 · Measures of Central Tendency: the governing relation",
+          "paragraphs": [
+            "The arithmetic mean is the sum divided by count. The median is the middle ordered value, averaging the two middle values for an even count; the mode is the most frequent value.",
+            "The mean is sensitive to extreme values, while the median is often more robust. A distribution need not have exactly one mode."
+          ]
+        },
+        "memoryCue": {
+          "title": "12.1 · Mean shares the total; median finds the ordered middle.",
+          "paragraphs": [
+            "Mean shares the total; median finds the ordered middle.",
+            "The mean is sensitive to extreme values, while the median is often more robust. A distribution need not have exactly one mode."
+          ]
+        },
+        "traps": {
+          "title": "12.1 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Do not average subgroup means without considering subgroup sizes. A combined mean requires weighting by the number of observations represented by each mean.",
+            "Choose a summary that fits the question and distribution. A central tendency alone does not describe variability, skewness or the uncertainty of a population estimate."
+          ]
+        },
+        "application": {
+          "title": "12.1 · Apply the model within its limits",
+          "paragraphs": [
+            "Choose a summary that fits the question and distribution. A central tendency alone does not describe variability, skewness or the uncertainty of a population estimate.",
+            "The sum is 20 across four values, so mean = 20/4 = 5."
+          ]
+        }
+      },
+      {
+        "id": "concept-12-2",
+        "title": "Distributions",
+        "section": "12.2",
+        "asset": "ph12-02",
+        "steps": [
+          {
+            "text": "A distribution describes how values or probabilities are spread. In a continuous probability density, probability corresponds to area over an interval, not the height at one point alone.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "A normal distribution is symmetric and specified by mean and standard deviation. For an exact normal model, about 68%, 95% and 99.7% lie within one, two and three standard deviations of the mean.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Right-skewed distributions have a long right tail; left-skewed distributions have a long left tail. Symmetry does not by itself prove a distribution is normal.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "A standard score z = (x - μ)/σ places a value relative to a specified distribution. This describes standard-deviation units, not a direct probability without a distribution model.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "12.2 · Distributions: the governing relation",
+          "paragraphs": [
+            "A distribution describes how values or probabilities are spread. In a continuous probability density, probability corresponds to area over an interval, not the height at one point alone.",
+            "A normal distribution is symmetric and specified by mean and standard deviation. For an exact normal model, about 68%, 95% and 99.7% lie within one, two and three standard deviations of the mean."
+          ]
+        },
+        "memoryCue": {
+          "title": "12.2 · A density’s area is probability; its height alone is not.",
+          "paragraphs": [
+            "A density’s area is probability; its height alone is not.",
+            "A normal distribution is symmetric and specified by mean and standard deviation. For an exact normal model, about 68%, 95% and 99.7% lie within one, two and three standard deviations of the mean."
+          ]
+        },
+        "traps": {
+          "title": "12.2 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Right-skewed distributions have a long right tail; left-skewed distributions have a long left tail. Symmetry does not by itself prove a distribution is normal.",
+            "A standard score z = (x - μ)/σ places a value relative to a specified distribution. This describes standard-deviation units, not a direct probability without a distribution model."
+          ]
+        },
+        "application": {
+          "title": "12.2 · Apply the model within its limits",
+          "paragraphs": [
+            "A standard score z = (x - μ)/σ places a value relative to a specified distribution. This describes standard-deviation units, not a direct probability without a distribution model.",
+            "The observation is two standard deviations above the mean: z = (60 - 50)/5 = +2."
+          ]
+        }
+      },
+      {
+        "id": "concept-12-3",
+        "title": "Measures of Distribution",
+        "section": "12.3",
+        "asset": "ph12-03",
+        "steps": [
+          {
+            "text": "Variance measures squared deviations from a center, and standard deviation is its square root. Standard deviation has the original data units; variance has squared units.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "For independent identically distributed observations with finite variance, the standard error of a sample mean is σ/√n, often estimated by s/√n.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Standard deviation describes spread of observations, while standard error describes sampling variability of an estimator. A large sample can narrow mean uncertainty without shrinking individual variability.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "For a fixed positive data scale factor c, standard deviation scales by c and variance by c². Adding a constant shifts location without changing either measure of spread.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "12.3 · Measures of Distribution: the governing relation",
+          "paragraphs": [
+            "Variance measures squared deviations from a center, and standard deviation is its square root. Standard deviation has the original data units; variance has squared units.",
+            "For independent identically distributed observations with finite variance, the standard error of a sample mean is σ/√n, often estimated by s/√n."
+          ]
+        },
+        "memoryCue": {
+          "title": "12.3 · SD describes observations; SE describes an estimate’s repeated-sample variation.",
+          "paragraphs": [
+            "SD describes observations; SE describes an estimate’s repeated-sample variation.",
+            "For independent identically distributed observations with finite variance, the standard error of a sample mean is σ/√n, often estimated by s/√n."
+          ]
+        },
+        "traps": {
+          "title": "12.3 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Standard deviation describes spread of observations, while standard error describes sampling variability of an estimator. A large sample can narrow mean uncertainty without shrinking individual variability.",
+            "For a fixed positive data scale factor c, standard deviation scales by c and variance by c². Adding a constant shifts location without changing either measure of spread."
+          ]
+        },
+        "application": {
+          "title": "12.3 · Apply the model within its limits",
+          "paragraphs": [
+            "For a fixed positive data scale factor c, standard deviation scales by c and variance by c². Adding a constant shifts location without changing either measure of spread.",
+            "SEmean = s/√n = 12/6 = 2 units."
+          ]
+        }
+      },
+      {
+        "id": "concept-12-4",
+        "title": "Probability",
+        "section": "12.4",
+        "asset": "ph12-04",
+        "steps": [
+          {
+            "text": "Probability ranges from zero to one. For any events, P(A or B) = P(A) + P(B) - P(A and B), so overlapping outcomes are not counted twice.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "For independent events, P(A and B) = P(A)P(B). Independence differs from mutual exclusivity; two positive-probability exclusive events are not independent.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Conditional probability P(A|B) = P(A and B)/P(B) when P(B) is positive. Reversing the condition generally changes the answer.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Diagnostic interpretation depends on prevalence as well as sensitivity and specificity. A positive result is not automatically the same probability as sensitivity.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "12.4 · Probability: the governing relation",
+          "paragraphs": [
+            "Probability ranges from zero to one. For any events, P(A or B) = P(A) + P(B) - P(A and B), so overlapping outcomes are not counted twice.",
+            "For independent events, P(A and B) = P(A)P(B). Independence differs from mutual exclusivity; two positive-probability exclusive events are not independent."
+          ]
+        },
+        "memoryCue": {
+          "title": "12.4 · Given B means restrict the denominator to B.",
+          "paragraphs": [
+            "Given B means restrict the denominator to B.",
+            "For independent events, P(A and B) = P(A)P(B). Independence differs from mutual exclusivity; two positive-probability exclusive events are not independent."
+          ]
+        },
+        "traps": {
+          "title": "12.4 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Conditional probability P(A|B) = P(A and B)/P(B) when P(B) is positive. Reversing the condition generally changes the answer.",
+            "Diagnostic interpretation depends on prevalence as well as sensitivity and specificity. A positive result is not automatically the same probability as sensitivity."
+          ]
+        },
+        "application": {
+          "title": "12.4 · Apply the model within its limits",
+          "paragraphs": [
+            "Diagnostic interpretation depends on prevalence as well as sensitivity and specificity. A positive result is not automatically the same probability as sensitivity.",
+            "Independence permits multiplication: 0.4 × 0.5 = 0.20."
+          ]
+        }
+      },
+      {
+        "id": "concept-12-5",
+        "title": "Statistical Testing",
+        "section": "12.5",
+        "asset": "ph12-05",
+        "steps": [
+          {
+            "text": "A statistical test evaluates evidence against a specified null model using a statistic and assumptions. Prespecifying a significance level helps define the decision rule.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "A p-value is the probability, under the null model and assumptions, of data at least as incompatible with the null as the observed statistic. It is not the probability that the null is true.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "A Type I error rejects a true null; a Type II error fails to reject a false null. Power is one minus the Type II error probability for a stated alternative.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Statistical significance does not determine effect importance, eliminate confounding or prove a causal mechanism. Confidence intervals describe uncertainty under their model and sampling procedure.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "12.5 · Statistical Testing: the governing relation",
+          "paragraphs": [
+            "A statistical test evaluates evidence against a specified null model using a statistic and assumptions. Prespecifying a significance level helps define the decision rule.",
+            "A p-value is the probability, under the null model and assumptions, of data at least as incompatible with the null as the observed statistic. It is not the probability that the null is true."
+          ]
+        },
+        "memoryCue": {
+          "title": "12.5 · A small p-value challenges the null model, not directly the null’s probability.",
+          "paragraphs": [
+            "A small p-value challenges the null model, not directly the null’s probability.",
+            "A p-value is the probability, under the null model and assumptions, of data at least as incompatible with the null as the observed statistic. It is not the probability that the null is true."
+          ]
+        },
+        "traps": {
+          "title": "12.5 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "A Type I error rejects a true null; a Type II error fails to reject a false null. Power is one minus the Type II error probability for a stated alternative.",
+            "Statistical significance does not determine effect importance, eliminate confounding or prove a causal mechanism. Confidence intervals describe uncertainty under their model and sampling procedure."
+          ]
+        },
+        "application": {
+          "title": "12.5 · Apply the model within its limits",
+          "paragraphs": [
+            "Statistical significance does not determine effect importance, eliminate confounding or prove a causal mechanism. Confidence intervals describe uncertainty under their model and sampling procedure.",
+            "Power = 1 - β = 1 - 0.20 = 0.80."
+          ]
+        }
+      },
+      {
+        "id": "concept-12-6",
+        "title": "Charts, Graphs, and Tables",
+        "section": "12.6",
+        "asset": "ph12-06",
+        "steps": [
+          {
+            "text": "Read axis variables, units, scales and legend before comparing data. A truncated axis or logarithmic scale can change visual impressions without changing the underlying values.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "A slope is change in vertical quantity divided by change in horizontal quantity. Its units come from that ratio, not from the visual angle of a line on a rescaled page.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Error bars can represent standard deviation, standard error or a confidence interval. Their meaning must be specified; overlap alone is not a universal significance test.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "A trend in a scatterplot shows association, not a causal mechanism by itself. Tables can provide exact values when a graphic is designed chiefly to display patterns.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "12.6 · Charts, Graphs, and Tables: the governing relation",
+          "paragraphs": [
+            "Read axis variables, units, scales and legend before comparing data. A truncated axis or logarithmic scale can change visual impressions without changing the underlying values.",
+            "A slope is change in vertical quantity divided by change in horizontal quantity. Its units come from that ratio, not from the visual angle of a line on a rescaled page."
+          ]
+        },
+        "memoryCue": {
+          "title": "12.6 · Axes, units, scale, then pattern.",
+          "paragraphs": [
+            "Axes, units, scale, then pattern.",
+            "A slope is change in vertical quantity divided by change in horizontal quantity. Its units come from that ratio, not from the visual angle of a line on a rescaled page."
+          ]
+        },
+        "traps": {
+          "title": "12.6 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Error bars can represent standard deviation, standard error or a confidence interval. Their meaning must be specified; overlap alone is not a universal significance test.",
+            "A trend in a scatterplot shows association, not a causal mechanism by itself. Tables can provide exact values when a graphic is designed chiefly to display patterns."
+          ]
+        },
+        "application": {
+          "title": "12.6 · Apply the model within its limits",
+          "paragraphs": [
+            "A trend in a scatterplot shows association, not a causal mechanism by itself. Tables can provide exact values when a graphic is designed chiefly to display patterns.",
+            "Slope = (14 - 2)/(5 - 1) = 12/4 = 3 m/s."
+          ]
+        }
+      },
+      {
+        "id": "concept-12-7",
+        "title": "Applying Data",
+        "section": "12.7",
+        "asset": "ph12-07",
+        "steps": [
+          {
+            "text": "Applying data requires matching a claim to the study design, measurement and population. A precise estimate can still be biased if the underlying comparison is flawed.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Relative and absolute effects answer different questions. Reducing risk from 0.02 to 0.01 is a 50% relative reduction but only a 0.01 absolute reduction.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Check denominators, missing data and uncertainty before comparing groups. A subgroup pattern can differ from an aggregate pattern when group composition changes.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "A defensible conclusion states what was measured, how uncertain it is and what alternatives remain. Correlation, significance and plausibility do not individually prove causation.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "12.7 · Applying Data: the governing relation",
+          "paragraphs": [
+            "Applying data requires matching a claim to the study design, measurement and population. A precise estimate can still be biased if the underlying comparison is flawed.",
+            "Relative and absolute effects answer different questions. Reducing risk from 0.02 to 0.01 is a 50% relative reduction but only a 0.01 absolute reduction."
+          ]
+        },
+        "memoryCue": {
+          "title": "12.7 · Name the denominator and limit the conclusion to the design.",
+          "paragraphs": [
+            "Name the denominator and limit the conclusion to the design.",
+            "Relative and absolute effects answer different questions. Reducing risk from 0.02 to 0.01 is a 50% relative reduction but only a 0.01 absolute reduction."
+          ]
+        },
+        "traps": {
+          "title": "12.7 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Check denominators, missing data and uncertainty before comparing groups. A subgroup pattern can differ from an aggregate pattern when group composition changes.",
+            "A defensible conclusion states what was measured, how uncertain it is and what alternatives remain. Correlation, significance and plausibility do not individually prove causation."
+          ]
+        },
+        "application": {
+          "title": "12.7 · Apply the model within its limits",
+          "paragraphs": [
+            "A defensible conclusion states what was measured, how uncertain it is and what alternatives remain. Correlation, significance and plausibility do not individually prove causation.",
+            "Relative reduction = (0.02 - 0.01)/0.02 = 0.5."
+          ]
+        }
+      }
+    ],
+    "exercises": [
+      {
+        "id": "ph-12-01-workshop-v1",
+        "title": "Measures of Central Tendency",
+        "asset": "ph12-01",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the summary usually less affected than the mean by one extreme value.",
+            "answer": [
+              "part-1"
+            ],
+            "explanation": "The relevant diagram entity or entities are Median. The arithmetic mean is the sum divided by count. The median is the middle ordered value, averaging the two middle values for an even count; the mode is the most frequent value.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "The mean is sensitive to extreme values, while the median is often more robust. A distribution need not have exactly one mode."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Find the arithmetic mean of 2, 4, 6 and 8.",
+            "answer": 5,
+            "unit": "dimensionless",
+            "tolerance": 0,
+            "explanation": "The sum is 20 across four values, so mean = 20/4 = 5.",
+            "id": "reason",
+            "hints": [
+              "The arithmetic mean is the sum divided by count. The median is the middle ordered value, averaging the two middle values for an even count; the mode is the most frequent value.",
+              "The mean is sensitive to extreme values, while the median is often more robust. A distribution need not have exactly one mode."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Find the median of 1, 2, 3, 4 and 100.",
+            "answer": 3,
+            "unit": "dimensionless",
+            "tolerance": 0,
+            "explanation": "The ordered list has five values; the third value is the median, 3.",
+            "id": "transfer",
+            "hints": [
+              "The mean is sensitive to extreme values, while the median is often more robust. A distribution need not have exactly one mode.",
+              "Do not average subgroup means without considering subgroup sizes. A combined mean requires weighting by the number of observations represented by each mean."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-12-02-workshop-v1",
+        "title": "Distributions",
+        "asset": "ph12-02",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the feature interpreted as probability in a continuous-density model.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant diagram entity or entities are Probability area. A distribution describes how values or probabilities are spread. In a continuous probability density, probability corresponds to area over an interval, not the height at one point alone.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "A normal distribution is symmetric and specified by mean and standard deviation. For an exact normal model, about 68%, 95% and 99.7% lie within one, two and three standard deviations of the mean."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "For μ = 50 and σ = 5, find the z score of x = 60.",
+            "answer": 2,
+            "unit": "dimensionless",
+            "tolerance": 0,
+            "explanation": "The observation is two standard deviations above the mean: z = (60 - 50)/5 = +2.",
+            "id": "reason",
+            "hints": [
+              "A distribution describes how values or probabilities are spread. In a continuous probability density, probability corresponds to area over an interval, not the height at one point alone.",
+              "A normal distribution is symmetric and specified by mean and standard deviation. For an exact normal model, about 68%, 95% and 99.7% lie within one, two and three standard deviations of the mean."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "A distribution has a long tail extending to large positive values. Which description fits?",
+            "options": [
+              "Left-skewed by definition",
+              "Necessarily normal",
+              "Uniform by definition",
+              "Right-skewed"
+            ],
+            "answer": 3,
+            "explanation": "Skew direction names the long tail, so a long high-value tail is right skew.",
+            "id": "transfer",
+            "hints": [
+              "A normal distribution is symmetric and specified by mean and standard deviation. For an exact normal model, about 68%, 95% and 99.7% lie within one, two and three standard deviations of the mean.",
+              "Right-skewed distributions have a long right tail; left-skewed distributions have a long left tail. Symmetry does not by itself prove a distribution is normal."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-12-03-workshop-v1",
+        "title": "Measures of Distribution",
+        "asset": "ph12-03",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the quantity shrinking as 1/√n under the stated independent-sample mean model.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant diagram entity or entities are Standard error. Variance measures squared deviations from a center, and standard deviation is its square root. Standard deviation has the original data units; variance has squared units.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "For independent identically distributed observations with finite variance, the standard error of a sample mean is σ/√n, often estimated by s/√n."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A sample has s = 12 units and n = 36 independent observations. Find the estimated standard error of its mean.",
+            "answer": 2,
+            "unit": "units",
+            "tolerance": 0,
+            "explanation": "SEmean = s/√n = 12/6 = 2 units.",
+            "id": "reason",
+            "hints": [
+              "Variance measures squared deviations from a center, and standard deviation is its square root. Standard deviation has the original data units; variance has squared units.",
+              "For independent identically distributed observations with finite variance, the standard error of a sample mean is σ/√n, often estimated by s/√n."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "All observations are multiplied by 3. By what factor does their variance change?",
+            "answer": 9,
+            "unit": "dimensionless",
+            "tolerance": 0,
+            "explanation": "Variance scales with the square of the multiplier, so the factor is 3² = 9.",
+            "id": "transfer",
+            "hints": [
+              "For independent identically distributed observations with finite variance, the standard error of a sample mean is σ/√n, often estimated by s/√n.",
+              "Standard deviation describes spread of observations, while standard error describes sampling variability of an estimator. A large sample can narrow mean uncertainty without shrinking individual variability."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-12-04-workshop-v1",
+        "title": "Probability",
+        "asset": "ph12-04",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the outcomes belonging to both A and B.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant diagram entity or entities are Intersection. Probability ranges from zero to one. For any events, P(A or B) = P(A) + P(B) - P(A and B), so overlapping outcomes are not counted twice.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "For independent events, P(A and B) = P(A)P(B). Independence differs from mutual exclusivity; two positive-probability exclusive events are not independent."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Independent events have P(A) = 0.4 and P(B) = 0.5. Find P(A and B).",
+            "answer": 0.2,
+            "unit": "dimensionless",
+            "tolerance": 0,
+            "explanation": "Independence permits multiplication: 0.4 × 0.5 = 0.20.",
+            "id": "reason",
+            "hints": [
+              "Probability ranges from zero to one. For any events, P(A or B) = P(A) + P(B) - P(A and B), so overlapping outcomes are not counted twice.",
+              "For independent events, P(A and B) = P(A)P(B). Independence differs from mutual exclusivity; two positive-probability exclusive events are not independent."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "P(A and B) = 0.12 and P(B) = 0.30. Find P(A|B).",
+            "answer": 0.4,
+            "unit": "dimensionless",
+            "tolerance": 0.000001,
+            "explanation": "Conditioning on B changes the denominator to P(B), giving P(A|B) = 0.12/0.30 = 0.4.",
+            "id": "transfer",
+            "hints": [
+              "For independent events, P(A and B) = P(A)P(B). Independence differs from mutual exclusivity; two positive-probability exclusive events are not independent.",
+              "Conditional probability P(A|B) = P(A and B)/P(B) when P(B) is positive. Reversing the condition generally changes the answer."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-12-05-workshop-v1",
+        "title": "Statistical Testing",
+        "asset": "ph12-05",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the set of statistic values triggering rejection under the chosen decision rule.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant diagram entity or entities are Rejection region. A statistical test evaluates evidence against a specified null model using a statistic and assumptions. Prespecifying a significance level helps define the decision rule.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "A p-value is the probability, under the null model and assumptions, of data at least as incompatible with the null as the observed statistic. It is not the probability that the null is true."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "For a stated alternative, β = 0.20. Find statistical power.",
+            "answer": 0.8,
+            "unit": "dimensionless",
+            "tolerance": 0.000001,
+            "explanation": "Power = 1 - β = 1 - 0.20 = 0.80.",
+            "id": "reason",
+            "hints": [
+              "A statistical test evaluates evidence against a specified null model using a statistic and assumptions. Prespecifying a significance level helps define the decision rule.",
+              "A p-value is the probability, under the null model and assumptions, of data at least as incompatible with the null as the observed statistic. It is not the probability that the null is true."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "A test rejects a null hypothesis that is actually true. What error occurred?",
+            "options": [
+              "Type II",
+              "No possible error",
+              "Type I",
+              "A sampling frame"
+            ],
+            "answer": 2,
+            "explanation": "Rejecting a true null is a Type I error; nonrejection of a false null is Type II.",
+            "id": "transfer",
+            "hints": [
+              "A p-value is the probability, under the null model and assumptions, of data at least as incompatible with the null as the observed statistic. It is not the probability that the null is true.",
+              "A Type I error rejects a true null; a Type II error fails to reject a false null. Power is one minus the Type II error probability for a stated alternative."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-12-06-workshop-v1",
+        "title": "Charts, Graphs, and Tables",
+        "asset": "ph12-06",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the visual element whose definition is required before interpreting statistical uncertainty.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant diagram entity or entities are Uncertainty bars. Read axis variables, units, scales and legend before comparing data. A truncated axis or logarithmic scale can change visual impressions without changing the underlying values.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "A slope is change in vertical quantity divided by change in horizontal quantity. Its units come from that ratio, not from the visual angle of a line on a rescaled page."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "On a position-time plot, position rises from 2 m at 1 s to 14 m at 5 s along a straight segment. Find the slope.",
+            "answer": 3,
+            "unit": "m/s",
+            "tolerance": 0,
+            "explanation": "Slope = (14 - 2)/(5 - 1) = 12/4 = 3 m/s.",
+            "id": "reason",
+            "hints": [
+              "Read axis variables, units, scales and legend before comparing data. A truncated axis or logarithmic scale can change visual impressions without changing the underlying values.",
+              "A slope is change in vertical quantity divided by change in horizontal quantity. Its units come from that ratio, not from the visual angle of a line on a rescaled page."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "A figure shows error bars without defining them. What is justified?",
+            "options": [
+              "They must be 95% confidence intervals",
+              "They always equal standard deviation",
+              "They prove every group difference significant",
+              "Their statistical interpretation is not established"
+            ],
+            "answer": 3,
+            "explanation": "Without the legend or methods, the bars could indicate different quantities and cannot be assigned a specific interpretation.",
+            "id": "transfer",
+            "hints": [
+              "A slope is change in vertical quantity divided by change in horizontal quantity. Its units come from that ratio, not from the visual angle of a line on a rescaled page.",
+              "Error bars can represent standard deviation, standard error or a confidence interval. Their meaning must be specified; overlap alone is not a universal significance test."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-12-07-workshop-v1",
+        "title": "Applying Data",
+        "asset": "ph12-07",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the influence that can distort the exposure–outcome comparison.",
+            "answer": [
+              "part-1"
+            ],
+            "explanation": "The relevant diagram entity or entities are Confounding. Applying data requires matching a claim to the study design, measurement and population. A precise estimate can still be biased if the underlying comparison is flawed.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Relative and absolute effects answer different questions. Reducing risk from 0.02 to 0.01 is a 50% relative reduction but only a 0.01 absolute reduction."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Risk falls from 0.02 to 0.01. Find relative risk reduction as a fraction.",
+            "answer": 0.5,
+            "unit": "dimensionless",
+            "tolerance": 0,
+            "explanation": "Relative reduction = (0.02 - 0.01)/0.02 = 0.5.",
+            "id": "reason",
+            "hints": [
+              "Applying data requires matching a claim to the study design, measurement and population. A precise estimate can still be biased if the underlying comparison is flawed.",
+              "Relative and absolute effects answer different questions. Reducing risk from 0.02 to 0.01 is a 50% relative reduction but only a 0.01 absolute reduction."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "An observational study finds an exposure associated with an outcome. Which conclusion is warranted without further design support?",
+            "options": [
+              "An association was observed; causation remains uncertain",
+              "The exposure certainly caused the outcome",
+              "Confounding is impossible",
+              "A small p-value removes all bias"
+            ],
+            "answer": 0,
+            "explanation": "Observed association alone does not rule out confounding, selection or other explanations.",
+            "id": "transfer",
+            "hints": [
+              "Relative and absolute effects answer different questions. Reducing risk from 0.02 to 0.01 is a 50% relative reduction but only a 0.01 absolute reduction.",
+              "Check denominators, missing data and uncertainty before comparing groups. A subgroup pattern can differ from an aggregate pattern when group composition changes."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "version": 1,
+    "assets": [
+      {
+        "id": "ph12-01",
+        "kind": "concept-schematic",
+        "title": "Measures of Central Tendency",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Mean",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Median",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Mode",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Outlier",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "center"
+        }
+      },
+      {
+        "id": "ph12-02",
+        "kind": "concept-schematic",
+        "title": "Distributions",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Left tail",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Central region",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Right tail",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Probability area",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "distribution"
+        }
+      },
+      {
+        "id": "ph12-03",
+        "kind": "concept-schematic",
+        "title": "Measures of Distribution",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Variance",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Standard deviation",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Standard error",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Sample size",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "spread"
+        }
+      },
+      {
+        "id": "ph12-04",
+        "kind": "concept-schematic",
+        "title": "Probability",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Event A",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Event B",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Intersection",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Conditional set",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "probability"
+        }
+      },
+      {
+        "id": "ph12-05",
+        "kind": "concept-schematic",
+        "title": "Statistical Testing",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Null hypothesis",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Test statistic",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Rejection region",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Decision",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "testing"
+        }
+      },
+      {
+        "id": "ph12-06",
+        "kind": "concept-schematic",
+        "title": "Charts, Graphs, and Tables",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Horizontal axis",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Vertical axis",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Data marks",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Uncertainty bars",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "graph"
+        }
+      },
+      {
+        "id": "ph12-07",
+        "kind": "concept-schematic",
+        "title": "Applying Data",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Observed association",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Confounding",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Effect estimate",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Bounded conclusion",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "inference"
+        }
+      }
+    ]
+  }
+}
+REPORT BY CHAPTER: item ID, severity (critical/major/minor), exact claim, independent answer, encoded key, evidence, correction, uncertainty. Include coverage counts, unresolved questions and a verdict. Cite only inspected sources. Label any incomplete coverage PARTIAL with exact remaining IDs. Do not execute commands or modify curriculum. Model review is candidate evidence, not expert sign-off.
+For strictly blind evidence use a fresh conversation with blind.json only; freeze its response before supplying keyed-audit.json in a separate pass. This combined file contains keys and cannot guarantee blindness.
