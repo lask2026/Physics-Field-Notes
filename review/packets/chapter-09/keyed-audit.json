@@ -1,0 +1,603 @@
+{
+  "warning": "Candidate evidence only; do not treat the provided keys as authoritative.",
+  "chapter": {
+    "version": 1,
+    "id": "chapter-09",
+    "title": "Atomic and Nuclear Phenomena",
+    "status": "implemented",
+    "scopeNote": "Original condensed MCAT Physics, Mathematics and Research Reasoning lessons. Models and calculations use stated assumptions. Independent scientific review is pending; this is not exhaustive textbook coverage.",
+    "lessons": [
+      {
+        "id": "concept-9-1",
+        "title": "The Photoelectric Effect",
+        "section": "9.1",
+        "asset": "ph09-01",
+        "steps": [
+          {
+            "text": "Photoelectric emission occurs when photon energy can overcome the material’s work function. The ideal maximum electron kinetic energy is Kmax = hf - φ for frequencies above threshold.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "At fixed above-threshold frequency, increasing intensity mainly increases the number of emitted electrons per time rather than their maximum kinetic energy.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Below threshold, increasing ordinary single-photon light intensity does not produce emission in this elementary model. Multiphoton regimes require additional assumptions and are outside this model.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Stopping-potential magnitude satisfies eVs = Kmax. Distinguish energy in electronvolts from voltage in volts and photon arrival rate from energy per photon.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "9.1 · The Photoelectric Effect: the governing relation",
+          "paragraphs": [
+            "Photoelectric emission occurs when photon energy can overcome the material’s work function. The ideal maximum electron kinetic energy is Kmax = hf - φ for frequencies above threshold.",
+            "At fixed above-threshold frequency, increasing intensity mainly increases the number of emitted electrons per time rather than their maximum kinetic energy."
+          ]
+        },
+        "memoryCue": {
+          "title": "9.1 · Frequency sets each photon’s energy; intensity sets the photon count rate.",
+          "paragraphs": [
+            "Frequency sets each photon’s energy; intensity sets the photon count rate.",
+            "At fixed above-threshold frequency, increasing intensity mainly increases the number of emitted electrons per time rather than their maximum kinetic energy."
+          ]
+        },
+        "traps": {
+          "title": "9.1 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Below threshold, increasing ordinary single-photon light intensity does not produce emission in this elementary model. Multiphoton regimes require additional assumptions and are outside this model.",
+            "Stopping-potential magnitude satisfies eVs = Kmax. Distinguish energy in electronvolts from voltage in volts and photon arrival rate from energy per photon."
+          ]
+        },
+        "application": {
+          "title": "9.1 · Apply the model within its limits",
+          "paragraphs": [
+            "Stopping-potential magnitude satisfies eVs = Kmax. Distinguish energy in electronvolts from voltage in volts and photon arrival rate from energy per photon.",
+            "Kmax = Ephoton - φ = 5 - 2 = 3 eV."
+          ]
+        }
+      },
+      {
+        "id": "concept-9-2",
+        "title": "Absorption and Emission of Light",
+        "section": "9.2",
+        "asset": "ph09-02",
+        "steps": [
+          {
+            "text": "An atom absorbs a photon when the photon energy matches an allowed energy gap. A transition to a higher state increases the atom’s internal energy.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Emission occurs when a system loses energy to a photon with E = ΔE = hf. Discrete energy levels produce characteristic spectral lines rather than every possible photon energy.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Not every pair of levels has an equally allowed transition. Selection rules and transition probabilities matter; a level diagram alone does not determine relative line intensities.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "A larger positive energy gap corresponds to a higher-frequency, shorter-wavelength emitted photon. The energy zero for the level diagram does not alter a transition gap.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "9.2 · Absorption and Emission of Light: the governing relation",
+          "paragraphs": [
+            "An atom absorbs a photon when the photon energy matches an allowed energy gap. A transition to a higher state increases the atom’s internal energy.",
+            "Emission occurs when a system loses energy to a photon with E = ΔE = hf. Discrete energy levels produce characteristic spectral lines rather than every possible photon energy."
+          ]
+        },
+        "memoryCue": {
+          "title": "9.2 · Photons match differences between levels, not the level labels themselves.",
+          "paragraphs": [
+            "Photons match differences between levels, not the level labels themselves.",
+            "Emission occurs when a system loses energy to a photon with E = ΔE = hf. Discrete energy levels produce characteristic spectral lines rather than every possible photon energy."
+          ]
+        },
+        "traps": {
+          "title": "9.2 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Not every pair of levels has an equally allowed transition. Selection rules and transition probabilities matter; a level diagram alone does not determine relative line intensities.",
+            "A larger positive energy gap corresponds to a higher-frequency, shorter-wavelength emitted photon. The energy zero for the level diagram does not alter a transition gap."
+          ]
+        },
+        "application": {
+          "title": "9.2 · Apply the model within its limits",
+          "paragraphs": [
+            "A larger positive energy gap corresponds to a higher-frequency, shorter-wavelength emitted photon. The energy zero for the level diagram does not alter a transition gap.",
+            "The atom loses 7 - 2 = 5 eV, which becomes the photon energy for this transition."
+          ]
+        }
+      },
+      {
+        "id": "concept-9-3",
+        "title": "Nuclear Binding Energy and Mass Defect",
+        "section": "9.3",
+        "asset": "ph09-03",
+        "steps": [
+          {
+            "text": "A bound nucleus has lower mass than its separated constituent protons and neutrons. The mass defect corresponds to binding energy through E = Δmc².",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Binding energy is the energy required to separate the nucleus into free nucleons. Energy released during formation is the same magnitude for the reverse ideal comparison.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Compare nuclear masses with nuclear constituent masses, or atomic masses with a consistent electron accounting. Mixing conventions can produce a spurious mass defect.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Binding energy per nucleon helps compare nuclear stability trends but is not by itself a complete reaction-rate or decay-mode predictor.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "9.3 · Nuclear Binding Energy and Mass Defect: the governing relation",
+          "paragraphs": [
+            "A bound nucleus has lower mass than its separated constituent protons and neutrons. The mass defect corresponds to binding energy through E = Δmc².",
+            "Binding energy is the energy required to separate the nucleus into free nucleons. Energy released during formation is the same magnitude for the reverse ideal comparison."
+          ]
+        },
+        "memoryCue": {
+          "title": "9.3 · The missing mass records energy released on binding.",
+          "paragraphs": [
+            "The missing mass records energy released on binding.",
+            "Binding energy is the energy required to separate the nucleus into free nucleons. Energy released during formation is the same magnitude for the reverse ideal comparison."
+          ]
+        },
+        "traps": {
+          "title": "9.3 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Compare nuclear masses with nuclear constituent masses, or atomic masses with a consistent electron accounting. Mixing conventions can produce a spurious mass defect.",
+            "Binding energy per nucleon helps compare nuclear stability trends but is not by itself a complete reaction-rate or decay-mode predictor."
+          ]
+        },
+        "application": {
+          "title": "9.3 · Apply the model within its limits",
+          "paragraphs": [
+            "Binding energy per nucleon helps compare nuclear stability trends but is not by itself a complete reaction-rate or decay-mode predictor.",
+            "E = 0.020 × 931.5 = 18.63 MeV."
+          ]
+        }
+      },
+      {
+        "id": "concept-9-4",
+        "title": "Nuclear Reactions",
+        "section": "9.4",
+        "asset": "ph09-04",
+        "steps": [
+          {
+            "text": "Nuclear equations conserve charge and nucleon number with emitted particles accounted for. Alpha decay lowers mass number by four and atomic number by two.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "In beta-minus decay, a neutron converts to a proton while an electron and an antineutrino are emitted. Nuclear mass number stays fixed and atomic number increases by one.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "For a single exponential decay population, N = N0(1/2)^(t/t½). A half-life concerns a population probability, not a scheduled lifetime for each nucleus.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Activity is λN and has units decays per second. Fusion and fission can release energy when products have a lower total mass; reaction feasibility and rate also require the stated conditions.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "9.4 · Nuclear Reactions: the governing relation",
+          "paragraphs": [
+            "Nuclear equations conserve charge and nucleon number with emitted particles accounted for. Alpha decay lowers mass number by four and atomic number by two.",
+            "In beta-minus decay, a neutron converts to a proton while an electron and an antineutrino are emitted. Nuclear mass number stays fixed and atomic number increases by one."
+          ]
+        },
+        "memoryCue": {
+          "title": "9.4 · Balance charge and nucleon count before naming the daughter.",
+          "paragraphs": [
+            "Balance charge and nucleon count before naming the daughter.",
+            "In beta-minus decay, a neutron converts to a proton while an electron and an antineutrino are emitted. Nuclear mass number stays fixed and atomic number increases by one."
+          ]
+        },
+        "traps": {
+          "title": "9.4 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "For a single exponential decay population, N = N0(1/2)^(t/t½). A half-life concerns a population probability, not a scheduled lifetime for each nucleus.",
+            "Activity is λN and has units decays per second. Fusion and fission can release energy when products have a lower total mass; reaction feasibility and rate also require the stated conditions."
+          ]
+        },
+        "application": {
+          "title": "9.4 · Apply the model within its limits",
+          "paragraphs": [
+            "Activity is λN and has units decays per second. Fusion and fission can release energy when products have a lower total mass; reaction feasibility and rate also require the stated conditions.",
+            "N = 800 × (1/2)³ = 100 expected undecayed nuclei."
+          ]
+        }
+      }
+    ],
+    "exercises": [
+      {
+        "id": "ph-09-01-workshop-v1",
+        "title": "The Photoelectric Effect",
+        "asset": "ph09-01",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the minimum-energy condition needed for emission in the model.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant diagram entity or entities are Threshold. Photoelectric emission occurs when photon energy can overcome the material’s work function. The ideal maximum electron kinetic energy is Kmax = hf - φ for frequencies above threshold.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "At fixed above-threshold frequency, increasing intensity mainly increases the number of emitted electrons per time rather than their maximum kinetic energy."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A metal has work function 2 eV and receives 5 eV photons in the single-photon model. Find Kmax.",
+            "answer": 3,
+            "unit": "eV",
+            "tolerance": 0,
+            "explanation": "Kmax = Ephoton - φ = 5 - 2 = 3 eV.",
+            "id": "reason",
+            "hints": [
+              "Photoelectric emission occurs when photon energy can overcome the material’s work function. The ideal maximum electron kinetic energy is Kmax = hf - φ for frequencies above threshold.",
+              "At fixed above-threshold frequency, increasing intensity mainly increases the number of emitted electrons per time rather than their maximum kinetic energy."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "At fixed frequency above threshold, brighter light most directly changes what?",
+            "options": [
+              "The work function necessarily",
+              "The maximum kinetic energy by the intensity factor",
+              "The photon energy necessarily",
+              "The emission rate"
+            ],
+            "answer": 3,
+            "explanation": "More incident photons can eject more electrons per time while the energy per photon remains hf.",
+            "id": "transfer",
+            "hints": [
+              "At fixed above-threshold frequency, increasing intensity mainly increases the number of emitted electrons per time rather than their maximum kinetic energy.",
+              "Below threshold, increasing ordinary single-photon light intensity does not produce emission in this elementary model. Multiphoton regimes require additional assumptions and are outside this model."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-09-02-workshop-v1",
+        "title": "Absorption and Emission of Light",
+        "asset": "ph09-02",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the process in which the atom gives energy to a photon.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant diagram entity or entities are Emission. An atom absorbs a photon when the photon energy matches an allowed energy gap. A transition to a higher state increases the atom’s internal energy.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Emission occurs when a system loses energy to a photon with E = ΔE = hf. Discrete energy levels produce characteristic spectral lines rather than every possible photon energy."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "An atom falls from 7 eV to 2 eV. Find emitted photon energy.",
+            "answer": 5,
+            "unit": "eV",
+            "tolerance": 0,
+            "explanation": "The atom loses 7 - 2 = 5 eV, which becomes the photon energy for this transition.",
+            "id": "reason",
+            "hints": [
+              "An atom absorbs a photon when the photon energy matches an allowed energy gap. A transition to a higher state increases the atom’s internal energy.",
+              "Emission occurs when a system loses energy to a photon with E = ΔE = hf. Discrete energy levels produce characteristic spectral lines rather than every possible photon energy."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "Which transition emits a higher-frequency photon?",
+            "options": [
+              "The one with the larger energy gap",
+              "The one starting at the numerically lower level in every diagram",
+              "Every gap gives the same frequency",
+              "The transition with more atoms but equal gap"
+            ],
+            "answer": 0,
+            "explanation": "E = hf relates photon frequency to the transition energy gap, not the number of emitters.",
+            "id": "transfer",
+            "hints": [
+              "Emission occurs when a system loses energy to a photon with E = ΔE = hf. Discrete energy levels produce characteristic spectral lines rather than every possible photon energy.",
+              "Not every pair of levels has an equally allowed transition. Selection rules and transition probabilities matter; a level diagram alone does not determine relative line intensities."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-09-03-workshop-v1",
+        "title": "Nuclear Binding Energy and Mass Defect",
+        "asset": "ph09-03",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the quantity converted to energy by multiplying by c².",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant diagram entity or entities are Mass difference. A bound nucleus has lower mass than its separated constituent protons and neutrons. The mass defect corresponds to binding energy through E = Δmc².",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Binding energy is the energy required to separate the nucleus into free nucleons. Energy released during formation is the same magnitude for the reverse ideal comparison."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Using 1 u·c² = 931.5 MeV, find binding energy for mass defect 0.020 u.",
+            "answer": 18.63,
+            "unit": "MeV",
+            "tolerance": 0.000001,
+            "explanation": "E = 0.020 × 931.5 = 18.63 MeV.",
+            "id": "reason",
+            "hints": [
+              "A bound nucleus has lower mass than its separated constituent protons and neutrons. The mass defect corresponds to binding energy through E = Δmc².",
+              "Binding energy is the energy required to separate the nucleus into free nucleons. Energy released during formation is the same magnitude for the reverse ideal comparison."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "What mass comparison is consistent for a nuclear binding-energy calculation?",
+            "options": [
+              "Mix an atomic mass with bare protons and ignore electrons",
+              "Use nuclear masses with proton and neutron nuclear masses",
+              "Use volume difference alone",
+              "Assume all nuclei have equal mass per nucleon"
+            ],
+            "answer": 1,
+            "explanation": "The electron contribution must be included consistently if atomic rather than nuclear masses are used.",
+            "id": "transfer",
+            "hints": [
+              "Binding energy is the energy required to separate the nucleus into free nucleons. Energy released during formation is the same magnitude for the reverse ideal comparison.",
+              "Compare nuclear masses with nuclear constituent masses, or atomic masses with a consistent electron accounting. Mixing conventions can produce a spurious mass defect."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-09-04-workshop-v1",
+        "title": "Nuclear Reactions",
+        "asset": "ph09-04",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the population timescale over which expected undecayed count halves.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant diagram entity or entities are Half-life. Nuclear equations conserve charge and nucleon number with emitted particles accounted for. Alpha decay lowers mass number by four and atomic number by two.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "In beta-minus decay, a neutron converts to a proton while an electron and an antineutrino are emitted. Nuclear mass number stays fixed and atomic number increases by one."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A single isotope starts with 800 undecayed nuclei in an ideal population model. How many are expected after three half-lives?",
+            "answer": 100,
+            "unit": "nuclei",
+            "tolerance": 0,
+            "explanation": "N = 800 × (1/2)³ = 100 expected undecayed nuclei.",
+            "id": "reason",
+            "hints": [
+              "Nuclear equations conserve charge and nucleon number with emitted particles accounted for. Alpha decay lowers mass number by four and atomic number by two.",
+              "In beta-minus decay, a neutron converts to a proton while an electron and an antineutrino are emitted. Nuclear mass number stays fixed and atomic number increases by one."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "An alpha decay starts from a nucleus with mass number 226. Find the daughter’s mass number.",
+            "answer": 222,
+            "unit": "dimensionless",
+            "tolerance": 0,
+            "explanation": "An alpha particle contains four nucleons, so Adaughter = 226 - 4 = 222.",
+            "id": "transfer",
+            "hints": [
+              "In beta-minus decay, a neutron converts to a proton while an electron and an antineutrino are emitted. Nuclear mass number stays fixed and atomic number increases by one.",
+              "For a single exponential decay population, N = N0(1/2)^(t/t½). A half-life concerns a population probability, not a scheduled lifetime for each nucleus."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "version": 1,
+    "assets": [
+      {
+        "id": "ph09-01",
+        "kind": "concept-schematic",
+        "title": "The Photoelectric Effect",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Incident photons",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Metal surface",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Ejected electron",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Threshold",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "photoelectric"
+        }
+      },
+      {
+        "id": "ph09-02",
+        "kind": "concept-schematic",
+        "title": "Absorption and Emission of Light",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Lower state",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Upper state",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Absorption",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Emission",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "levels"
+        }
+      },
+      {
+        "id": "ph09-03",
+        "kind": "concept-schematic",
+        "title": "Nuclear Binding Energy and Mass Defect",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Free nucleons",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Bound nucleus",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Mass difference",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Binding energy",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "nucleus"
+        }
+      },
+      {
+        "id": "ph09-04",
+        "kind": "concept-schematic",
+        "title": "Nuclear Reactions",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Parent nucleus",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Emitted particle",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Daughter nucleus",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Half-life",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "decay"
+        }
+      }
+    ]
+  }
+}
