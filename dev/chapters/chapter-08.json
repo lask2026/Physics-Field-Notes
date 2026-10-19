@@ -1,0 +1,443 @@
+{
+  "version": 1,
+  "id": "chapter-08",
+  "title": "Light and Optics",
+  "status": "implemented",
+  "scopeNote": "Original condensed MCAT Physics, Mathematics and Research Reasoning lessons. Models and calculations use stated assumptions. Independent scientific review is pending; this is not exhaustive textbook coverage.",
+  "lessons": [
+    {
+      "id": "concept-8-1",
+      "title": "Electromagnetic Spectrum",
+      "section": "8.1",
+      "asset": "ph08-01",
+      "steps": [
+        {
+          "text": "Electromagnetic waves in vacuum travel at c and obey c = fλ. The spectrum orders radio, microwave, infrared, visible, ultraviolet, X-ray and gamma-ray regions by increasing typical frequency.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "A photon has energy E = hf = hc/λ. Greater frequency means greater energy per photon; greater intensity can instead mean more photons arriving per time and area.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "In a material, phase speed and wavelength can change while the frequency from a steady source remains fixed at a stationary boundary. The vacuum c relation does not use the material wavelength unchanged.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Spectrum bands are useful categories rather than perfectly universal origin-free boundaries. A wave’s speed in vacuum does not increase because its frequency is higher.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "8.1 · Electromagnetic Spectrum: the governing relation",
+        "paragraphs": [
+          "Electromagnetic waves in vacuum travel at c and obey c = fλ. The spectrum orders radio, microwave, infrared, visible, ultraviolet, X-ray and gamma-ray regions by increasing typical frequency.",
+          "A photon has energy E = hf = hc/λ. Greater frequency means greater energy per photon; greater intensity can instead mean more photons arriving per time and area."
+        ]
+      },
+      "memoryCue": {
+        "title": "8.1 · In vacuum: higher frequency, shorter wavelength, larger photon energy.",
+        "paragraphs": [
+          "In vacuum: higher frequency, shorter wavelength, larger photon energy.",
+          "A photon has energy E = hf = hc/λ. Greater frequency means greater energy per photon; greater intensity can instead mean more photons arriving per time and area."
+        ]
+      },
+      "traps": {
+        "title": "8.1 · Check signs, assumptions and meaning",
+        "paragraphs": [
+          "In a material, phase speed and wavelength can change while the frequency from a steady source remains fixed at a stationary boundary. The vacuum c relation does not use the material wavelength unchanged.",
+          "Spectrum bands are useful categories rather than perfectly universal origin-free boundaries. A wave’s speed in vacuum does not increase because its frequency is higher."
+        ]
+      },
+      "application": {
+        "title": "8.1 · Apply the model within its limits",
+        "paragraphs": [
+          "Spectrum bands are useful categories rather than perfectly universal origin-free boundaries. A wave’s speed in vacuum does not increase because its frequency is higher.",
+          "f = c/λ = (3.0×10⁸)/(6.0×10⁻⁷) = 5.0×10¹⁴ Hz."
+        ]
+      }
+    },
+    {
+      "id": "concept-8-2",
+      "title": "Geometrical Optics",
+      "section": "8.2",
+      "asset": "ph08-02",
+      "steps": [
+        {
+          "text": "In the thin-lens model, 1/f = 1/do + 1/di. Use a consistent sign convention: a converging lens has positive f, a real object has positive do, and a real image has positive di.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Transverse magnification is m = -di/do in this convention. Negative m means an inverted image; positive m means an upright image.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Snell’s law uses n1 sin θ1 = n2 sin θ2 with angles measured from the normal. Total internal reflection requires travel from higher n to lower n and an angle beyond the critical value.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "A ray sketch constrains image location and orientation. Thin-lens equations require the stated approximation and do not model every thick lens or aberration.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "8.2 · Geometrical Optics: the governing relation",
+        "paragraphs": [
+          "In the thin-lens model, 1/f = 1/do + 1/di. Use a consistent sign convention: a converging lens has positive f, a real object has positive do, and a real image has positive di.",
+          "Transverse magnification is m = -di/do in this convention. Negative m means an inverted image; positive m means an upright image."
+        ]
+      },
+      "memoryCue": {
+        "title": "8.2 · Choose signs first; measure refraction angles from the normal.",
+        "paragraphs": [
+          "Choose signs first; measure refraction angles from the normal.",
+          "Transverse magnification is m = -di/do in this convention. Negative m means an inverted image; positive m means an upright image."
+        ]
+      },
+      "traps": {
+        "title": "8.2 · Check signs, assumptions and meaning",
+        "paragraphs": [
+          "Snell’s law uses n1 sin θ1 = n2 sin θ2 with angles measured from the normal. Total internal reflection requires travel from higher n to lower n and an angle beyond the critical value.",
+          "A ray sketch constrains image location and orientation. Thin-lens equations require the stated approximation and do not model every thick lens or aberration."
+        ]
+      },
+      "application": {
+        "title": "8.2 · Apply the model within its limits",
+        "paragraphs": [
+          "A ray sketch constrains image location and orientation. Thin-lens equations require the stated approximation and do not model every thick lens or aberration.",
+          "1/di = 1/10 - 1/30 = 1/15 cm⁻¹, so di = +15 cm, a real image."
+        ]
+      }
+    },
+    {
+      "id": "concept-8-3",
+      "title": "Diffraction",
+      "section": "8.3",
+      "asset": "ph08-03",
+      "steps": [
+        {
+          "text": "Diffraction spreads waves passing through openings or around edges. It becomes prominent when the opening size is comparable to wavelength.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "For a single slit of width a, minima satisfy a sin θ = mλ for nonzero integers m. A narrower slit gives a broader central maximum for a fixed wavelength.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Two-slit interference and single-slit diffraction have different formulas and meanings. Do not call a single-slit minimum a two-slit bright fringe.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "The small-angle approximation sin θ ≈ tan θ ≈ y/L uses angles in radians and requires a suitable geometry. Real patterns can combine interference with a diffraction envelope.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "8.3 · Diffraction: the governing relation",
+        "paragraphs": [
+          "Diffraction spreads waves passing through openings or around edges. It becomes prominent when the opening size is comparable to wavelength.",
+          "For a single slit of width a, minima satisfy a sin θ = mλ for nonzero integers m. A narrower slit gives a broader central maximum for a fixed wavelength."
+        ]
+      },
+      "memoryCue": {
+        "title": "8.3 · A narrower opening spreads the central pattern wider.",
+        "paragraphs": [
+          "A narrower opening spreads the central pattern wider.",
+          "For a single slit of width a, minima satisfy a sin θ = mλ for nonzero integers m. A narrower slit gives a broader central maximum for a fixed wavelength."
+        ]
+      },
+      "traps": {
+        "title": "8.3 · Check signs, assumptions and meaning",
+        "paragraphs": [
+          "Two-slit interference and single-slit diffraction have different formulas and meanings. Do not call a single-slit minimum a two-slit bright fringe.",
+          "The small-angle approximation sin θ ≈ tan θ ≈ y/L uses angles in radians and requires a suitable geometry. Real patterns can combine interference with a diffraction envelope."
+        ]
+      },
+      "application": {
+        "title": "8.3 · Apply the model within its limits",
+        "paragraphs": [
+          "The small-angle approximation sin θ ≈ tan θ ≈ y/L uses angles in radians and requires a suitable geometry. Real patterns can combine interference with a diffraction envelope.",
+          "For m = 1, sin θ = λ/a = 0.25."
+        ]
+      }
+    },
+    {
+      "id": "concept-8-4",
+      "title": "Polarization",
+      "section": "8.4",
+      "asset": "ph08-04",
+      "steps": [
+        {
+          "text": "Polarization specifies the orientation pattern of an electromagnetic wave’s electric field. Longitudinal sound in air does not have the same transverse polarization freedom.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "An ideal polarizer transmits half the intensity of unpolarized incident light. For already linearly polarized light, Malus’s law gives I = I0 cos² θ relative to the transmission axis.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Two ideal crossed polarizers transmit zero of an initially transmitted linear polarization. Adding an intermediate polarizer can change that result by changing the transmitted polarization direction.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Intensity is not electric-field amplitude: intensity is proportional to amplitude squared in a fixed medium. A one-half amplitude ratio gives a one-quarter intensity ratio.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "8.4 · Polarization: the governing relation",
+        "paragraphs": [
+          "Polarization specifies the orientation pattern of an electromagnetic wave’s electric field. Longitudinal sound in air does not have the same transverse polarization freedom.",
+          "An ideal polarizer transmits half the intensity of unpolarized incident light. For already linearly polarized light, Malus’s law gives I = I0 cos² θ relative to the transmission axis."
+        ]
+      },
+      "memoryCue": {
+        "title": "8.4 · Unpolarized first pass: half; aligned linear pass: cosine squared.",
+        "paragraphs": [
+          "Unpolarized first pass: half; aligned linear pass: cosine squared.",
+          "An ideal polarizer transmits half the intensity of unpolarized incident light. For already linearly polarized light, Malus’s law gives I = I0 cos² θ relative to the transmission axis."
+        ]
+      },
+      "traps": {
+        "title": "8.4 · Check signs, assumptions and meaning",
+        "paragraphs": [
+          "Two ideal crossed polarizers transmit zero of an initially transmitted linear polarization. Adding an intermediate polarizer can change that result by changing the transmitted polarization direction.",
+          "Intensity is not electric-field amplitude: intensity is proportional to amplitude squared in a fixed medium. A one-half amplitude ratio gives a one-quarter intensity ratio."
+        ]
+      },
+      "application": {
+        "title": "8.4 · Apply the model within its limits",
+        "paragraphs": [
+          "Intensity is not electric-field amplitude: intensity is proportional to amplitude squared in a fixed medium. A one-half amplitude ratio gives a one-quarter intensity ratio.",
+          "An ideal polarizer transmits half of unpolarized intensity: 80/2 = 40 W/m²."
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ph-08-01-workshop-v1",
+      "title": "Electromagnetic Spectrum",
+      "asset": "ph08-01",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the direction corresponding to shorter vacuum wavelength.",
+          "answer": [
+            "part-3"
+          ],
+          "explanation": "The relevant diagram entity or entities are Increasing frequency. Electromagnetic waves in vacuum travel at c and obey c = fλ. The spectrum orders radio, microwave, infrared, visible, ultraviolet, X-ray and gamma-ray regions by increasing typical frequency.",
+          "hints": [
+            "Identify the physical or reasoning role described before selecting its schematic entity.",
+            "A photon has energy E = hf = hc/λ. Greater frequency means greater energy per photon; greater intensity can instead mean more photons arriving per time and area."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "Using c = 3.0×10⁸ m/s, find the vacuum frequency of light with wavelength 6.0×10⁻⁷ m.",
+          "answer": 500000000000000.0,
+          "unit": "Hz",
+          "tolerance": 0,
+          "explanation": "f = c/λ = (3.0×10⁸)/(6.0×10⁻⁷) = 5.0×10¹⁴ Hz.",
+          "id": "reason",
+          "hints": [
+            "Electromagnetic waves in vacuum travel at c and obey c = fλ. The spectrum orders radio, microwave, infrared, visible, ultraviolet, X-ray and gamma-ray regions by increasing typical frequency.",
+            "A photon has energy E = hf = hc/λ. Greater frequency means greater energy per photon; greater intensity can instead mean more photons arriving per time and area."
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "Compared with a red photon, a blue photon in vacuum generally has what property?",
+          "options": [
+            "Lower energy and longer wavelength",
+            "Greater vacuum speed",
+            "Greater energy and shorter wavelength",
+            "The same frequency necessarily"
+          ],
+          "answer": 2,
+          "explanation": "E = hf and c = fλ: greater visible frequency gives higher photon energy and shorter wavelength, with the same c.",
+          "id": "transfer",
+          "hints": [
+            "A photon has energy E = hf = hc/λ. Greater frequency means greater energy per photon; greater intensity can instead mean more photons arriving per time and area.",
+            "In a material, phase speed and wavelength can change while the frequency from a steady source remains fixed at a stationary boundary. The vacuum c relation does not use the material wavelength unchanged."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ph-08-02-workshop-v1",
+      "title": "Geometrical Optics",
+      "asset": "ph08-02",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the point at which paraxial rays parallel to the axis converge after an ideal converging lens.",
+          "answer": [
+            "part-1"
+          ],
+          "explanation": "The relevant diagram entity or entities are Focal point. In the thin-lens model, 1/f = 1/do + 1/di. Use a consistent sign convention: a converging lens has positive f, a real object has positive do, and a real image has positive di.",
+          "hints": [
+            "Identify the physical or reasoning role described before selecting its schematic entity.",
+            "Transverse magnification is m = -di/do in this convention. Negative m means an inverted image; positive m means an upright image."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "A thin converging lens has f = +10 cm and real object distance do = +30 cm. Find di.",
+          "answer": 15,
+          "unit": "cm",
+          "tolerance": 0,
+          "explanation": "1/di = 1/10 - 1/30 = 1/15 cm⁻¹, so di = +15 cm, a real image.",
+          "id": "reason",
+          "hints": [
+            "In the thin-lens model, 1/f = 1/do + 1/di. Use a consistent sign convention: a converging lens has positive f, a real object has positive do, and a real image has positive di.",
+            "Transverse magnification is m = -di/do in this convention. Negative m means an inverted image; positive m means an upright image."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "Using di = +15 cm and do = +30 cm, find signed magnification.",
+          "answer": -0.5,
+          "unit": "dimensionless",
+          "tolerance": 0,
+          "explanation": "m = -di/do = -15/30 = -0.5, so the image is inverted and half-size.",
+          "id": "transfer",
+          "hints": [
+            "Transverse magnification is m = -di/do in this convention. Negative m means an inverted image; positive m means an upright image.",
+            "Snell’s law uses n1 sin θ1 = n2 sin θ2 with angles measured from the normal. Total internal reflection requires travel from higher n to lower n and an angle beyond the critical value."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ph-08-03-workshop-v1",
+      "title": "Diffraction",
+      "asset": "ph08-03",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the physical opening whose width enters the single-slit relation.",
+          "answer": [
+            "part-0"
+          ],
+          "explanation": "The relevant diagram entity or entities are Slit opening. Diffraction spreads waves passing through openings or around edges. It becomes prominent when the opening size is comparable to wavelength.",
+          "hints": [
+            "Identify the physical or reasoning role described before selecting its schematic entity.",
+            "For a single slit of width a, minima satisfy a sin θ = mλ for nonzero integers m. A narrower slit gives a broader central maximum for a fixed wavelength."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "For a single slit a = 2.0×10⁻⁶ m and wavelength 5.0×10⁻⁷ m, find sin θ for the first minimum.",
+          "answer": 0.25,
+          "unit": "dimensionless",
+          "tolerance": 0,
+          "explanation": "For m = 1, sin θ = λ/a = 0.25.",
+          "id": "reason",
+          "hints": [
+            "Diffraction spreads waves passing through openings or around edges. It becomes prominent when the opening size is comparable to wavelength.",
+            "For a single slit of width a, minima satisfy a sin θ = mλ for nonzero integers m. A narrower slit gives a broader central maximum for a fixed wavelength."
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "At fixed wavelength, what happens to a single-slit central maximum when slit width decreases?",
+          "options": [
+            "It broadens",
+            "It always narrows",
+            "It disappears because wavelength changes",
+            "It becomes a point for every width"
+          ],
+          "answer": 0,
+          "explanation": "The first-minimum angle grows because sin θ = λ/a increases.",
+          "id": "transfer",
+          "hints": [
+            "For a single slit of width a, minima satisfy a sin θ = mλ for nonzero integers m. A narrower slit gives a broader central maximum for a fixed wavelength.",
+            "Two-slit interference and single-slit diffraction have different formulas and meanings. Do not call a single-slit minimum a two-slit bright fringe."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ph-08-04-workshop-v1",
+      "title": "Polarization",
+      "asset": "ph08-04",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the outgoing quantity whose intensity follows the stated polarization laws.",
+          "answer": [
+            "part-3"
+          ],
+          "explanation": "The relevant diagram entity or entities are Transmitted light. Polarization specifies the orientation pattern of an electromagnetic wave’s electric field. Longitudinal sound in air does not have the same transverse polarization freedom.",
+          "hints": [
+            "Identify the physical or reasoning role described before selecting its schematic entity.",
+            "An ideal polarizer transmits half the intensity of unpolarized incident light. For already linearly polarized light, Malus’s law gives I = I0 cos² θ relative to the transmission axis."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "Unpolarized light of intensity 80 W/m² reaches an ideal polarizer. Find transmitted intensity.",
+          "answer": 40,
+          "unit": "W/m²",
+          "tolerance": 0,
+          "explanation": "An ideal polarizer transmits half of unpolarized intensity: 80/2 = 40 W/m².",
+          "id": "reason",
+          "hints": [
+            "Polarization specifies the orientation pattern of an electromagnetic wave’s electric field. Longitudinal sound in air does not have the same transverse polarization freedom.",
+            "An ideal polarizer transmits half the intensity of unpolarized incident light. For already linearly polarized light, Malus’s law gives I = I0 cos² θ relative to the transmission axis."
+          ]
+        },
+        {
+          "type": "number",
+          "prompt": "Linearly polarized light of intensity 80 W/m² meets an ideal analyzer at 60°. Find transmitted intensity.",
+          "answer": 20,
+          "unit": "W/m²",
+          "tolerance": 0,
+          "explanation": "I = I0 cos²60° = 80 × (1/2)² = 20 W/m².",
+          "id": "transfer",
+          "hints": [
+            "An ideal polarizer transmits half the intensity of unpolarized incident light. For already linearly polarized light, Malus’s law gives I = I0 cos² θ relative to the transmission axis.",
+            "Two ideal crossed polarizers transmit zero of an initially transmitted linear polarization. Adding an intermediate polarizer can change that result by changing the transmitted polarization direction."
+          ]
+        }
+      ]
+    }
+  ]
+}
