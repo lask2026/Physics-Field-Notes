@@ -1,0 +1,793 @@
+{
+  "chapter": "chapter-05",
+  "cases": [
+    {
+      "id": "ph-05-01-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the body with excess electrons relative to neutrality.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Positive charge",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Negative charge",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Neutral body",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Charge transfer",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "charge"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Charge signs and redistribution; circles are conceptual bodies</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"160\" cy=\"130\" r=\"35\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"137\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Positive charge</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"480\" cy=\"130\" r=\"35\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"480\" y=\"137\" text-anchor=\"middle\">−</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Negative charge</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"160\" cy=\"285\" r=\"38\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"292\" text-anchor=\"middle\">+  −</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Neutral body</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M390 285 H540\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Charge transfer</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-01-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "A body has charge +8.0×10⁻¹⁹ C. Using e = 1.6×10⁻¹⁹ C, how many electrons is it missing relative to neutrality?",
+      "type": "number",
+      "unit": "electrons",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Positive charge",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Negative charge",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Neutral body",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Charge transfer",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "charge"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Charge signs and redistribution; circles are conceptual bodies</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"160\" cy=\"130\" r=\"35\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"137\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Positive charge</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"480\" cy=\"130\" r=\"35\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"480\" y=\"137\" text-anchor=\"middle\">−</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Negative charge</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"160\" cy=\"285\" r=\"38\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"292\" text-anchor=\"middle\">+  −</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Neutral body</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M390 285 H540\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Charge transfer</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-01-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "A neutral object is attracted to a charged object. What can explain this?",
+      "type": "choice",
+      "options": [
+        "Creation of net charge from nothing",
+        "Only universal magnetic attraction",
+        "Neutral matter contains no charges",
+        "Polarization of the neutral object"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Positive charge",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Negative charge",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Neutral body",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Charge transfer",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "charge"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Charge signs and redistribution; circles are conceptual bodies</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"160\" cy=\"130\" r=\"35\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"137\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Positive charge</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"480\" cy=\"130\" r=\"35\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"480\" y=\"137\" text-anchor=\"middle\">−</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Negative charge</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"160\" cy=\"285\" r=\"38\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"292\" text-anchor=\"middle\">+  −</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Neutral body</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M390 285 H540\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Charge transfer</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-02-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the geometric quantity that enters the inverse-square denominator.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Source charge",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Test charge",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Separation",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Force direction",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "coulomb"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"365\" text-anchor=\"middle\">Like-sign example; magnitudes depend on stated charges and r</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"150\" cy=\"170\" r=\"30\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"150\" y=\"177\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"150\" y=\"100\" text-anchor=\"middle\">Source charge</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"490\" cy=\"170\" r=\"24\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"490\" y=\"177\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"490\" y=\"100\" text-anchor=\"middle\">Test charge</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M150 250 H490 M150 240 V260 M490 240 V260\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"295\" text-anchor=\"middle\">Separation</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M520 170 H585\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"535\" y=\"220\" text-anchor=\"middle\">Force direction</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-02-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "Two point charges repel with 36 N. Their separation triples with charges and medium fixed. Find the new force magnitude.",
+      "type": "number",
+      "unit": "N",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Source charge",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Test charge",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Separation",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Force direction",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "coulomb"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"365\" text-anchor=\"middle\">Like-sign example; magnitudes depend on stated charges and r</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"150\" cy=\"170\" r=\"30\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"150\" y=\"177\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"150\" y=\"100\" text-anchor=\"middle\">Source charge</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"490\" cy=\"170\" r=\"24\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"490\" y=\"177\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"490\" y=\"100\" text-anchor=\"middle\">Test charge</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M150 250 H490 M150 240 V260 M490 240 V260\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"295\" text-anchor=\"middle\">Separation</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M520 170 H585\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"535\" y=\"220\" text-anchor=\"middle\">Force direction</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-02-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "A +2 C test charge experiences +10 N along x. Find Ex.",
+      "type": "number",
+      "unit": "N/C",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Source charge",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Test charge",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Separation",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Force direction",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "coulomb"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"365\" text-anchor=\"middle\">Like-sign example; magnitudes depend on stated charges and r</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"150\" cy=\"170\" r=\"30\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"150\" y=\"177\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"150\" y=\"100\" text-anchor=\"middle\">Source charge</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"490\" cy=\"170\" r=\"24\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"490\" y=\"177\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"490\" y=\"100\" text-anchor=\"middle\">Test charge</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M150 250 H490 M150 240 V260 M490 240 V260\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"295\" text-anchor=\"middle\">Separation</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M520 170 H585\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"535\" y=\"220\" text-anchor=\"middle\">Force direction</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-03-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the configuration property that changes oppositely to electrostatic field work.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Source charge",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Moving charge",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Separation",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Potential energy",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "electric-energy"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"400\" text-anchor=\"middle\">Zero energy at infinite separation in the stated point-charge model</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"160\" cy=\"140\" r=\"30\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"147\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"160\" y=\"75\" text-anchor=\"middle\">Source charge</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"480\" cy=\"140\" r=\"25\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"480\" y=\"147\" text-anchor=\"middle\">−</text></g><text class=\"part-label\" x=\"480\" y=\"75\" text-anchor=\"middle\">Moving charge</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M190 195 H455 M190 185 V205 M455 185 V205\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"235\" text-anchor=\"middle\">Separation</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"240\" y=\"260\" width=\"160\" height=\"55\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"320\" y=\"295\" text-anchor=\"middle\">Configuration U</text></g><text class=\"part-label\" x=\"320\" y=\"365\" text-anchor=\"middle\">Potential energy</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-03-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "An electrostatic field does +12 J of work on a charge. Find the change in electric potential energy.",
+      "type": "number",
+      "unit": "J",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Source charge",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Moving charge",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Separation",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Potential energy",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "electric-energy"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"400\" text-anchor=\"middle\">Zero energy at infinite separation in the stated point-charge model</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"160\" cy=\"140\" r=\"30\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"147\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"160\" y=\"75\" text-anchor=\"middle\">Source charge</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"480\" cy=\"140\" r=\"25\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"480\" y=\"147\" text-anchor=\"middle\">−</text></g><text class=\"part-label\" x=\"480\" y=\"75\" text-anchor=\"middle\">Moving charge</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M190 195 H455 M190 185 V205 M455 185 V205\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"235\" text-anchor=\"middle\">Separation</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"240\" y=\"260\" width=\"160\" height=\"55\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"320\" y=\"295\" text-anchor=\"middle\">Configuration U</text></g><text class=\"part-label\" x=\"320\" y=\"365\" text-anchor=\"middle\">Potential energy</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-03-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "With U = 0 at infinite separation, what is U for two opposite point charges at finite separation?",
+      "type": "choice",
+      "options": [
+        "Always positive",
+        "Negative",
+        "Exactly zero",
+        "Undefined for any separation"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Source charge",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Moving charge",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Separation",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Potential energy",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "electric-energy"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"400\" text-anchor=\"middle\">Zero energy at infinite separation in the stated point-charge model</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"160\" cy=\"140\" r=\"30\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"160\" y=\"147\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"160\" y=\"75\" text-anchor=\"middle\">Source charge</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"480\" cy=\"140\" r=\"25\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"480\" y=\"147\" text-anchor=\"middle\">−</text></g><text class=\"part-label\" x=\"480\" y=\"75\" text-anchor=\"middle\">Moving charge</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M190 195 H455 M190 185 V205 M455 185 V205\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"235\" text-anchor=\"middle\">Separation</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"240\" y=\"260\" width=\"160\" height=\"55\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"320\" y=\"295\" text-anchor=\"middle\">Configuration U</text></g><text class=\"part-label\" x=\"320\" y=\"365\" text-anchor=\"middle\">Potential energy</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-04-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the direction quantity pointing toward decreasing electric potential.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "High potential",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Low potential",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Electric field",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Test charge",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "potential"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"370\" text-anchor=\"middle\">Uniform electric field points from higher to lower potential</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M150 95 V300\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"150\" y=\"65\" text-anchor=\"middle\">High potential</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M490 95 V300\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"490\" y=\"65\" text-anchor=\"middle\">Low potential</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M200 170 H435\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"320\" y=\"135\" text-anchor=\"middle\">Electric field</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"250\" r=\"18\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"320\" y=\"256\" text-anchor=\"middle\">q</text></g><text class=\"part-label\" x=\"320\" y=\"310\" text-anchor=\"middle\">Test charge</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-04-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "A +3 C charge moves across ΔV = -4 V. Find ΔU.",
+      "type": "number",
+      "unit": "J",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "High potential",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Low potential",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Electric field",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Test charge",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "potential"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"370\" text-anchor=\"middle\">Uniform electric field points from higher to lower potential</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M150 95 V300\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"150\" y=\"65\" text-anchor=\"middle\">High potential</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M490 95 V300\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"490\" y=\"65\" text-anchor=\"middle\">Low potential</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M200 170 H435\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"320\" y=\"135\" text-anchor=\"middle\">Electric field</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"250\" r=\"18\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"320\" y=\"256\" text-anchor=\"middle\">q</text></g><text class=\"part-label\" x=\"320\" y=\"310\" text-anchor=\"middle\">Test charge</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-04-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "A uniform Ex = +20 V/m extends over Δx = +0.5 m. Find ΔV.",
+      "type": "number",
+      "unit": "V",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "High potential",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Low potential",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Electric field",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Test charge",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "potential"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"370\" text-anchor=\"middle\">Uniform electric field points from higher to lower potential</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M150 95 V300\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"150\" y=\"65\" text-anchor=\"middle\">High potential</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M490 95 V300\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"490\" y=\"65\" text-anchor=\"middle\">Low potential</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M200 170 H435\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"320\" y=\"135\" text-anchor=\"middle\">Electric field</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"250\" r=\"18\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"320\" y=\"256\" text-anchor=\"middle\">q</text></g><text class=\"part-label\" x=\"320\" y=\"310\" text-anchor=\"middle\">Test charge</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-05-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the region where the equilibrium conductor-material field vanishes.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Conducting surface",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Interior",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Equipotential",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Induced charge",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "conductor"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"385\" text-anchor=\"middle\">Conducting material at electrostatic equilibrium; no internal cavity charge</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"200\" r=\"110\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"65\" text-anchor=\"middle\">Conducting surface</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"200\" r=\"55\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"205\" text-anchor=\"middle\">Interior</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M175 90 Q320 55 465 90\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"65\" text-anchor=\"middle\">Equipotential</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><text class=\"anatomy-note\" x=\"215\" y=\"200\" text-anchor=\"middle\">+</text><text class=\"anatomy-note\" x=\"425\" y=\"200\" text-anchor=\"middle\">+</text><text class=\"anatomy-note\" x=\"320\" y=\"95\" text-anchor=\"middle\">+</text><text class=\"anatomy-note\" x=\"320\" y=\"310\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"480\" y=\"345\" text-anchor=\"middle\">Induced charge</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-05-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "What is the electric-field magnitude within conducting material in electrostatic equilibrium?",
+      "type": "number",
+      "unit": "N/C",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Conducting surface",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Interior",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Equipotential",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Induced charge",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "conductor"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"385\" text-anchor=\"middle\">Conducting material at electrostatic equilibrium; no internal cavity charge</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"200\" r=\"110\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"65\" text-anchor=\"middle\">Conducting surface</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"200\" r=\"55\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"205\" text-anchor=\"middle\">Interior</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M175 90 Q320 55 465 90\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"65\" text-anchor=\"middle\">Equipotential</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><text class=\"anatomy-note\" x=\"215\" y=\"200\" text-anchor=\"middle\">+</text><text class=\"anatomy-note\" x=\"425\" y=\"200\" text-anchor=\"middle\">+</text><text class=\"anatomy-note\" x=\"320\" y=\"95\" text-anchor=\"middle\">+</text><text class=\"anatomy-note\" x=\"320\" y=\"310\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"480\" y=\"345\" text-anchor=\"middle\">Induced charge</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-05-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "A dipole has zero total charge. Which conclusion is valid?",
+      "type": "choice",
+      "options": [
+        "Its field must vanish everywhere",
+        "Its two charges must coincide",
+        "It cannot experience torque",
+        "It may still create a nonzero electric field"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Conducting surface",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Interior",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Equipotential",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Induced charge",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "conductor"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"385\" text-anchor=\"middle\">Conducting material at electrostatic equilibrium; no internal cavity charge</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"200\" r=\"110\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"65\" text-anchor=\"middle\">Conducting surface</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"320\" cy=\"200\" r=\"55\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"320\" y=\"205\" text-anchor=\"middle\">Interior</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M175 90 Q320 55 465 90\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"65\" text-anchor=\"middle\">Equipotential</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><text class=\"anatomy-note\" x=\"215\" y=\"200\" text-anchor=\"middle\">+</text><text class=\"anatomy-note\" x=\"425\" y=\"200\" text-anchor=\"middle\">+</text><text class=\"anatomy-note\" x=\"320\" y=\"95\" text-anchor=\"middle\">+</text><text class=\"anatomy-note\" x=\"320\" y=\"310\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"480\" y=\"345\" text-anchor=\"middle\">Induced charge</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-06-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the force constrained to be perpendicular to both velocity and field.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Magnetic field",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Positive velocity",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Magnetic force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Positive test charge",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "magnet"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"375\" text-anchor=\"middle\">Positive charge moving right in field into page: force upward</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M145 105 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M250 105 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M355 105 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M460 105 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M145 225 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M250 225 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M355 225 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M460 225 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"65\" text-anchor=\"middle\">Magnetic field</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M300 190 H465\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"475\" y=\"190\" text-anchor=\"middle\">Positive velocity</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M300 190 V85\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"370\" y=\"80\" text-anchor=\"middle\">Magnetic force</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"300\" cy=\"190\" r=\"20\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"300\" y=\"198\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"300\" y=\"315\" text-anchor=\"middle\">Positive test charge</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-06-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "A charge of +2 C moves perpendicular to B = 0.5 T at 3 m/s. Find magnetic-force magnitude.",
+      "type": "number",
+      "unit": "N",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Magnetic field",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Positive velocity",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Magnetic force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Positive test charge",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "magnet"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"375\" text-anchor=\"middle\">Positive charge moving right in field into page: force upward</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M145 105 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M250 105 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M355 105 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M460 105 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M145 225 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M250 225 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M355 225 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M460 225 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"65\" text-anchor=\"middle\">Magnetic field</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M300 190 H465\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"475\" y=\"190\" text-anchor=\"middle\">Positive velocity</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M300 190 V85\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"370\" y=\"80\" text-anchor=\"middle\">Magnetic force</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"300\" cy=\"190\" r=\"20\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"300\" y=\"198\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"300\" y=\"315\" text-anchor=\"middle\">Positive test charge</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-05-06-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "A magnetic force alone acts perpendicular to a particle’s velocity. What happens to its speed?",
+      "type": "choice",
+      "options": [
+        "It remains constant",
+        "It always increases",
+        "It always falls to zero",
+        "It becomes a scalar field"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Magnetic field",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Positive velocity",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Magnetic force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Positive test charge",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "magnet"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"375\" text-anchor=\"middle\">Positive charge moving right in field into page: force upward</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M145 105 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M250 105 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M355 105 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M460 105 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M145 225 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M250 225 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M355 225 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline \" d=\"M460 225 l10 10 m0 -10 l-10 10\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"65\" text-anchor=\"middle\">Magnetic field</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M300 190 H465\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"475\" y=\"190\" text-anchor=\"middle\">Positive velocity</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M300 190 V85\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"370\" y=\"80\" text-anchor=\"middle\">Magnetic force</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"300\" cy=\"190\" r=\"20\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"300\" y=\"198\" text-anchor=\"middle\">+</text></g><text class=\"part-label\" x=\"300\" y=\"315\" text-anchor=\"middle\">Positive test charge</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    }
+  ]
+}

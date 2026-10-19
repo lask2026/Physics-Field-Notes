@@ -1,0 +1,893 @@
+{
+  "warning": "Candidate evidence only; do not treat the provided keys as authoritative.",
+  "chapter": {
+    "version": 1,
+    "id": "chapter-05",
+    "title": "Electrostatics and Magnetism",
+    "status": "implemented",
+    "scopeNote": "Original condensed MCAT Physics, Mathematics and Research Reasoning lessons. Models and calculations use stated assumptions. Independent scientific review is pending; this is not exhaustive textbook coverage.",
+    "lessons": [
+      {
+        "id": "concept-5-1",
+        "title": "Charges",
+        "section": "5.1",
+        "asset": "ph05-01",
+        "steps": [
+          {
+            "text": "Electric charge is conserved and occurs in integer multiples of the elementary charge for ordinary isolated particles. A neutral object has balanced positive and negative charge, not an absence of charged constituents.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Like charges repel and unlike charges attract. Charging by contact redistributes charge; polarization separates charge within an initially neutral object.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "In ordinary solid conductors, mobile electrons move while positive lattice ions remain approximately fixed. Conventional positive-current direction need not match electron drift.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "An isolated conductor can redistribute its charges without changing total charge. Grounding permits charge exchange with a much larger reservoir.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "5.1 · Charges: the governing relation",
+          "paragraphs": [
+            "Electric charge is conserved and occurs in integer multiples of the elementary charge for ordinary isolated particles. A neutral object has balanced positive and negative charge, not an absence of charged constituents.",
+            "Like charges repel and unlike charges attract. Charging by contact redistributes charge; polarization separates charge within an initially neutral object."
+          ]
+        },
+        "memoryCue": {
+          "title": "5.1 · Neutral means balanced charge, not no charge.",
+          "paragraphs": [
+            "Neutral means balanced charge, not no charge.",
+            "Like charges repel and unlike charges attract. Charging by contact redistributes charge; polarization separates charge within an initially neutral object."
+          ]
+        },
+        "traps": {
+          "title": "5.1 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "In ordinary solid conductors, mobile electrons move while positive lattice ions remain approximately fixed. Conventional positive-current direction need not match electron drift.",
+            "An isolated conductor can redistribute its charges without changing total charge. Grounding permits charge exchange with a much larger reservoir."
+          ]
+        },
+        "application": {
+          "title": "5.1 · Apply the model within its limits",
+          "paragraphs": [
+            "An isolated conductor can redistribute its charges without changing total charge. Grounding permits charge exchange with a much larger reservoir.",
+            "A positive charge of Q/e = 8.0/1.6 = 5 elementary charges corresponds to five missing electrons."
+          ]
+        }
+      },
+      {
+        "id": "concept-5-2",
+        "title": "Coulomb’s Law",
+        "section": "5.2",
+        "asset": "ph05-02",
+        "steps": [
+          {
+            "text": "For point charges in vacuum, Coulomb-force magnitude is k|q1q2|/r². The force lies along the line joining the charges.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Superposition adds the forces from several sources as vectors. Cancellation depends on direction, not merely on equal magnitudes.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Doubling separation divides force by four when the charges and medium are unchanged. The inverse-square law concerns center-to-center separation in the point-charge approximation.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Electric field is force per positive test charge: E = F/qtest. Changing the test-charge sign reverses its force relative to the field but does not reverse the source field.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "5.2 · Coulomb’s Law: the governing relation",
+          "paragraphs": [
+            "For point charges in vacuum, Coulomb-force magnitude is k|q1q2|/r². The force lies along the line joining the charges.",
+            "Superposition adds the forces from several sources as vectors. Cancellation depends on direction, not merely on equal magnitudes."
+          ]
+        },
+        "memoryCue": {
+          "title": "5.2 · Charge products scale force; separation is squared.",
+          "paragraphs": [
+            "Charge products scale force; separation is squared.",
+            "Superposition adds the forces from several sources as vectors. Cancellation depends on direction, not merely on equal magnitudes."
+          ]
+        },
+        "traps": {
+          "title": "5.2 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Doubling separation divides force by four when the charges and medium are unchanged. The inverse-square law concerns center-to-center separation in the point-charge approximation.",
+            "Electric field is force per positive test charge: E = F/qtest. Changing the test-charge sign reverses its force relative to the field but does not reverse the source field."
+          ]
+        },
+        "application": {
+          "title": "5.2 · Apply the model within its limits",
+          "paragraphs": [
+            "Electric field is force per positive test charge: E = F/qtest. Changing the test-charge sign reverses its force relative to the field but does not reverse the source field.",
+            "F scales as 1/r², so Fnew = 36/3² = 4 N."
+          ]
+        }
+      },
+      {
+        "id": "concept-5-3",
+        "title": "Electric Potential Energy",
+        "section": "5.3",
+        "asset": "ph05-03",
+        "steps": [
+          {
+            "text": "For two point charges in vacuum with zero energy at infinite separation, electric potential energy is U = kq1q2/r. Its sign depends on the signed charge product.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Like-charge pairs have positive U in this convention; opposite-charge pairs have negative U. A negative potential energy is compatible with a stable choice of zero at infinity.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "For an electrostatic field, work done by the field equals -ΔU. External quasistatic work with no kinetic-energy change equals +ΔU.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Potential energy belongs to a charge configuration, not to position alone. Changing the moving charge changes its energy even if the source potential is unchanged.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "5.3 · Electric Potential Energy: the governing relation",
+          "paragraphs": [
+            "For two point charges in vacuum with zero energy at infinite separation, electric potential energy is U = kq1q2/r. Its sign depends on the signed charge product.",
+            "Like-charge pairs have positive U in this convention; opposite-charge pairs have negative U. A negative potential energy is compatible with a stable choice of zero at infinity."
+          ]
+        },
+        "memoryCue": {
+          "title": "5.3 · Field work lowers potential energy.",
+          "paragraphs": [
+            "Field work lowers potential energy.",
+            "Like-charge pairs have positive U in this convention; opposite-charge pairs have negative U. A negative potential energy is compatible with a stable choice of zero at infinity."
+          ]
+        },
+        "traps": {
+          "title": "5.3 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "For an electrostatic field, work done by the field equals -ΔU. External quasistatic work with no kinetic-energy change equals +ΔU.",
+            "Potential energy belongs to a charge configuration, not to position alone. Changing the moving charge changes its energy even if the source potential is unchanged."
+          ]
+        },
+        "application": {
+          "title": "5.3 · Apply the model within its limits",
+          "paragraphs": [
+            "Potential energy belongs to a charge configuration, not to position alone. Changing the moving charge changes its energy even if the source potential is unchanged.",
+            "Wfield = -ΔU, so ΔU = -12 J."
+          ]
+        }
+      },
+      {
+        "id": "concept-5-4",
+        "title": "Electric Potential",
+        "section": "5.4",
+        "asset": "ph05-04",
+        "steps": [
+          {
+            "text": "Electric potential is potential energy per charge: V = U/q. A potential difference has units joules per coulomb, called volts.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "A charge moving across ΔV changes electric potential energy by qΔV. A negative charge reverses the energy-change sign relative to a positive charge.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "For a uniform one-dimensional field, Ex = -ΔV/Δx. The field points toward decreasing potential, while force direction also depends on the sign of the charge.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Equipotential surfaces require no electrostatic work for motion along them. Zero potential at a point does not necessarily imply zero electric field there.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "5.4 · Electric Potential: the governing relation",
+          "paragraphs": [
+            "Electric potential is potential energy per charge: V = U/q. A potential difference has units joules per coulomb, called volts.",
+            "A charge moving across ΔV changes electric potential energy by qΔV. A negative charge reverses the energy-change sign relative to a positive charge."
+          ]
+        },
+        "memoryCue": {
+          "title": "5.4 · Potential belongs to the field; energy also needs the charge.",
+          "paragraphs": [
+            "Potential belongs to the field; energy also needs the charge.",
+            "A charge moving across ΔV changes electric potential energy by qΔV. A negative charge reverses the energy-change sign relative to a positive charge."
+          ]
+        },
+        "traps": {
+          "title": "5.4 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "For a uniform one-dimensional field, Ex = -ΔV/Δx. The field points toward decreasing potential, while force direction also depends on the sign of the charge.",
+            "Equipotential surfaces require no electrostatic work for motion along them. Zero potential at a point does not necessarily imply zero electric field there."
+          ]
+        },
+        "application": {
+          "title": "5.4 · Apply the model within its limits",
+          "paragraphs": [
+            "Equipotential surfaces require no electrostatic work for motion along them. Zero potential at a point does not necessarily imply zero electric field there.",
+            "ΔU = qΔV = (+3)(-4) = -12 J."
+          ]
+        }
+      },
+      {
+        "id": "concept-5-5",
+        "title": "Special Cases in Electrostatics",
+        "section": "5.5",
+        "asset": "ph05-05",
+        "steps": [
+          {
+            "text": "In electrostatic equilibrium, the electric field inside conducting material is zero. This statement does not apply to every cavity containing an internal charge or to a current-carrying conductor.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "An equilibrium conductor is equipotential, and excess charge resides on its surface. Surface charge distribution depends on geometry and nearby charges.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "A dipole has separated opposite charges and zero net charge. Its far field is not zero everywhere simply because the total charge is zero.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "A uniform external field can exert a torque on a dipole without a net translational force. A nonuniform field can also produce a net force.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "5.5 · Special Cases in Electrostatics: the governing relation",
+          "paragraphs": [
+            "In electrostatic equilibrium, the electric field inside conducting material is zero. This statement does not apply to every cavity containing an internal charge or to a current-carrying conductor.",
+            "An equilibrium conductor is equipotential, and excess charge resides on its surface. Surface charge distribution depends on geometry and nearby charges."
+          ]
+        },
+        "memoryCue": {
+          "title": "5.5 · Zero net charge can still produce a field; a conductor’s equilibrium interior is different.",
+          "paragraphs": [
+            "Zero net charge can still produce a field; a conductor’s equilibrium interior is different.",
+            "An equilibrium conductor is equipotential, and excess charge resides on its surface. Surface charge distribution depends on geometry and nearby charges."
+          ]
+        },
+        "traps": {
+          "title": "5.5 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "A dipole has separated opposite charges and zero net charge. Its far field is not zero everywhere simply because the total charge is zero.",
+            "A uniform external field can exert a torque on a dipole without a net translational force. A nonuniform field can also produce a net force."
+          ]
+        },
+        "application": {
+          "title": "5.5 · Apply the model within its limits",
+          "paragraphs": [
+            "A uniform external field can exert a torque on a dipole without a net translational force. A nonuniform field can also produce a net force.",
+            "Mobile charges redistribute until the internal electric field in the conductor material is zero."
+          ]
+        }
+      },
+      {
+        "id": "concept-5-6",
+        "title": "Magnetism",
+        "section": "5.6",
+        "asset": "ph05-06",
+        "steps": [
+          {
+            "text": "A moving point charge in a magnetic field experiences F = qv × B, with magnitude |q|vB sin θ. A charge at rest has no magnetic force from this term.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "For a positive charge, use the right-hand rule for v × B; reverse the force for a negative charge. The magnetic field direction is not generally the force direction.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "A magnetic force perpendicular to velocity changes direction without changing speed when it is the only force. It does no work on an ideal point charge.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "A current-carrying wire produces a magnetic field. The field around a long straight wire circles it according to the right-hand rule for conventional current.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "5.6 · Magnetism: the governing relation",
+          "paragraphs": [
+            "A moving point charge in a magnetic field experiences F = qv × B, with magnitude |q|vB sin θ. A charge at rest has no magnetic force from this term.",
+            "For a positive charge, use the right-hand rule for v × B; reverse the force for a negative charge. The magnetic field direction is not generally the force direction."
+          ]
+        },
+        "memoryCue": {
+          "title": "5.6 · Magnetic force turns motion; the sign of charge flips the turn.",
+          "paragraphs": [
+            "Magnetic force turns motion; the sign of charge flips the turn.",
+            "For a positive charge, use the right-hand rule for v × B; reverse the force for a negative charge. The magnetic field direction is not generally the force direction."
+          ]
+        },
+        "traps": {
+          "title": "5.6 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "A magnetic force perpendicular to velocity changes direction without changing speed when it is the only force. It does no work on an ideal point charge.",
+            "A current-carrying wire produces a magnetic field. The field around a long straight wire circles it according to the right-hand rule for conventional current."
+          ]
+        },
+        "application": {
+          "title": "5.6 · Apply the model within its limits",
+          "paragraphs": [
+            "A current-carrying wire produces a magnetic field. The field around a long straight wire circles it according to the right-hand rule for conventional current.",
+            "F = |q|vB sin 90° = 2 × 3 × 0.5 = 3 N."
+          ]
+        }
+      }
+    ],
+    "exercises": [
+      {
+        "id": "ph-05-01-workshop-v1",
+        "title": "Charges",
+        "asset": "ph05-01",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the body with excess electrons relative to neutrality.",
+            "answer": [
+              "part-1"
+            ],
+            "explanation": "The relevant diagram entity or entities are Negative charge. Electric charge is conserved and occurs in integer multiples of the elementary charge for ordinary isolated particles. A neutral object has balanced positive and negative charge, not an absence of charged constituents.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Like charges repel and unlike charges attract. Charging by contact redistributes charge; polarization separates charge within an initially neutral object."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A body has charge +8.0×10⁻¹⁹ C. Using e = 1.6×10⁻¹⁹ C, how many electrons is it missing relative to neutrality?",
+            "answer": 5,
+            "unit": "electrons",
+            "tolerance": 0,
+            "explanation": "A positive charge of Q/e = 8.0/1.6 = 5 elementary charges corresponds to five missing electrons.",
+            "id": "reason",
+            "hints": [
+              "Electric charge is conserved and occurs in integer multiples of the elementary charge for ordinary isolated particles. A neutral object has balanced positive and negative charge, not an absence of charged constituents.",
+              "Like charges repel and unlike charges attract. Charging by contact redistributes charge; polarization separates charge within an initially neutral object."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "A neutral object is attracted to a charged object. What can explain this?",
+            "options": [
+              "Creation of net charge from nothing",
+              "Only universal magnetic attraction",
+              "Neutral matter contains no charges",
+              "Polarization of the neutral object"
+            ],
+            "answer": 3,
+            "explanation": "A nonuniform electric field can attract an induced charge separation even if the object has zero total charge.",
+            "id": "transfer",
+            "hints": [
+              "Like charges repel and unlike charges attract. Charging by contact redistributes charge; polarization separates charge within an initially neutral object.",
+              "In ordinary solid conductors, mobile electrons move while positive lattice ions remain approximately fixed. Conventional positive-current direction need not match electron drift."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-05-02-workshop-v1",
+        "title": "Coulomb’s Law",
+        "asset": "ph05-02",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the geometric quantity that enters the inverse-square denominator.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant diagram entity or entities are Separation. For point charges in vacuum, Coulomb-force magnitude is k|q1q2|/r². The force lies along the line joining the charges.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Superposition adds the forces from several sources as vectors. Cancellation depends on direction, not merely on equal magnitudes."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Two point charges repel with 36 N. Their separation triples with charges and medium fixed. Find the new force magnitude.",
+            "answer": 4,
+            "unit": "N",
+            "tolerance": 0,
+            "explanation": "F scales as 1/r², so Fnew = 36/3² = 4 N.",
+            "id": "reason",
+            "hints": [
+              "For point charges in vacuum, Coulomb-force magnitude is k|q1q2|/r². The force lies along the line joining the charges.",
+              "Superposition adds the forces from several sources as vectors. Cancellation depends on direction, not merely on equal magnitudes."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A +2 C test charge experiences +10 N along x. Find Ex.",
+            "answer": 5,
+            "unit": "N/C",
+            "tolerance": 0,
+            "explanation": "Ex = Fx/q = 10/2 = +5 N/C.",
+            "id": "transfer",
+            "hints": [
+              "Superposition adds the forces from several sources as vectors. Cancellation depends on direction, not merely on equal magnitudes.",
+              "Doubling separation divides force by four when the charges and medium are unchanged. The inverse-square law concerns center-to-center separation in the point-charge approximation."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-05-03-workshop-v1",
+        "title": "Electric Potential Energy",
+        "asset": "ph05-03",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the configuration property that changes oppositely to electrostatic field work.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant diagram entity or entities are Potential energy. For two point charges in vacuum with zero energy at infinite separation, electric potential energy is U = kq1q2/r. Its sign depends on the signed charge product.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Like-charge pairs have positive U in this convention; opposite-charge pairs have negative U. A negative potential energy is compatible with a stable choice of zero at infinity."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "An electrostatic field does +12 J of work on a charge. Find the change in electric potential energy.",
+            "answer": -12,
+            "unit": "J",
+            "tolerance": 0,
+            "explanation": "Wfield = -ΔU, so ΔU = -12 J.",
+            "id": "reason",
+            "hints": [
+              "For two point charges in vacuum with zero energy at infinite separation, electric potential energy is U = kq1q2/r. Its sign depends on the signed charge product.",
+              "Like-charge pairs have positive U in this convention; opposite-charge pairs have negative U. A negative potential energy is compatible with a stable choice of zero at infinity."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "With U = 0 at infinite separation, what is U for two opposite point charges at finite separation?",
+            "options": [
+              "Always positive",
+              "Negative",
+              "Exactly zero",
+              "Undefined for any separation"
+            ],
+            "answer": 1,
+            "explanation": "U = kq1q2/r is negative when q1q2 is negative under this reference convention.",
+            "id": "transfer",
+            "hints": [
+              "Like-charge pairs have positive U in this convention; opposite-charge pairs have negative U. A negative potential energy is compatible with a stable choice of zero at infinity.",
+              "For an electrostatic field, work done by the field equals -ΔU. External quasistatic work with no kinetic-energy change equals +ΔU."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-05-04-workshop-v1",
+        "title": "Electric Potential",
+        "asset": "ph05-04",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the direction quantity pointing toward decreasing electric potential.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant diagram entity or entities are Electric field. Electric potential is potential energy per charge: V = U/q. A potential difference has units joules per coulomb, called volts.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "A charge moving across ΔV changes electric potential energy by qΔV. A negative charge reverses the energy-change sign relative to a positive charge."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A +3 C charge moves across ΔV = -4 V. Find ΔU.",
+            "answer": -12,
+            "unit": "J",
+            "tolerance": 0,
+            "explanation": "ΔU = qΔV = (+3)(-4) = -12 J.",
+            "id": "reason",
+            "hints": [
+              "Electric potential is potential energy per charge: V = U/q. A potential difference has units joules per coulomb, called volts.",
+              "A charge moving across ΔV changes electric potential energy by qΔV. A negative charge reverses the energy-change sign relative to a positive charge."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A uniform Ex = +20 V/m extends over Δx = +0.5 m. Find ΔV.",
+            "answer": -10,
+            "unit": "V",
+            "tolerance": 0,
+            "explanation": "ΔV = -ExΔx = -20 × 0.5 = -10 V.",
+            "id": "transfer",
+            "hints": [
+              "A charge moving across ΔV changes electric potential energy by qΔV. A negative charge reverses the energy-change sign relative to a positive charge.",
+              "For a uniform one-dimensional field, Ex = -ΔV/Δx. The field points toward decreasing potential, while force direction also depends on the sign of the charge."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-05-05-workshop-v1",
+        "title": "Special Cases in Electrostatics",
+        "asset": "ph05-05",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the region where the equilibrium conductor-material field vanishes.",
+            "answer": [
+              "part-1"
+            ],
+            "explanation": "The relevant diagram entity or entities are Interior. In electrostatic equilibrium, the electric field inside conducting material is zero. This statement does not apply to every cavity containing an internal charge or to a current-carrying conductor.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "An equilibrium conductor is equipotential, and excess charge resides on its surface. Surface charge distribution depends on geometry and nearby charges."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "What is the electric-field magnitude within conducting material in electrostatic equilibrium?",
+            "answer": 0,
+            "unit": "N/C",
+            "tolerance": 0,
+            "explanation": "Mobile charges redistribute until the internal electric field in the conductor material is zero.",
+            "id": "reason",
+            "hints": [
+              "In electrostatic equilibrium, the electric field inside conducting material is zero. This statement does not apply to every cavity containing an internal charge or to a current-carrying conductor.",
+              "An equilibrium conductor is equipotential, and excess charge resides on its surface. Surface charge distribution depends on geometry and nearby charges."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "A dipole has zero total charge. Which conclusion is valid?",
+            "options": [
+              "Its field must vanish everywhere",
+              "Its two charges must coincide",
+              "It cannot experience torque",
+              "It may still create a nonzero electric field"
+            ],
+            "answer": 3,
+            "explanation": "Separated opposite charges generate a dipole field even though total charge is zero.",
+            "id": "transfer",
+            "hints": [
+              "An equilibrium conductor is equipotential, and excess charge resides on its surface. Surface charge distribution depends on geometry and nearby charges.",
+              "A dipole has separated opposite charges and zero net charge. Its far field is not zero everywhere simply because the total charge is zero."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-05-06-workshop-v1",
+        "title": "Magnetism",
+        "asset": "ph05-06",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the force constrained to be perpendicular to both velocity and field.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant diagram entity or entities are Magnetic force. A moving point charge in a magnetic field experiences F = qv × B, with magnitude |q|vB sin θ. A charge at rest has no magnetic force from this term.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "For a positive charge, use the right-hand rule for v × B; reverse the force for a negative charge. The magnetic field direction is not generally the force direction."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A charge of +2 C moves perpendicular to B = 0.5 T at 3 m/s. Find magnetic-force magnitude.",
+            "answer": 3,
+            "unit": "N",
+            "tolerance": 0,
+            "explanation": "F = |q|vB sin 90° = 2 × 3 × 0.5 = 3 N.",
+            "id": "reason",
+            "hints": [
+              "A moving point charge in a magnetic field experiences F = qv × B, with magnitude |q|vB sin θ. A charge at rest has no magnetic force from this term.",
+              "For a positive charge, use the right-hand rule for v × B; reverse the force for a negative charge. The magnetic field direction is not generally the force direction."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "A magnetic force alone acts perpendicular to a particle’s velocity. What happens to its speed?",
+            "options": [
+              "It remains constant",
+              "It always increases",
+              "It always falls to zero",
+              "It becomes a scalar field"
+            ],
+            "answer": 0,
+            "explanation": "The perpendicular force does no work, so kinetic energy and speed remain constant in the ideal model.",
+            "id": "transfer",
+            "hints": [
+              "For a positive charge, use the right-hand rule for v × B; reverse the force for a negative charge. The magnetic field direction is not generally the force direction.",
+              "A magnetic force perpendicular to velocity changes direction without changing speed when it is the only force. It does no work on an ideal point charge."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "version": 1,
+    "assets": [
+      {
+        "id": "ph05-01",
+        "kind": "concept-schematic",
+        "title": "Charges",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Positive charge",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Negative charge",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Neutral body",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Charge transfer",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "charge"
+        }
+      },
+      {
+        "id": "ph05-02",
+        "kind": "concept-schematic",
+        "title": "Coulomb’s Law",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Source charge",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Test charge",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Separation",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Force direction",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "coulomb"
+        }
+      },
+      {
+        "id": "ph05-03",
+        "kind": "concept-schematic",
+        "title": "Electric Potential Energy",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Source charge",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Moving charge",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Separation",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Potential energy",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "electric-energy"
+        }
+      },
+      {
+        "id": "ph05-04",
+        "kind": "concept-schematic",
+        "title": "Electric Potential",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "High potential",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Low potential",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Electric field",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Test charge",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "potential"
+        }
+      },
+      {
+        "id": "ph05-05",
+        "kind": "concept-schematic",
+        "title": "Special Cases in Electrostatics",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Conducting surface",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Interior",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Equipotential",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Induced charge",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "conductor"
+        }
+      },
+      {
+        "id": "ph05-06",
+        "kind": "concept-schematic",
+        "title": "Magnetism",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Magnetic field",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Positive velocity",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Magnetic force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Positive test charge",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "magnet"
+        }
+      }
+    ]
+  }
+}
