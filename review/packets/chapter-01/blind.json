@@ -1,0 +1,921 @@
+{
+  "chapter": "chapter-01",
+  "cases": [
+    {
+      "id": "ph-01-01-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the category containing force, energy and pressure.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Mass",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Length",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Time",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Derived quantity",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "units"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Dimensions combine; conversions preserve the quantity</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"95\" y=\"105\" width=\"110\" height=\"90\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"150\" y=\"155\" text-anchor=\"middle\">kg</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Mass</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M375 150 H545 M375 135 V165 M545 135 V165\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"460\" y=\"125\" text-anchor=\"middle\">m</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Length</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"150\" cy=\"275\" r=\"40\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline \" d=\"M150 275 V250 M150 275 L175 285\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"150\" y=\"338\" text-anchor=\"middle\">s</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Time</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"400\" y=\"240\" width=\"120\" height=\"70\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"460\" y=\"282\" text-anchor=\"middle\">N · J · Pa</text></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Derived quantity</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-01-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "Convert 250 cm to meters.",
+      "type": "number",
+      "unit": "m",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Mass",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Length",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Time",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Derived quantity",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "units"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Dimensions combine; conversions preserve the quantity</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"95\" y=\"105\" width=\"110\" height=\"90\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"150\" y=\"155\" text-anchor=\"middle\">kg</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Mass</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M375 150 H545 M375 135 V165 M545 135 V165\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"460\" y=\"125\" text-anchor=\"middle\">m</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Length</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"150\" cy=\"275\" r=\"40\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline \" d=\"M150 275 V250 M150 275 L175 285\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"150\" y=\"338\" text-anchor=\"middle\">s</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Time</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"400\" y=\"240\" width=\"120\" height=\"70\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"460\" y=\"282\" text-anchor=\"middle\">N · J · Pa</text></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Derived quantity</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-01-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "Convert 3 cm² to square meters.",
+      "type": "number",
+      "unit": "m²",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Mass",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Length",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Time",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Derived quantity",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "units"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Dimensions combine; conversions preserve the quantity</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"95\" y=\"105\" width=\"110\" height=\"90\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"150\" y=\"155\" text-anchor=\"middle\">kg</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Mass</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M375 150 H545 M375 135 V165 M545 135 V165\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"460\" y=\"125\" text-anchor=\"middle\">m</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Length</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"150\" cy=\"275\" r=\"40\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline \" d=\"M150 275 V250 M150 275 L175 285\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"150\" y=\"338\" text-anchor=\"middle\">s</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Time</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"400\" y=\"240\" width=\"120\" height=\"70\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"460\" y=\"282\" text-anchor=\"middle\">N · J · Pa</text></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Derived quantity</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-02-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select both components that combine to form the resultant.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Horizontal component",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Vertical component",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Resultant vector",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Reference axes",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "vectors"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Arrow lengths are illustrative, not problem values</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M170 270 H470\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"310\" y=\"320\" text-anchor=\"middle\">Horizontal component</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M470 270 V115\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"550\" y=\"205\" text-anchor=\"middle\">Vertical component</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M170 270 L470 115\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"280\" y=\"150\" text-anchor=\"middle\">Resultant vector</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M110 300 H540 M140 325 V85\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"115\" y=\"65\" text-anchor=\"middle\">Reference axes</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-02-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "A displacement has perpendicular components +6 m and +8 m. Find its magnitude.",
+      "type": "number",
+      "unit": "m",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Horizontal component",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Vertical component",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Resultant vector",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Reference axes",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "vectors"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Arrow lengths are illustrative, not problem values</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M170 270 H470\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"310\" y=\"320\" text-anchor=\"middle\">Horizontal component</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M470 270 V115\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"550\" y=\"205\" text-anchor=\"middle\">Vertical component</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M170 270 L470 115\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"280\" y=\"150\" text-anchor=\"middle\">Resultant vector</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M110 300 H540 M140 325 V85\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"115\" y=\"65\" text-anchor=\"middle\">Reference axes</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-02-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "Which pair consists only of vectors?",
+      "type": "choice",
+      "options": [
+        "Velocity and force",
+        "Speed and energy",
+        "Mass and time",
+        "Temperature and distance"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Horizontal component",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Vertical component",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Resultant vector",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Reference axes",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "vectors"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Arrow lengths are illustrative, not problem values</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M170 270 H470\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"310\" y=\"320\" text-anchor=\"middle\">Horizontal component</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M470 270 V115\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"550\" y=\"205\" text-anchor=\"middle\">Vertical component</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M170 270 L470 115\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"280\" y=\"150\" text-anchor=\"middle\">Resultant vector</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M110 300 H540 M140 325 V85\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"115\" y=\"65\" text-anchor=\"middle\">Reference axes</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-03-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the quantity determined by the endpoints alone.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Initial position",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Final position",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Displacement",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Traveled path",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "motion"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M90 215 H550\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"390\" text-anchor=\"middle\">Endpoints define displacement; the route defines distance</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"140\" cy=\"180\" r=\"18\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"140\" y=\"100\" text-anchor=\"middle\">Initial position</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"490\" cy=\"180\" r=\"18\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"490\" y=\"100\" text-anchor=\"middle\">Final position</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M160 150 H470\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"320\" y=\"120\" text-anchor=\"middle\">Displacement</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M140 200 C210 320 390 310 490 200\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"350\" text-anchor=\"middle\">Traveled path</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-03-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "A cart moves from x = -2 m to x = +10 m in 4 s. Find its average velocity.",
+      "type": "number",
+      "unit": "m/s",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Initial position",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Final position",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Displacement",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Traveled path",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "motion"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M90 215 H550\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"390\" text-anchor=\"middle\">Endpoints define displacement; the route defines distance</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"140\" cy=\"180\" r=\"18\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"140\" y=\"100\" text-anchor=\"middle\">Initial position</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"490\" cy=\"180\" r=\"18\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"490\" y=\"100\" text-anchor=\"middle\">Final position</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M160 150 H470\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"320\" y=\"120\" text-anchor=\"middle\">Displacement</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M140 200 C210 320 390 310 490 200\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"350\" text-anchor=\"middle\">Traveled path</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-03-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "A runner travels 30 m out and 30 m back in 20 s. Find average speed.",
+      "type": "number",
+      "unit": "m/s",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Initial position",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Final position",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Displacement",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Traveled path",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "motion"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M90 215 H550\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"390\" text-anchor=\"middle\">Endpoints define displacement; the route defines distance</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"140\" cy=\"180\" r=\"18\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"140\" y=\"100\" text-anchor=\"middle\">Initial position</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"490\" cy=\"180\" r=\"18\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"490\" y=\"100\" text-anchor=\"middle\">Final position</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M160 150 H470\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"320\" y=\"120\" text-anchor=\"middle\">Displacement</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M140 200 C210 320 390 310 490 200\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"320\" y=\"350\" text-anchor=\"middle\">Traveled path</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-04-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the force opposing relative sliding along the surface.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Weight",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Normal force",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Applied force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Friction",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "forces"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><rect class=\"outline\" x=\"280\" y=\"165\" width=\"80\" height=\"42\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline \" d=\"M100 210 H550\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"365\" text-anchor=\"middle\">Forces on one block · arrow lengths are qualitative</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 205 V310\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"390\" y=\"315\" text-anchor=\"middle\">Weight</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 165 V70\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"395\" y=\"80\" text-anchor=\"middle\">Normal force</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M360 185 H520\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"510\" y=\"150\" text-anchor=\"middle\">Applied force</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M280 185 H160\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"150\" y=\"150\" text-anchor=\"middle\">Friction</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-04-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "A 3 kg block experiences a net horizontal force of +12 N. Find ax.",
+      "type": "number",
+      "unit": "m/s²",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Weight",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Normal force",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Applied force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Friction",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "forces"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><rect class=\"outline\" x=\"280\" y=\"165\" width=\"80\" height=\"42\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline \" d=\"M100 210 H550\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"365\" text-anchor=\"middle\">Forces on one block · arrow lengths are qualitative</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 205 V310\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"390\" y=\"315\" text-anchor=\"middle\">Weight</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 165 V70\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"395\" y=\"80\" text-anchor=\"middle\">Normal force</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M360 185 H520\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"510\" y=\"150\" text-anchor=\"middle\">Applied force</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M280 185 H160\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"150\" y=\"150\" text-anchor=\"middle\">Friction</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-04-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "A block moves right and slows down. What is the direction of its acceleration?",
+      "type": "choice",
+      "options": [
+        "Right",
+        "Up only",
+        "Left",
+        "Zero necessarily"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Weight",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Normal force",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Applied force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Friction",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "forces"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><rect class=\"outline\" x=\"280\" y=\"165\" width=\"80\" height=\"42\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline \" d=\"M100 210 H550\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"365\" text-anchor=\"middle\">Forces on one block · arrow lengths are qualitative</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 205 V310\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"390\" y=\"315\" text-anchor=\"middle\">Weight</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 165 V70\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"395\" y=\"80\" text-anchor=\"middle\">Normal force</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M360 185 H520\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"510\" y=\"150\" text-anchor=\"middle\">Applied force</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M280 185 H160\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"150\" y=\"150\" text-anchor=\"middle\">Friction</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-05-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the contact force a scale measures as apparent weight.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Weight",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Normal force",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Applied force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Friction",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "forces"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><rect class=\"outline\" x=\"280\" y=\"165\" width=\"80\" height=\"42\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline \" d=\"M100 210 H550\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"365\" text-anchor=\"middle\">Forces on one block · arrow lengths are qualitative</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 205 V310\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"390\" y=\"315\" text-anchor=\"middle\">Weight</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 165 V70\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"395\" y=\"80\" text-anchor=\"middle\">Normal force</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M360 185 H520\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"510\" y=\"150\" text-anchor=\"middle\">Applied force</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M280 185 H160\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"150\" y=\"150\" text-anchor=\"middle\">Friction</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-05-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "Using g = 10 m/s², find the gravitational weight of a 6 kg mass.",
+      "type": "number",
+      "unit": "N",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Weight",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Normal force",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Applied force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Friction",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "forces"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><rect class=\"outline\" x=\"280\" y=\"165\" width=\"80\" height=\"42\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline \" d=\"M100 210 H550\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"365\" text-anchor=\"middle\">Forces on one block · arrow lengths are qualitative</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 205 V310\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"390\" y=\"315\" text-anchor=\"middle\">Weight</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 165 V70\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"395\" y=\"80\" text-anchor=\"middle\">Normal force</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M360 185 H520\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"510\" y=\"150\" text-anchor=\"middle\">Applied force</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M280 185 H160\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"150\" y=\"150\" text-anchor=\"middle\">Friction</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-05-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "Which is the third-law partner of Earth pulling down on a book?",
+      "type": "choice",
+      "options": [
+        "The table pushing up on the book",
+        "Friction on the book",
+        "The book’s acceleration",
+        "The book pulling gravitationally on Earth"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Weight",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Normal force",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Applied force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Friction",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "forces"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><rect class=\"outline\" x=\"280\" y=\"165\" width=\"80\" height=\"42\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline \" d=\"M100 210 H550\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"365\" text-anchor=\"middle\">Forces on one block · arrow lengths are qualitative</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 205 V310\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"390\" y=\"315\" text-anchor=\"middle\">Weight</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 165 V70\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"395\" y=\"80\" text-anchor=\"middle\">Normal force</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M360 185 H520\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"510\" y=\"150\" text-anchor=\"middle\">Applied force</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M280 185 H160\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"150\" y=\"150\" text-anchor=\"middle\">Friction</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-06-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the assumption required by the displayed kinematic relations.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Initial velocity",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Constant acceleration",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Elapsed time",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Displacement",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "kinematics"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><circle class=\"outline\" cx=\"110\" cy=\"130\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"290\" cy=\"275\" r=\"14\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">One axis, signed quantities, constant acceleration</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M120 130 H230\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Initial velocity</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 130 H490\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Constant acceleration</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"150\" cy=\"275\" r=\"35\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline \" d=\"M150 275 V250 L170 270\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Elapsed time</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M290 275 H510\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Displacement</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-06-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "A cart starts from rest with constant a = +2 m/s² for 3 s. Find its displacement.",
+      "type": "number",
+      "unit": "m",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Initial velocity",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Constant acceleration",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Elapsed time",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Displacement",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "kinematics"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><circle class=\"outline\" cx=\"110\" cy=\"130\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"290\" cy=\"275\" r=\"14\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">One axis, signed quantities, constant acceleration</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M120 130 H230\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Initial velocity</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 130 H490\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Constant acceleration</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"150\" cy=\"275\" r=\"35\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline \" d=\"M150 275 V250 L170 270\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Elapsed time</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M290 275 H510\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Displacement</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-06-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "Take upward as positive and g = 10 m/s². What is ay at the top of a drag-free vertical toss?",
+      "type": "number",
+      "unit": "m/s²",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Initial velocity",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Constant acceleration",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Elapsed time",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Displacement",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "kinematics"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><circle class=\"outline\" cx=\"110\" cy=\"130\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"290\" cy=\"275\" r=\"14\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">One axis, signed quantities, constant acceleration</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M120 130 H230\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Initial velocity</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M320 130 H490\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Constant acceleration</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><circle class=\"outline\" cx=\"150\" cy=\"275\" r=\"35\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline \" d=\"M150 275 V250 L170 270\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Elapsed time</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M290 275 H510\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Displacement</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-07-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the reference point about which torque is evaluated.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Pivot",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Lever arm",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Applied force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Rotation tendency",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "torque"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M110 205 H530\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"370\" text-anchor=\"middle\">Torque uses perpendicular distance to the line of action</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M245 265 L285 205 L325 265Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"205\" y=\"310\" text-anchor=\"middle\">Pivot</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M285 225 H485 M285 210 V240 M485 210 V240\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"385\" y=\"275\" text-anchor=\"middle\">Lever arm</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M485 95 V200\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"520\" y=\"75\" text-anchor=\"middle\">Applied force</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M365 125 Q410 135 400 180\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"355\" y=\"95\" text-anchor=\"middle\">Rotation tendency</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-07-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "A 12 N force acts perpendicular to a lever 0.5 m from its pivot. Find torque magnitude.",
+      "type": "number",
+      "unit": "N·m",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Pivot",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Lever arm",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Applied force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Rotation tendency",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "torque"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M110 205 H530\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"370\" text-anchor=\"middle\">Torque uses perpendicular distance to the line of action</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M245 265 L285 205 L325 265Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"205\" y=\"310\" text-anchor=\"middle\">Pivot</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M285 225 H485 M285 210 V240 M485 210 V240\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"385\" y=\"275\" text-anchor=\"middle\">Lever arm</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M485 95 V200\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"520\" y=\"75\" text-anchor=\"middle\">Applied force</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M365 125 Q410 135 400 180\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"355\" y=\"95\" text-anchor=\"middle\">Rotation tendency</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-01-07-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "A force’s line of action passes through the pivot. What is its torque about that pivot?",
+      "type": "choice",
+      "options": [
+        "Equal to the force in newtons",
+        "Zero",
+        "Always clockwise",
+        "Infinite"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Pivot",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Lever arm",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Applied force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Rotation tendency",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "torque"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M110 205 H530\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"370\" text-anchor=\"middle\">Torque uses perpendicular distance to the line of action</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M245 265 L285 205 L325 265Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"205\" y=\"310\" text-anchor=\"middle\">Pivot</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M285 225 H485 M285 210 V240 M485 210 V240\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"385\" y=\"275\" text-anchor=\"middle\">Lever arm</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M485 95 V200\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"520\" y=\"75\" text-anchor=\"middle\">Applied force</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline\" d=\"M365 125 Q410 135 400 180\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" marker-end=\"url(#physics-arrow)\"/></g><text class=\"part-label\" x=\"355\" y=\"95\" text-anchor=\"middle\">Rotation tendency</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    }
+  ]
+}

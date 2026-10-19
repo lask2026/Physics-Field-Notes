@@ -1,0 +1,1037 @@
+{
+  "warning": "Candidate evidence only; do not treat the provided keys as authoritative.",
+  "chapter": {
+    "version": 1,
+    "id": "chapter-01",
+    "title": "Kinematics and Dynamics",
+    "status": "implemented",
+    "scopeNote": "Original condensed MCAT Physics, Mathematics and Research Reasoning lessons. Models and calculations use stated assumptions. Independent scientific review is pending; this is not exhaustive textbook coverage.",
+    "lessons": [
+      {
+        "id": "concept-1-1",
+        "title": "Units",
+        "section": "1.1",
+        "asset": "ph01-01",
+        "steps": [
+          {
+            "text": "SI units connect measurements to dimensions: kilograms for mass, meters for length and seconds for time. A number without its unit does not fully specify a physical measurement.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Derived units combine base units. A newton is kg·m/s², a joule is N·m and a pascal is N/m². Dimensional agreement is a necessary check on an equation, not proof of its numerical coefficient.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Convert with factors equal to one and cancel units explicitly. A squared length conversion squares the whole factor: one square centimeter is 10⁻⁴ square meters, not 10⁻².",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Keep mass distinct from weight, and prefix scales distinct from powers. Use dimensional analysis to reject a proposed result before spending time on arithmetic.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "1.1 · Units: the governing relation",
+          "paragraphs": [
+            "SI units connect measurements to dimensions: kilograms for mass, meters for length and seconds for time. A number without its unit does not fully specify a physical measurement.",
+            "Derived units combine base units. A newton is kg·m/s², a joule is N·m and a pascal is N/m². Dimensional agreement is a necessary check on an equation, not proof of its numerical coefficient."
+          ]
+        },
+        "memoryCue": {
+          "title": "1.1 · Convert first, then square the conversion factor.",
+          "paragraphs": [
+            "Convert first, then square the conversion factor.",
+            "Derived units combine base units. A newton is kg·m/s², a joule is N·m and a pascal is N/m². Dimensional agreement is a necessary check on an equation, not proof of its numerical coefficient."
+          ]
+        },
+        "traps": {
+          "title": "1.1 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Convert with factors equal to one and cancel units explicitly. A squared length conversion squares the whole factor: one square centimeter is 10⁻⁴ square meters, not 10⁻².",
+            "Keep mass distinct from weight, and prefix scales distinct from powers. Use dimensional analysis to reject a proposed result before spending time on arithmetic."
+          ]
+        },
+        "application": {
+          "title": "1.1 · Apply the model within its limits",
+          "paragraphs": [
+            "Keep mass distinct from weight, and prefix scales distinct from powers. Use dimensional analysis to reject a proposed result before spending time on arithmetic.",
+            "250 cm × (1 m / 100 cm) = 2.5 m."
+          ]
+        }
+      },
+      {
+        "id": "concept-1-2",
+        "title": "Vectors and Scalars",
+        "section": "1.2",
+        "asset": "ph01-02",
+        "steps": [
+          {
+            "text": "A scalar has magnitude; a vector also has direction. Mass and energy are scalars, while displacement, velocity, acceleration and force are vectors.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "For a vector A at angle θ measured from positive x, Ax = A cos θ and Ay = A sin θ. Components carry signs determined by direction relative to the chosen axes.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Add vectors by adding corresponding components. Magnitudes generally cannot be added directly unless the vectors point along the same direction.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Perpendicular components of 3 and 4 units give a magnitude of 5 units by the Pythagorean theorem. A negative component is a direction statement, not a negative vector magnitude.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "1.2 · Vectors and Scalars: the governing relation",
+          "paragraphs": [
+            "A scalar has magnitude; a vector also has direction. Mass and energy are scalars, while displacement, velocity, acceleration and force are vectors.",
+            "For a vector A at angle θ measured from positive x, Ax = A cos θ and Ay = A sin θ. Components carry signs determined by direction relative to the chosen axes."
+          ]
+        },
+        "memoryCue": {
+          "title": "1.2 · Resolve, add components, then recover the magnitude.",
+          "paragraphs": [
+            "Resolve, add components, then recover the magnitude.",
+            "For a vector A at angle θ measured from positive x, Ax = A cos θ and Ay = A sin θ. Components carry signs determined by direction relative to the chosen axes."
+          ]
+        },
+        "traps": {
+          "title": "1.2 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Add vectors by adding corresponding components. Magnitudes generally cannot be added directly unless the vectors point along the same direction.",
+            "Perpendicular components of 3 and 4 units give a magnitude of 5 units by the Pythagorean theorem. A negative component is a direction statement, not a negative vector magnitude."
+          ]
+        },
+        "application": {
+          "title": "1.2 · Apply the model within its limits",
+          "paragraphs": [
+            "Perpendicular components of 3 and 4 units give a magnitude of 5 units by the Pythagorean theorem. A negative component is a direction statement, not a negative vector magnitude.",
+            "Magnitude = sqrt(6² + 8²) m = 10 m."
+          ]
+        }
+      },
+      {
+        "id": "concept-1-3",
+        "title": "Displacement and Velocity",
+        "section": "1.3",
+        "asset": "ph01-03",
+        "steps": [
+          {
+            "text": "Displacement is final position minus initial position. Distance is total path length. Returning to a starting point gives zero displacement even when distance traveled is substantial.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Average velocity is displacement divided by elapsed time; average speed is distance divided by elapsed time. Instantaneous velocity is the slope of a position-versus-time graph.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "A zero average velocity does not imply zero velocity at every instant. Keep the coordinate origin and positive direction explicit when interpreting a signed result.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "The area under a velocity-versus-time graph gives signed displacement. Sections below the time axis contribute negatively rather than adding to positive distance.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "1.3 · Displacement and Velocity: the governing relation",
+          "paragraphs": [
+            "Displacement is final position minus initial position. Distance is total path length. Returning to a starting point gives zero displacement even when distance traveled is substantial.",
+            "Average velocity is displacement divided by elapsed time; average speed is distance divided by elapsed time. Instantaneous velocity is the slope of a position-versus-time graph."
+          ]
+        },
+        "memoryCue": {
+          "title": "1.3 · Distance follows the route; displacement joins the endpoints.",
+          "paragraphs": [
+            "Distance follows the route; displacement joins the endpoints.",
+            "Average velocity is displacement divided by elapsed time; average speed is distance divided by elapsed time. Instantaneous velocity is the slope of a position-versus-time graph."
+          ]
+        },
+        "traps": {
+          "title": "1.3 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "A zero average velocity does not imply zero velocity at every instant. Keep the coordinate origin and positive direction explicit when interpreting a signed result.",
+            "The area under a velocity-versus-time graph gives signed displacement. Sections below the time axis contribute negatively rather than adding to positive distance."
+          ]
+        },
+        "application": {
+          "title": "1.3 · Apply the model within its limits",
+          "paragraphs": [
+            "The area under a velocity-versus-time graph gives signed displacement. Sections below the time axis contribute negatively rather than adding to positive distance.",
+            "Displacement is 10 - (-2) = 12 m; 12 m / 4 s = +3 m/s."
+          ]
+        }
+      },
+      {
+        "id": "concept-1-4",
+        "title": "Forces and Acceleration",
+        "section": "1.4",
+        "asset": "ph01-04",
+        "steps": [
+          {
+            "text": "Acceleration is the change in velocity per unit time. A change in direction is an acceleration even if speed remains constant.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "In an inertial frame, the net external force obeys ΣF = ma for a constant-mass object. Draw all forces on the chosen object and sum them as vectors.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "A force changes velocity, not necessarily motion in the force direction at that instant. An object moving right can accelerate left while slowing down.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Kinetic friction is often modeled as μkN; static friction adjusts up to a maximum μsN. Do not set static friction equal to its maximum unless impending slip is specified.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "1.4 · Forces and Acceleration: the governing relation",
+          "paragraphs": [
+            "Acceleration is the change in velocity per unit time. A change in direction is an acceleration even if speed remains constant.",
+            "In an inertial frame, the net external force obeys ΣF = ma for a constant-mass object. Draw all forces on the chosen object and sum them as vectors."
+          ]
+        },
+        "memoryCue": {
+          "title": "1.4 · Net force sets acceleration; velocity can point elsewhere.",
+          "paragraphs": [
+            "Net force sets acceleration; velocity can point elsewhere.",
+            "In an inertial frame, the net external force obeys ΣF = ma for a constant-mass object. Draw all forces on the chosen object and sum them as vectors."
+          ]
+        },
+        "traps": {
+          "title": "1.4 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "A force changes velocity, not necessarily motion in the force direction at that instant. An object moving right can accelerate left while slowing down.",
+            "Kinetic friction is often modeled as μkN; static friction adjusts up to a maximum μsN. Do not set static friction equal to its maximum unless impending slip is specified."
+          ]
+        },
+        "application": {
+          "title": "1.4 · Apply the model within its limits",
+          "paragraphs": [
+            "Kinetic friction is often modeled as μkN; static friction adjusts up to a maximum μsN. Do not set static friction equal to its maximum unless impending slip is specified.",
+            "Using ΣFx = max gives ax = 12/3 = +4 m/s²."
+          ]
+        }
+      },
+      {
+        "id": "concept-1-5",
+        "title": "Newton’s Laws",
+        "section": "1.5",
+        "asset": "ph01-05",
+        "steps": [
+          {
+            "text": "Newton’s first law describes constant velocity when net force is zero in an inertial frame. Rest is only one possible constant-velocity state.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Newton’s second law relates net force on one object to that object’s acceleration. More individual forces do not necessarily mean a larger net force.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Third-law partners are equal and opposite forces acting on different objects. Weight and normal force on the same block are not a third-law pair.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "A contact force can change without changing gravitational weight. An accelerating elevator alters apparent weight, measured by the normal force, while mg stays approximately fixed.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "1.5 · Newton’s Laws: the governing relation",
+          "paragraphs": [
+            "Newton’s first law describes constant velocity when net force is zero in an inertial frame. Rest is only one possible constant-velocity state.",
+            "Newton’s second law relates net force on one object to that object’s acceleration. More individual forces do not necessarily mean a larger net force."
+          ]
+        },
+        "memoryCue": {
+          "title": "1.5 · Third-law partners live on different objects.",
+          "paragraphs": [
+            "Third-law partners live on different objects.",
+            "Newton’s second law relates net force on one object to that object’s acceleration. More individual forces do not necessarily mean a larger net force."
+          ]
+        },
+        "traps": {
+          "title": "1.5 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Third-law partners are equal and opposite forces acting on different objects. Weight and normal force on the same block are not a third-law pair.",
+            "A contact force can change without changing gravitational weight. An accelerating elevator alters apparent weight, measured by the normal force, while mg stays approximately fixed."
+          ]
+        },
+        "application": {
+          "title": "1.5 · Apply the model within its limits",
+          "paragraphs": [
+            "A contact force can change without changing gravitational weight. An accelerating elevator alters apparent weight, measured by the normal force, while mg stays approximately fixed.",
+            "Weight magnitude is mg = 6 × 10 = 60 N."
+          ]
+        }
+      },
+      {
+        "id": "concept-1-6",
+        "title": "Motion with Constant Acceleration",
+        "section": "1.6",
+        "asset": "ph01-06",
+        "steps": [
+          {
+            "text": "For constant acceleration in one dimension, v = v0 + at and Δx = v0t + ½at². Choose signed values along one consistent axis.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "The relation v² = v0² + 2aΔx eliminates time. The mean of initial and final velocity equals average velocity only when acceleration is constant over the interval.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Near Earth’s surface, free fall can be approximated with constant downward g when air resistance is negligible. At the top of a vertical toss, velocity is zero but acceleration is still downward.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "For projectile motion without drag, horizontal acceleration is zero while vertical acceleration is -g if up is positive. Components share the same flight time.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "1.6 · Motion with Constant Acceleration: the governing relation",
+          "paragraphs": [
+            "For constant acceleration in one dimension, v = v0 + at and Δx = v0t + ½at². Choose signed values along one consistent axis.",
+            "The relation v² = v0² + 2aΔx eliminates time. The mean of initial and final velocity equals average velocity only when acceleration is constant over the interval."
+          ]
+        },
+        "memoryCue": {
+          "title": "1.6 · Constant a permits the shortcut equations; check that assumption first.",
+          "paragraphs": [
+            "Constant a permits the shortcut equations; check that assumption first.",
+            "The relation v² = v0² + 2aΔx eliminates time. The mean of initial and final velocity equals average velocity only when acceleration is constant over the interval."
+          ]
+        },
+        "traps": {
+          "title": "1.6 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Near Earth’s surface, free fall can be approximated with constant downward g when air resistance is negligible. At the top of a vertical toss, velocity is zero but acceleration is still downward.",
+            "For projectile motion without drag, horizontal acceleration is zero while vertical acceleration is -g if up is positive. Components share the same flight time."
+          ]
+        },
+        "application": {
+          "title": "1.6 · Apply the model within its limits",
+          "paragraphs": [
+            "For projectile motion without drag, horizontal acceleration is zero while vertical acceleration is -g if up is positive. Components share the same flight time.",
+            "Constant acceleration with zero initial velocity gives Δx = ½at² = ½(2)(3²) = +9 m."
+          ]
+        }
+      },
+      {
+        "id": "concept-1-7",
+        "title": "Mechanical Equilibrium",
+        "section": "1.7",
+        "asset": "ph01-07",
+        "steps": [
+          {
+            "text": "Translational equilibrium requires zero net force. Rotational equilibrium requires zero net torque about an axis; complete static equilibrium requires both.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Torque magnitude is rF sin θ, or force times its perpendicular lever arm. A force applied through the pivot has zero torque about that pivot.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Choose a rotation sign convention before summing torques. Equal force magnitudes can produce different torques when lever arms differ.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "A freely rotating ideal seesaw balances when clockwise and counterclockwise torques cancel. Equilibrium does not require every individual force or torque to vanish.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "1.7 · Mechanical Equilibrium: the governing relation",
+          "paragraphs": [
+            "Translational equilibrium requires zero net force. Rotational equilibrium requires zero net torque about an axis; complete static equilibrium requires both.",
+            "Torque magnitude is rF sin θ, or force times its perpendicular lever arm. A force applied through the pivot has zero torque about that pivot."
+          ]
+        },
+        "memoryCue": {
+          "title": "1.7 · Balance forces and torques separately.",
+          "paragraphs": [
+            "Balance forces and torques separately.",
+            "Torque magnitude is rF sin θ, or force times its perpendicular lever arm. A force applied through the pivot has zero torque about that pivot."
+          ]
+        },
+        "traps": {
+          "title": "1.7 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Choose a rotation sign convention before summing torques. Equal force magnitudes can produce different torques when lever arms differ.",
+            "A freely rotating ideal seesaw balances when clockwise and counterclockwise torques cancel. Equilibrium does not require every individual force or torque to vanish."
+          ]
+        },
+        "application": {
+          "title": "1.7 · Apply the model within its limits",
+          "paragraphs": [
+            "A freely rotating ideal seesaw balances when clockwise and counterclockwise torques cancel. Equilibrium does not require every individual force or torque to vanish.",
+            "τ = rF = 0.5 × 12 = 6 N·m."
+          ]
+        }
+      }
+    ],
+    "exercises": [
+      {
+        "id": "ph-01-01-workshop-v1",
+        "title": "Units",
+        "asset": "ph01-01",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the category containing force, energy and pressure.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant diagram entity or entities are Derived quantity. SI units connect measurements to dimensions: kilograms for mass, meters for length and seconds for time. A number without its unit does not fully specify a physical measurement.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Derived units combine base units. A newton is kg·m/s², a joule is N·m and a pascal is N/m². Dimensional agreement is a necessary check on an equation, not proof of its numerical coefficient."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Convert 250 cm to meters.",
+            "answer": 2.5,
+            "unit": "m",
+            "tolerance": 0,
+            "explanation": "250 cm × (1 m / 100 cm) = 2.5 m.",
+            "id": "reason",
+            "hints": [
+              "SI units connect measurements to dimensions: kilograms for mass, meters for length and seconds for time. A number without its unit does not fully specify a physical measurement.",
+              "Derived units combine base units. A newton is kg·m/s², a joule is N·m and a pascal is N/m². Dimensional agreement is a necessary check on an equation, not proof of its numerical coefficient."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Convert 3 cm² to square meters.",
+            "answer": 0.0003,
+            "unit": "m²",
+            "tolerance": 0,
+            "explanation": "One centimeter is 0.01 m, so 3 cm² = 3 × (0.01)² m² = 0.0003 m².",
+            "id": "transfer",
+            "hints": [
+              "Derived units combine base units. A newton is kg·m/s², a joule is N·m and a pascal is N/m². Dimensional agreement is a necessary check on an equation, not proof of its numerical coefficient.",
+              "Convert with factors equal to one and cancel units explicitly. A squared length conversion squares the whole factor: one square centimeter is 10⁻⁴ square meters, not 10⁻²."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-01-02-workshop-v1",
+        "title": "Vectors and Scalars",
+        "asset": "ph01-02",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select both components that combine to form the resultant.",
+            "answer": [
+              "part-0",
+              "part-1"
+            ],
+            "explanation": "The relevant diagram entity or entities are Horizontal component, Vertical component. A scalar has magnitude; a vector also has direction. Mass and energy are scalars, while displacement, velocity, acceleration and force are vectors.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "For a vector A at angle θ measured from positive x, Ax = A cos θ and Ay = A sin θ. Components carry signs determined by direction relative to the chosen axes."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A displacement has perpendicular components +6 m and +8 m. Find its magnitude.",
+            "answer": 10,
+            "unit": "m",
+            "tolerance": 0,
+            "explanation": "Magnitude = sqrt(6² + 8²) m = 10 m.",
+            "id": "reason",
+            "hints": [
+              "A scalar has magnitude; a vector also has direction. Mass and energy are scalars, while displacement, velocity, acceleration and force are vectors.",
+              "For a vector A at angle θ measured from positive x, Ax = A cos θ and Ay = A sin θ. Components carry signs determined by direction relative to the chosen axes."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "Which pair consists only of vectors?",
+            "options": [
+              "Velocity and force",
+              "Speed and energy",
+              "Mass and time",
+              "Temperature and distance"
+            ],
+            "answer": 0,
+            "explanation": "Velocity and force require directions; the quantities in the other pairs are scalars.",
+            "id": "transfer",
+            "hints": [
+              "For a vector A at angle θ measured from positive x, Ax = A cos θ and Ay = A sin θ. Components carry signs determined by direction relative to the chosen axes.",
+              "Add vectors by adding corresponding components. Magnitudes generally cannot be added directly unless the vectors point along the same direction."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-01-03-workshop-v1",
+        "title": "Displacement and Velocity",
+        "asset": "ph01-03",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the quantity determined by the endpoints alone.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant diagram entity or entities are Displacement. Displacement is final position minus initial position. Distance is total path length. Returning to a starting point gives zero displacement even when distance traveled is substantial.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Average velocity is displacement divided by elapsed time; average speed is distance divided by elapsed time. Instantaneous velocity is the slope of a position-versus-time graph."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A cart moves from x = -2 m to x = +10 m in 4 s. Find its average velocity.",
+            "answer": 3,
+            "unit": "m/s",
+            "tolerance": 0,
+            "explanation": "Displacement is 10 - (-2) = 12 m; 12 m / 4 s = +3 m/s.",
+            "id": "reason",
+            "hints": [
+              "Displacement is final position minus initial position. Distance is total path length. Returning to a starting point gives zero displacement even when distance traveled is substantial.",
+              "Average velocity is displacement divided by elapsed time; average speed is distance divided by elapsed time. Instantaneous velocity is the slope of a position-versus-time graph."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A runner travels 30 m out and 30 m back in 20 s. Find average speed.",
+            "answer": 3,
+            "unit": "m/s",
+            "tolerance": 0,
+            "explanation": "Total distance is 60 m, so average speed is 60/20 = 3 m/s. Average velocity would be zero.",
+            "id": "transfer",
+            "hints": [
+              "Average velocity is displacement divided by elapsed time; average speed is distance divided by elapsed time. Instantaneous velocity is the slope of a position-versus-time graph.",
+              "A zero average velocity does not imply zero velocity at every instant. Keep the coordinate origin and positive direction explicit when interpreting a signed result."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-01-04-workshop-v1",
+        "title": "Forces and Acceleration",
+        "asset": "ph01-04",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the force opposing relative sliding along the surface.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant diagram entity or entities are Friction. Acceleration is the change in velocity per unit time. A change in direction is an acceleration even if speed remains constant.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "In an inertial frame, the net external force obeys ΣF = ma for a constant-mass object. Draw all forces on the chosen object and sum them as vectors."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A 3 kg block experiences a net horizontal force of +12 N. Find ax.",
+            "answer": 4,
+            "unit": "m/s²",
+            "tolerance": 0,
+            "explanation": "Using ΣFx = max gives ax = 12/3 = +4 m/s².",
+            "id": "reason",
+            "hints": [
+              "Acceleration is the change in velocity per unit time. A change in direction is an acceleration even if speed remains constant.",
+              "In an inertial frame, the net external force obeys ΣF = ma for a constant-mass object. Draw all forces on the chosen object and sum them as vectors."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "A block moves right and slows down. What is the direction of its acceleration?",
+            "options": [
+              "Right",
+              "Up only",
+              "Left",
+              "Zero necessarily"
+            ],
+            "answer": 2,
+            "explanation": "Slowing a rightward velocity requires a leftward acceleration.",
+            "id": "transfer",
+            "hints": [
+              "In an inertial frame, the net external force obeys ΣF = ma for a constant-mass object. Draw all forces on the chosen object and sum them as vectors.",
+              "A force changes velocity, not necessarily motion in the force direction at that instant. An object moving right can accelerate left while slowing down."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-01-05-workshop-v1",
+        "title": "Newton’s Laws",
+        "asset": "ph01-05",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the contact force a scale measures as apparent weight.",
+            "answer": [
+              "part-1"
+            ],
+            "explanation": "The relevant diagram entity or entities are Normal force. Newton’s first law describes constant velocity when net force is zero in an inertial frame. Rest is only one possible constant-velocity state.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Newton’s second law relates net force on one object to that object’s acceleration. More individual forces do not necessarily mean a larger net force."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Using g = 10 m/s², find the gravitational weight of a 6 kg mass.",
+            "answer": 60,
+            "unit": "N",
+            "tolerance": 0,
+            "explanation": "Weight magnitude is mg = 6 × 10 = 60 N.",
+            "id": "reason",
+            "hints": [
+              "Newton’s first law describes constant velocity when net force is zero in an inertial frame. Rest is only one possible constant-velocity state.",
+              "Newton’s second law relates net force on one object to that object’s acceleration. More individual forces do not necessarily mean a larger net force."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "Which is the third-law partner of Earth pulling down on a book?",
+            "options": [
+              "The table pushing up on the book",
+              "Friction on the book",
+              "The book’s acceleration",
+              "The book pulling gravitationally on Earth"
+            ],
+            "answer": 3,
+            "explanation": "The partner force acts on Earth and is exerted by the book; the normal force acts on the book.",
+            "id": "transfer",
+            "hints": [
+              "Newton’s second law relates net force on one object to that object’s acceleration. More individual forces do not necessarily mean a larger net force.",
+              "Third-law partners are equal and opposite forces acting on different objects. Weight and normal force on the same block are not a third-law pair."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-01-06-workshop-v1",
+        "title": "Motion with Constant Acceleration",
+        "asset": "ph01-06",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the assumption required by the displayed kinematic relations.",
+            "answer": [
+              "part-1"
+            ],
+            "explanation": "The relevant diagram entity or entities are Constant acceleration. For constant acceleration in one dimension, v = v0 + at and Δx = v0t + ½at². Choose signed values along one consistent axis.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "The relation v² = v0² + 2aΔx eliminates time. The mean of initial and final velocity equals average velocity only when acceleration is constant over the interval."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A cart starts from rest with constant a = +2 m/s² for 3 s. Find its displacement.",
+            "answer": 9,
+            "unit": "m",
+            "tolerance": 0,
+            "explanation": "Constant acceleration with zero initial velocity gives Δx = ½at² = ½(2)(3²) = +9 m.",
+            "id": "reason",
+            "hints": [
+              "For constant acceleration in one dimension, v = v0 + at and Δx = v0t + ½at². Choose signed values along one consistent axis.",
+              "The relation v² = v0² + 2aΔx eliminates time. The mean of initial and final velocity equals average velocity only when acceleration is constant over the interval."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Take upward as positive and g = 10 m/s². What is ay at the top of a drag-free vertical toss?",
+            "answer": -10,
+            "unit": "m/s²",
+            "tolerance": 0,
+            "explanation": "Gravity remains downward throughout flight, so ay = -10 m/s² even when instantaneous velocity is zero.",
+            "id": "transfer",
+            "hints": [
+              "The relation v² = v0² + 2aΔx eliminates time. The mean of initial and final velocity equals average velocity only when acceleration is constant over the interval.",
+              "Near Earth’s surface, free fall can be approximated with constant downward g when air resistance is negligible. At the top of a vertical toss, velocity is zero but acceleration is still downward."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-01-07-workshop-v1",
+        "title": "Mechanical Equilibrium",
+        "asset": "ph01-07",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the reference point about which torque is evaluated.",
+            "answer": [
+              "part-0"
+            ],
+            "explanation": "The relevant diagram entity or entities are Pivot. Translational equilibrium requires zero net force. Rotational equilibrium requires zero net torque about an axis; complete static equilibrium requires both.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Torque magnitude is rF sin θ, or force times its perpendicular lever arm. A force applied through the pivot has zero torque about that pivot."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A 12 N force acts perpendicular to a lever 0.5 m from its pivot. Find torque magnitude.",
+            "answer": 6,
+            "unit": "N·m",
+            "tolerance": 0,
+            "explanation": "τ = rF = 0.5 × 12 = 6 N·m.",
+            "id": "reason",
+            "hints": [
+              "Translational equilibrium requires zero net force. Rotational equilibrium requires zero net torque about an axis; complete static equilibrium requires both.",
+              "Torque magnitude is rF sin θ, or force times its perpendicular lever arm. A force applied through the pivot has zero torque about that pivot."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "A force’s line of action passes through the pivot. What is its torque about that pivot?",
+            "options": [
+              "Equal to the force in newtons",
+              "Zero",
+              "Always clockwise",
+              "Infinite"
+            ],
+            "answer": 1,
+            "explanation": "Its perpendicular lever arm is zero, so torque about that pivot is zero.",
+            "id": "transfer",
+            "hints": [
+              "Torque magnitude is rF sin θ, or force times its perpendicular lever arm. A force applied through the pivot has zero torque about that pivot.",
+              "Choose a rotation sign convention before summing torques. Equal force magnitudes can produce different torques when lever arms differ."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "version": 1,
+    "assets": [
+      {
+        "id": "ph01-01",
+        "kind": "concept-schematic",
+        "title": "Units",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Mass",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Length",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Time",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Derived quantity",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "units"
+        }
+      },
+      {
+        "id": "ph01-02",
+        "kind": "concept-schematic",
+        "title": "Vectors and Scalars",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Horizontal component",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Vertical component",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Resultant vector",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Reference axes",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "vectors"
+        }
+      },
+      {
+        "id": "ph01-03",
+        "kind": "concept-schematic",
+        "title": "Displacement and Velocity",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Initial position",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Final position",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Displacement",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Traveled path",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "motion"
+        }
+      },
+      {
+        "id": "ph01-04",
+        "kind": "concept-schematic",
+        "title": "Forces and Acceleration",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Weight",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Normal force",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Applied force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Friction",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "forces"
+        }
+      },
+      {
+        "id": "ph01-05",
+        "kind": "concept-schematic",
+        "title": "Newton’s Laws",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Weight",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Normal force",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Applied force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Friction",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "forces"
+        }
+      },
+      {
+        "id": "ph01-06",
+        "kind": "concept-schematic",
+        "title": "Motion with Constant Acceleration",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Initial velocity",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Constant acceleration",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Elapsed time",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Displacement",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "kinematics"
+        }
+      },
+      {
+        "id": "ph01-07",
+        "kind": "concept-schematic",
+        "title": "Mechanical Equilibrium",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Pivot",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Lever arm",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Applied force",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Rotation tendency",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "torque"
+        }
+      }
+    ]
+  }
+}
