@@ -1,0 +1,527 @@
+{
+  "chapter": "chapter-10",
+  "cases": [
+    {
+      "id": "ph-10-01-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the criterion governing the reporting of a measured sum.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Measured value",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Significant digits",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Decimal place",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Reported result",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "precision"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"210\" text-anchor=\"middle\">Examples of notation, not hidden assessment solutions</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"95\" y=\"105\" width=\"120\" height=\"70\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"140\" text-anchor=\"middle\">0.00450</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Measured value</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M125 160 H190\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"460\" y=\"140\" text-anchor=\"middle\">4  5  0</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Significant digits</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"85\" y=\"250\" width=\"140\" height=\"70\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"285\" text-anchor=\"middle\">12.3 + 0.45</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Decimal place</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"400\" y=\"250\" width=\"135\" height=\"65\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"465\" y=\"290\" text-anchor=\"middle\">Report</text></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Reported result</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-10-01-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "How many significant figures are in the measured value 0.00450?",
+      "type": "number",
+      "unit": "dimensionless",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Measured value",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Significant digits",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Decimal place",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Reported result",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "precision"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"210\" text-anchor=\"middle\">Examples of notation, not hidden assessment solutions</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"95\" y=\"105\" width=\"120\" height=\"70\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"140\" text-anchor=\"middle\">0.00450</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Measured value</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M125 160 H190\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"460\" y=\"140\" text-anchor=\"middle\">4  5  0</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Significant digits</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"85\" y=\"250\" width=\"140\" height=\"70\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"285\" text-anchor=\"middle\">12.3 + 0.45</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Decimal place</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"400\" y=\"250\" width=\"135\" height=\"65\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"465\" y=\"290\" text-anchor=\"middle\">Report</text></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Reported result</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-10-01-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "A measured sum is 12.3 m + 0.45 m. Which reported result follows the decimal-place convention?",
+      "type": "choice",
+      "options": [
+        "12.8 m",
+        "12.75 m",
+        "13 m",
+        "12.750 m"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Measured value",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Significant digits",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Decimal place",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Reported result",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "precision"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"210\" text-anchor=\"middle\">Examples of notation, not hidden assessment solutions</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"95\" y=\"105\" width=\"120\" height=\"70\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"140\" text-anchor=\"middle\">0.00450</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Measured value</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M125 160 H190\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"460\" y=\"140\" text-anchor=\"middle\">4  5  0</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Significant digits</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"85\" y=\"250\" width=\"140\" height=\"70\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"285\" text-anchor=\"middle\">12.3 + 0.45</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Decimal place</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"400\" y=\"250\" width=\"135\" height=\"65\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"465\" y=\"290\" text-anchor=\"middle\">Report</text></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Reported result</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-10-02-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the operation that recovers the exponent from a positive base-ten value.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Power of ten",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Exponent",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Logarithm",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Ratio change",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "logarithm"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Logarithmic spacing represents equal ratios</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"105\" y=\"105\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"140\" text-anchor=\"middle\">10ˣ</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Power of ten</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"420\" y=\"105\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-purple)\" fill-opacity=\".1\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"470\" y=\"140\" text-anchor=\"middle\">x</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Exponent</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"105\" y=\"250\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"285\" text-anchor=\"middle\">log₁₀</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Logarithm</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 285 H540 M400 275 V295 M445 275 V295 M490 275 V295 M535 275 V295\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Ratio change</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-10-02-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "Find log10(1000).",
+      "type": "number",
+      "unit": "dimensionless",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Power of ten",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Exponent",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Logarithm",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Ratio change",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "logarithm"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Logarithmic spacing represents equal ratios</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"105\" y=\"105\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"140\" text-anchor=\"middle\">10ˣ</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Power of ten</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"420\" y=\"105\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-purple)\" fill-opacity=\".1\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"470\" y=\"140\" text-anchor=\"middle\">x</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Exponent</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"105\" y=\"250\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"285\" text-anchor=\"middle\">log₁₀</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Logarithm</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 285 H540 M400 275 V295 M445 275 V295 M490 275 V295 M535 275 V295\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Ratio change</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-10-02-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "Evaluate (2×10³)(3×10⁻²).",
+      "type": "number",
+      "unit": "dimensionless",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Power of ten",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Exponent",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Logarithm",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Ratio change",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "logarithm"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Logarithmic spacing represents equal ratios</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"105\" y=\"105\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"140\" text-anchor=\"middle\">10ˣ</text></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Power of ten</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"420\" y=\"105\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-purple)\" fill-opacity=\".1\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"470\" y=\"140\" text-anchor=\"middle\">x</text></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Exponent</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"105\" y=\"250\" width=\"100\" height=\"65\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><text class=\"anatomy-note\" x=\"155\" y=\"285\" text-anchor=\"middle\">log₁₀</text></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Logarithm</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M390 285 H540 M400 275 V295 M445 275 V295 M490 275 V295 M535 275 V295\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Ratio change</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-10-03-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the side opposite the right angle.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Opposite side",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Adjacent side",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Hypotenuse",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Reference angle",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "triangle"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M450 290 V270 H470\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Reference angle at lower left; lengths are qualitative</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M470 290 V110\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"535\" y=\"200\" text-anchor=\"middle\">Opposite side</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M150 290 H470\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"325\" y=\"345\" text-anchor=\"middle\">Adjacent side</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M150 290 L470 110\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"290\" y=\"160\" text-anchor=\"middle\">Hypotenuse</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M210 290 Q210 270 202 260\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"225\" y=\"278\" text-anchor=\"middle\">θ</text></g><text class=\"part-label\" x=\"150\" y=\"235\" text-anchor=\"middle\">Reference angle</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-10-03-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "A right triangle has opposite side 3 and hypotenuse 5 relative to θ. Find sin θ.",
+      "type": "number",
+      "unit": "dimensionless",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Opposite side",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Adjacent side",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Hypotenuse",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Reference angle",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "triangle"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M450 290 V270 H470\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Reference angle at lower left; lengths are qualitative</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M470 290 V110\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"535\" y=\"200\" text-anchor=\"middle\">Opposite side</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M150 290 H470\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"325\" y=\"345\" text-anchor=\"middle\">Adjacent side</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M150 290 L470 110\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"290\" y=\"160\" text-anchor=\"middle\">Hypotenuse</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M210 290 Q210 270 202 260\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"225\" y=\"278\" text-anchor=\"middle\">θ</text></g><text class=\"part-label\" x=\"150\" y=\"235\" text-anchor=\"middle\">Reference angle</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-10-03-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "A right triangle has adjacent side 4 and opposite side 3 relative to θ. Find tan θ.",
+      "type": "number",
+      "unit": "dimensionless",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Opposite side",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Adjacent side",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Hypotenuse",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Reference angle",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "triangle"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><path class=\"outline \" d=\"M450 290 V270 H470\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"320\" y=\"395\" text-anchor=\"middle\">Reference angle at lower left; lengths are qualitative</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M470 290 V110\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"535\" y=\"200\" text-anchor=\"middle\">Opposite side</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M150 290 H470\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"325\" y=\"345\" text-anchor=\"middle\">Adjacent side</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M150 290 L470 110\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"290\" y=\"160\" text-anchor=\"middle\">Hypotenuse</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><path class=\"outline \" d=\"M210 290 Q210 270 202 260\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text class=\"anatomy-note\" x=\"225\" y=\"278\" text-anchor=\"middle\">θ</text></g><text class=\"part-label\" x=\"150\" y=\"235\" text-anchor=\"middle\">Reference angle</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-10-04-workshop-v1/map",
+      "subject": "physics",
+      "prompt": "Select the step that tests signs, dimensions and limiting behavior after a calculation.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Known quantities",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Target quantity",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Model choice",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Sanity check",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "reasoning"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Given information → model → computation → checks</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"90\" y=\"85\" width=\"175\" height=\"75\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Known quantities</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"375\" y=\"85\" width=\"175\" height=\"75\" rx=\"6\" fill=\"var(--v-purple)\" fill-opacity=\".1\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Target quantity</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"90\" y=\"245\" width=\"175\" height=\"75\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Model choice</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"375\" y=\"245\" width=\"175\" height=\"75\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Sanity check</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-10-04-workshop-v1/reason",
+      "subject": "physics",
+      "prompt": "A model gives t = d/v. For d = 45 m and v = 3 m/s, find t.",
+      "type": "number",
+      "unit": "s",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Known quantities",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Target quantity",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Model choice",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Sanity check",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "reasoning"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Given information → model → computation → checks</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"90\" y=\"85\" width=\"175\" height=\"75\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Known quantities</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"375\" y=\"85\" width=\"175\" height=\"75\" rx=\"6\" fill=\"var(--v-purple)\" fill-opacity=\".1\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Target quantity</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"90\" y=\"245\" width=\"175\" height=\"75\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Model choice</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"375\" y=\"245\" width=\"175\" height=\"75\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Sanity check</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "ph-10-04-workshop-v1/transfer",
+      "subject": "physics",
+      "prompt": "A computed speed has units kg/s. What should happen next?",
+      "type": "choice",
+      "options": [
+        "Accept it if the digits look plausible",
+        "Rename kilograms as meters",
+        "Drop the units",
+        "Recheck the physical relation and unit cancellation"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Known quantities",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Target quantity",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Model choice",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Sanity check",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "reasoning"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-purple:#7c3aed;--v-green:#047857;--v-gold:#a16207;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"physics-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 440\" role=\"img\" aria-label=\"Original problem diagram — original illustrative physical model\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"physics-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6\" fill=\"var(--sec)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"205\" text-anchor=\"middle\">Given information → model → computation → checks</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"90\" y=\"85\" width=\"175\" height=\"75\" rx=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".1\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"55\" text-anchor=\"middle\">Known quantities</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"375\" y=\"85\" width=\"175\" height=\"75\" rx=\"6\" fill=\"var(--v-purple)\" fill-opacity=\".1\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"55\" text-anchor=\"middle\">Target quantity</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"90\" y=\"245\" width=\"175\" height=\"75\" rx=\"6\" fill=\"var(--v-green)\" fill-opacity=\".1\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"160\" y=\"370\" text-anchor=\"middle\">Model choice</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(0 0)\"><rect class=\"outline\" x=\"375\" y=\"245\" width=\"175\" height=\"75\" rx=\"6\" fill=\"var(--v-gold)\" fill-opacity=\".1\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"480\" y=\"370\" text-anchor=\"middle\">Sanity check</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    }
+  ]
+}

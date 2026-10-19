@@ -1,0 +1,599 @@
+{
+  "warning": "Candidate evidence only; do not treat the provided keys as authoritative.",
+  "chapter": {
+    "version": 1,
+    "id": "chapter-10",
+    "title": "Mathematics",
+    "status": "implemented",
+    "scopeNote": "Original condensed MCAT Physics, Mathematics and Research Reasoning lessons. Models and calculations use stated assumptions. Independent scientific review is pending; this is not exhaustive textbook coverage.",
+    "lessons": [
+      {
+        "id": "concept-10-1",
+        "title": "Arithmetic and Significant Figures",
+        "section": "10.1",
+        "asset": "ph10-01",
+        "steps": [
+          {
+            "text": "Reported precision should match the information available. Leading zeros locate a decimal point but do not count as significant digits; zeros between nonzero digits do count.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "For multiplication and division, a common reporting convention uses the fewest significant figures among measured inputs. For addition and subtraction, the limiting decimal place governs.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Exact counts and defined conversion factors do not impose the same significant-figure limit as uncertain measurements. Keep extra digits during intermediate work to reduce rounding error.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "A final numerical value and its precision are different aspects of reporting. In this app, dedicated precision questions can require exact text while ordinary numerical questions assess value in a stated unit.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "10.1 · Arithmetic and Significant Figures: the governing relation",
+          "paragraphs": [
+            "Reported precision should match the information available. Leading zeros locate a decimal point but do not count as significant digits; zeros between nonzero digits do count.",
+            "For multiplication and division, a common reporting convention uses the fewest significant figures among measured inputs. For addition and subtraction, the limiting decimal place governs."
+          ]
+        },
+        "memoryCue": {
+          "title": "10.1 · Products track significant figures; sums track decimal places.",
+          "paragraphs": [
+            "Products track significant figures; sums track decimal places.",
+            "For multiplication and division, a common reporting convention uses the fewest significant figures among measured inputs. For addition and subtraction, the limiting decimal place governs."
+          ]
+        },
+        "traps": {
+          "title": "10.1 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "Exact counts and defined conversion factors do not impose the same significant-figure limit as uncertain measurements. Keep extra digits during intermediate work to reduce rounding error.",
+            "A final numerical value and its precision are different aspects of reporting. In this app, dedicated precision questions can require exact text while ordinary numerical questions assess value in a stated unit."
+          ]
+        },
+        "application": {
+          "title": "10.1 · Apply the model within its limits",
+          "paragraphs": [
+            "A final numerical value and its precision are different aspects of reporting. In this app, dedicated precision questions can require exact text while ordinary numerical questions assess value in a stated unit.",
+            "The leading zeros do not count; 4, 5 and the terminal decimal zero do, giving three significant figures."
+          ]
+        }
+      },
+      {
+        "id": "concept-10-2",
+        "title": "Exponents and Logarithms",
+        "section": "10.2",
+        "asset": "ph10-02",
+        "steps": [
+          {
+            "text": "For a positive quantity, log10 returns the exponent of ten that produces it. Scientific notation separates a coefficient from its power-of-ten scale.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Multiplication adds exponents and logarithms turn products into sums. A logarithm’s argument should be dimensionless, often formed as a ratio to a reference value.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "A change of one unit on a base-ten logarithmic scale represents a tenfold ratio. A negative logarithm is possible for a positive argument below one.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Use order-of-magnitude estimates to check arithmetic. Be explicit whether an axis is linear or logarithmic before interpreting equal spacings.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "10.2 · Exponents and Logarithms: the governing relation",
+          "paragraphs": [
+            "For a positive quantity, log10 returns the exponent of ten that produces it. Scientific notation separates a coefficient from its power-of-ten scale.",
+            "Multiplication adds exponents and logarithms turn products into sums. A logarithm’s argument should be dimensionless, often formed as a ratio to a reference value."
+          ]
+        },
+        "memoryCue": {
+          "title": "10.2 · Logs turn ratios into differences and products into sums.",
+          "paragraphs": [
+            "Logs turn ratios into differences and products into sums.",
+            "Multiplication adds exponents and logarithms turn products into sums. A logarithm’s argument should be dimensionless, often formed as a ratio to a reference value."
+          ]
+        },
+        "traps": {
+          "title": "10.2 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "A change of one unit on a base-ten logarithmic scale represents a tenfold ratio. A negative logarithm is possible for a positive argument below one.",
+            "Use order-of-magnitude estimates to check arithmetic. Be explicit whether an axis is linear or logarithmic before interpreting equal spacings."
+          ]
+        },
+        "application": {
+          "title": "10.2 · Apply the model within its limits",
+          "paragraphs": [
+            "Use order-of-magnitude estimates to check arithmetic. Be explicit whether an axis is linear or logarithmic before interpreting equal spacings.",
+            "10³ = 1000, so log10(1000) = 3."
+          ]
+        }
+      },
+      {
+        "id": "concept-10-3",
+        "title": "Trigonometry",
+        "section": "10.3",
+        "asset": "ph10-03",
+        "steps": [
+          {
+            "text": "In a right triangle relative to angle θ, sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse and tan θ = opposite/adjacent.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "The hypotenuse lies opposite the right angle, not necessarily opposite the angle named in a problem. Side roles change when the reference acute angle changes.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "One full turn is 2π radians or 360°. Small-angle relations such as sin θ ≈ θ require θ in radians and are approximations, not exact identities at every angle.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "For components of a vector, identify the angle relative to the chosen axis before assigning sine or cosine. A diagram can make this decision clearer than a memorized word order.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "10.3 · Trigonometry: the governing relation",
+          "paragraphs": [
+            "In a right triangle relative to angle θ, sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse and tan θ = opposite/adjacent.",
+            "The hypotenuse lies opposite the right angle, not necessarily opposite the angle named in a problem. Side roles change when the reference acute angle changes."
+          ]
+        },
+        "memoryCue": {
+          "title": "10.3 · SOH-CAH-TOA works only after choosing the reference angle.",
+          "paragraphs": [
+            "SOH-CAH-TOA works only after choosing the reference angle.",
+            "The hypotenuse lies opposite the right angle, not necessarily opposite the angle named in a problem. Side roles change when the reference acute angle changes."
+          ]
+        },
+        "traps": {
+          "title": "10.3 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "One full turn is 2π radians or 360°. Small-angle relations such as sin θ ≈ θ require θ in radians and are approximations, not exact identities at every angle.",
+            "For components of a vector, identify the angle relative to the chosen axis before assigning sine or cosine. A diagram can make this decision clearer than a memorized word order."
+          ]
+        },
+        "application": {
+          "title": "10.3 · Apply the model within its limits",
+          "paragraphs": [
+            "For components of a vector, identify the angle relative to the chosen axis before assigning sine or cosine. A diagram can make this decision clearer than a memorized word order.",
+            "sin θ = opposite/hypotenuse = 3/5 = 0.6."
+          ]
+        }
+      },
+      {
+        "id": "concept-10-4",
+        "title": "Problem-Solving",
+        "section": "10.4",
+        "asset": "ph10-04",
+        "steps": [
+          {
+            "text": "Begin a quantitative problem by naming the target and listing given quantities with units. Choose a physical model before rearranging symbols.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Write a symbolic relation, isolate the target and then substitute values. This preserves dependencies and makes unit cancellation easier to inspect.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "A plausible number is not sufficient if its unit, sign or limiting behavior is wrong. Check what the formula predicts as a relevant input approaches zero or becomes large.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "An approximation must match its regime: small-angle, nonrelativistic, ideal-fluid and constant-acceleration models each have different conditions. State the assumption that makes a shortcut legitimate.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "10.4 · Problem-Solving: the governing relation",
+          "paragraphs": [
+            "Begin a quantitative problem by naming the target and listing given quantities with units. Choose a physical model before rearranging symbols.",
+            "Write a symbolic relation, isolate the target and then substitute values. This preserves dependencies and makes unit cancellation easier to inspect."
+          ]
+        },
+        "memoryCue": {
+          "title": "10.4 · Model, symbols, numbers, then units and limits.",
+          "paragraphs": [
+            "Model, symbols, numbers, then units and limits.",
+            "Write a symbolic relation, isolate the target and then substitute values. This preserves dependencies and makes unit cancellation easier to inspect."
+          ]
+        },
+        "traps": {
+          "title": "10.4 · Check signs, assumptions and meaning",
+          "paragraphs": [
+            "A plausible number is not sufficient if its unit, sign or limiting behavior is wrong. Check what the formula predicts as a relevant input approaches zero or becomes large.",
+            "An approximation must match its regime: small-angle, nonrelativistic, ideal-fluid and constant-acceleration models each have different conditions. State the assumption that makes a shortcut legitimate."
+          ]
+        },
+        "application": {
+          "title": "10.4 · Apply the model within its limits",
+          "paragraphs": [
+            "An approximation must match its regime: small-angle, nonrelativistic, ideal-fluid and constant-acceleration models each have different conditions. State the assumption that makes a shortcut legitimate.",
+            "t = d/v = 45/3 = 15 s; units m divided by m/s give seconds."
+          ]
+        }
+      }
+    ],
+    "exercises": [
+      {
+        "id": "ph-10-01-workshop-v1",
+        "title": "Arithmetic and Significant Figures",
+        "asset": "ph10-01",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the criterion governing the reporting of a measured sum.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant diagram entity or entities are Decimal place. Reported precision should match the information available. Leading zeros locate a decimal point but do not count as significant digits; zeros between nonzero digits do count.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "For multiplication and division, a common reporting convention uses the fewest significant figures among measured inputs. For addition and subtraction, the limiting decimal place governs."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "How many significant figures are in the measured value 0.00450?",
+            "answer": 3,
+            "unit": "dimensionless",
+            "tolerance": 0,
+            "explanation": "The leading zeros do not count; 4, 5 and the terminal decimal zero do, giving three significant figures.",
+            "id": "reason",
+            "hints": [
+              "Reported precision should match the information available. Leading zeros locate a decimal point but do not count as significant digits; zeros between nonzero digits do count.",
+              "For multiplication and division, a common reporting convention uses the fewest significant figures among measured inputs. For addition and subtraction, the limiting decimal place governs."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "A measured sum is 12.3 m + 0.45 m. Which reported result follows the decimal-place convention?",
+            "options": [
+              "12.8 m",
+              "12.75 m",
+              "13 m",
+              "12.750 m"
+            ],
+            "answer": 0,
+            "explanation": "The sum is 12.75 m before rounding; the tenths-place limit gives 12.8 m.",
+            "id": "transfer",
+            "hints": [
+              "For multiplication and division, a common reporting convention uses the fewest significant figures among measured inputs. For addition and subtraction, the limiting decimal place governs.",
+              "Exact counts and defined conversion factors do not impose the same significant-figure limit as uncertain measurements. Keep extra digits during intermediate work to reduce rounding error."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-10-02-workshop-v1",
+        "title": "Exponents and Logarithms",
+        "asset": "ph10-02",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the operation that recovers the exponent from a positive base-ten value.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant diagram entity or entities are Logarithm. For a positive quantity, log10 returns the exponent of ten that produces it. Scientific notation separates a coefficient from its power-of-ten scale.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Multiplication adds exponents and logarithms turn products into sums. A logarithm’s argument should be dimensionless, often formed as a ratio to a reference value."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Find log10(1000).",
+            "answer": 3,
+            "unit": "dimensionless",
+            "tolerance": 0,
+            "explanation": "10³ = 1000, so log10(1000) = 3.",
+            "id": "reason",
+            "hints": [
+              "For a positive quantity, log10 returns the exponent of ten that produces it. Scientific notation separates a coefficient from its power-of-ten scale.",
+              "Multiplication adds exponents and logarithms turn products into sums. A logarithm’s argument should be dimensionless, often formed as a ratio to a reference value."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "Evaluate (2×10³)(3×10⁻²).",
+            "answer": 60,
+            "unit": "dimensionless",
+            "tolerance": 0,
+            "explanation": "Multiply coefficients and add exponents: 6×10¹ = 60.",
+            "id": "transfer",
+            "hints": [
+              "Multiplication adds exponents and logarithms turn products into sums. A logarithm’s argument should be dimensionless, often formed as a ratio to a reference value.",
+              "A change of one unit on a base-ten logarithmic scale represents a tenfold ratio. A negative logarithm is possible for a positive argument below one."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-10-03-workshop-v1",
+        "title": "Trigonometry",
+        "asset": "ph10-03",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the side opposite the right angle.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant diagram entity or entities are Hypotenuse. In a right triangle relative to angle θ, sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse and tan θ = opposite/adjacent.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "The hypotenuse lies opposite the right angle, not necessarily opposite the angle named in a problem. Side roles change when the reference acute angle changes."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A right triangle has opposite side 3 and hypotenuse 5 relative to θ. Find sin θ.",
+            "answer": 0.6,
+            "unit": "dimensionless",
+            "tolerance": 0,
+            "explanation": "sin θ = opposite/hypotenuse = 3/5 = 0.6.",
+            "id": "reason",
+            "hints": [
+              "In a right triangle relative to angle θ, sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse and tan θ = opposite/adjacent.",
+              "The hypotenuse lies opposite the right angle, not necessarily opposite the angle named in a problem. Side roles change when the reference acute angle changes."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A right triangle has adjacent side 4 and opposite side 3 relative to θ. Find tan θ.",
+            "answer": 0.75,
+            "unit": "dimensionless",
+            "tolerance": 0,
+            "explanation": "tan θ = opposite/adjacent = 3/4 = 0.75.",
+            "id": "transfer",
+            "hints": [
+              "The hypotenuse lies opposite the right angle, not necessarily opposite the angle named in a problem. Side roles change when the reference acute angle changes.",
+              "One full turn is 2π radians or 360°. Small-angle relations such as sin θ ≈ θ require θ in radians and are approximations, not exact identities at every angle."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ph-10-04-workshop-v1",
+        "title": "Problem-Solving",
+        "asset": "ph10-04",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the step that tests signs, dimensions and limiting behavior after a calculation.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant diagram entity or entities are Sanity check. Begin a quantitative problem by naming the target and listing given quantities with units. Choose a physical model before rearranging symbols.",
+            "hints": [
+              "Identify the physical or reasoning role described before selecting its schematic entity.",
+              "Write a symbolic relation, isolate the target and then substitute values. This preserves dependencies and makes unit cancellation easier to inspect."
+            ]
+          },
+          {
+            "type": "number",
+            "prompt": "A model gives t = d/v. For d = 45 m and v = 3 m/s, find t.",
+            "answer": 15,
+            "unit": "s",
+            "tolerance": 0,
+            "explanation": "t = d/v = 45/3 = 15 s; units m divided by m/s give seconds.",
+            "id": "reason",
+            "hints": [
+              "Begin a quantitative problem by naming the target and listing given quantities with units. Choose a physical model before rearranging symbols.",
+              "Write a symbolic relation, isolate the target and then substitute values. This preserves dependencies and makes unit cancellation easier to inspect."
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "A computed speed has units kg/s. What should happen next?",
+            "options": [
+              "Accept it if the digits look plausible",
+              "Rename kilograms as meters",
+              "Drop the units",
+              "Recheck the physical relation and unit cancellation"
+            ],
+            "answer": 3,
+            "explanation": "Speed must have dimensions length/time; a dimensional mismatch reveals an inconsistent derivation or substitution.",
+            "id": "transfer",
+            "hints": [
+              "Write a symbolic relation, isolate the target and then substitute values. This preserves dependencies and makes unit cancellation easier to inspect.",
+              "A plausible number is not sufficient if its unit, sign or limiting behavior is wrong. Check what the formula predicts as a relevant input approaches zero or becomes large."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "version": 1,
+    "assets": [
+      {
+        "id": "ph10-01",
+        "kind": "concept-schematic",
+        "title": "Arithmetic and Significant Figures",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Measured value",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Significant digits",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Decimal place",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Reported result",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "precision"
+        }
+      },
+      {
+        "id": "ph10-02",
+        "kind": "concept-schematic",
+        "title": "Exponents and Logarithms",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Power of ten",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Exponent",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Logarithm",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Ratio change",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "logarithm"
+        }
+      },
+      {
+        "id": "ph10-03",
+        "kind": "concept-schematic",
+        "title": "Trigonometry",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Opposite side",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Adjacent side",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Hypotenuse",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Reference angle",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "triangle"
+        }
+      },
+      {
+        "id": "ph10-04",
+        "kind": "concept-schematic",
+        "title": "Problem-Solving",
+        "context": "Original illustrative physics or reasoning schematic; not an experimental measurement, scale drawing or complete apparatus. Use the assumptions and values in the current prompt for calculations.",
+        "reviewNote": "Original author-created model. Direction, sign convention, geometry and applicability require independent scientific review. Schematic proportions and animation speeds are not measured.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Known quantities",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Target quantity",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Model choice",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Sanity check",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "reasoning"
+        }
+      }
+    ]
+  }
+}
